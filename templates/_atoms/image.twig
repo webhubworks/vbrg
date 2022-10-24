@@ -1,0 +1,76 @@
+{#
+
+  use via:
+
+  {% include '_atoms/image.twig' with {
+    image: assetSource,
+    ratio: 1,
+    mode: 'crop',
+    breakpoints: [
+      { width: 736 }
+    ],
+    pictureClass: '',
+    imageClass: ''
+  } %}
+
+#}
+
+{% if image is defined and image|length %}
+
+  {% set full = {
+    mode: mode,
+    width: image.width > breakpoints[0].width ? breakpoints[0].width  : image.width,
+    height: image.width > breakpoints[0].width ? breakpoints[0].width / ratio : image.width / ratio,
+    quality: 80
+  } %}
+
+  {% set mobile = {
+    mode: mode,
+    width: image.width > 480 ? 480 : image.width,
+    height: image.width > 480 ? 480 / ratio : image.width / ratio,
+    quality: 80
+  } %}
+
+  {% set mobileWebp = {
+    mode: mode,
+    width: image.width > 480 ? 480 : image.width,
+    height: image.width > 480 ? 480 / ratio : image.width / ratio,
+    quality: 80,
+    format: 'webp'
+  } %}
+
+  <picture class="{{ pictureClass is defined ? pictureClass }}">
+
+    {% for break in breakpoints %}
+
+      <source type="image/webp" media="(min-width: {{ break.width / 16 }}em)" srcset="{{ image.getUrl({
+        mode: mode,
+        width: break.width ,
+        height: break.width / ratio,
+        quality: 80,
+        format: 'webp'
+      }) }}">
+
+      <source type="{{ image.mimeType }}" media="(min-width: {{ break.width / 16 }}em)" srcset="{{ image.getUrl({
+        mode: mode,
+        width: break.width,
+        height: break.width / ratio,
+        quality: 80
+      }) }}">
+
+    {% endfor %}
+
+    <source type="image/webp" srcset="{{ image.getUrl( mobileWebp) }}">
+    <source type="{{ image.mimeType }}" srcset="{{ image.getUrl(mobile) }}">
+
+    <img loading="lazy"
+         src="{{ image.getUrl(full) }}"
+         alt="{{ image.alt ? image.alt : image.title }}"
+         class="{{ imageClass ?? imageClass }}"
+         width="{{ image.getWidth(full) }}"
+         height="{{ image.getHeight(full) }}
+    ">
+
+  </picture>
+
+{% endif %}

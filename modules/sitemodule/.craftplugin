@@ -1,0 +1,23 @@
+{
+  "pluginName": "site-module",
+  "pluginDescription": "Provides custom functionality for this specific site.",
+  "pluginVersion": "0.0.1",
+  "pluginAuthorName": "webhub GmbH",
+  "pluginAuthorUrl": "https://webhub.de",
+  "codeComments": "yes",
+  "pluginComponents": [
+  ],
+  "consolecommandName": "",
+  "controllerName": "",
+  "cpsectionName": "",
+  "elementName": "",
+  "fieldName": "",
+  "modelName": "",
+  "purchasableName": "",
+  "recordName": "",
+  "serviceName": "",
+  "taskName": "",
+  "utilityName": "",
+  "widgetName": "",
+  "apiVersion": "module_api_version_3_0"
+}
