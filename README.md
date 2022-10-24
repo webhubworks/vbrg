@@ -32,24 +32,7 @@ ddev composer config platform.php 8.1
 ddev start
 ```
 
-### 4. Install Craft & Plugins
-```bash
-ddev describe
-ddev craft setup # Confirm everything until 'username'
-
-git add . && git commit -m "Install Craft CMS"
-
-ddev composer require --dev spatie/craft-ray
-ddev composer require nystudio107/craft-vite craftcms/redactor ether/seo
-ddev craft plugin/install vite && ddev craft plugin/install redactor && ddev craft plugin/install seo  
-```
-
-### 5. Install Node components
-```bash
-ddev npm install
-```
-
-### 6. Configure autoload of boilerplate module
+### 4. Configure autoload of boilerplate module
 ```
 // composer.json
 {
@@ -63,6 +46,23 @@ ddev npm install
 ```
 ```bash
 ddev exec composer dump-autoload -a
+```
+
+### 5. Install Craft & Plugins
+```bash
+ddev describe
+ddev craft setup # Confirm everything until 'username'
+
+git add . && git commit -m "Install Craft CMS"
+
+ddev composer require --dev spatie/craft-ray
+ddev composer require nystudio107/craft-vite craftcms/redactor ether/seo
+ddev craft plugin/install vite && ddev craft plugin/install redactor && ddev craft plugin/install seo  
+```
+
+### 6. Install Node components
+```bash
+ddev npm install
 ```
 
 ## Usage
