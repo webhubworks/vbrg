@@ -21,8 +21,7 @@ mv web public
 git init && git add . && git commit -m "A new project has been born"
 git remote add boilerplate git@github.com:webhubworks/craft4-vite-boilerplate.git
 git fetch boilerplate
-git checkout -b boilerplate boilerplate/main
-git merge main -X theirs --allow-unrelated-histories -m "Install boilerplate files"
+git merge boilerplate/main -X theirs --allow-unrelated-histories -m "Install boilerplate files"
 git remote remove boilerplate
 ```
 
