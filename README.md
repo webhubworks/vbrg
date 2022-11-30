@@ -70,3 +70,26 @@ ddev npm install
 ddev npm run dev
 ```
 
+### CriticalCSS
+>Under the hood (and down the dependency tree!), the Critical plugin relies on Puppeteer, which will not be able to launch the bundled chromium binary from within the web container because of some missing Linux libraries.
+
+To run Puppeteer within DDEV, there's a workaround included in `.ddev/config.yaml` and `.ddev/config.m1.yaml` (for Apple M1 chips). Based on [this guide](https://github.com/onedarnleyroad/craftcms/wiki/Generating-Critical-CSS).
+
+Upon build, the critical CSS is generated for the homepage. To generate it for other pages, you need to add the following to the `vite.config.js` file:
+
+```js
+// vite.config.js
+criticalPages: [
+    { uri: '', template: 'index' },
+    { uri: 'about', template: 'about/index' },      // templates/about/index.twig
+    { uri: 'contact', template: 'contact/index' },  // templates/contact/index.twig
+]
+```
+
+Before deploying, you need to install required Debian packages on the server (based on [spatie.be](https://spatie.be/docs/browsershot/v2/requirements#content-installing-puppeteer-a-forge-provisioned-server)). You can do this by running the following command on the server (for Ubuntu 20.04):
+
+```bash
+sudo apt-get install gconf-service libasound2 libatk1.0-0 libgbm1 libgcc1 libgcc1 libgconf-2-4 libgtk-3-0 libx11-xcb1 libxcomposite1 libxcursor1 libxdamage1 libxfixes3 libxi6 libxrandr2 libxss1 libxtst6 fonts-liberation libappindicator1 xdg-utils libgbm-dev libxshmfence-dev
+```
+
+Alternatively, you can run the Forge recipe 'Install Puppeteer dependencies'.

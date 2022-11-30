@@ -10,4 +10,6 @@ return [
     'manifestPath' => Craft::getAlias('@webroot') . '/dist/manifest.json',
     'serverPublic' => Craft::getAlias('@web')  . '/dist/',
     'useDevServer' => App::env('CRAFT_ENVIRONMENT') === 'dev',
+    'criticalPath' => Craft::getAlias('@webroot') . '/dist/criticalcss',
+    'criticalSuffix' => '_critical.min.css',
 ];
