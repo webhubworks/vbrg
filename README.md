@@ -56,8 +56,8 @@ ddev craft setup # Confirm everything including 'Install Craft now?' then start 
 git add . && git commit -m "Install Craft CMS"
 
 ddev composer require --dev spatie/craft-ray craftcms/generator
-ddev composer require nystudio107/craft-vite craftcms/redactor ether/seo
-ddev craft plugin/install vite && ddev craft plugin/install redactor && ddev craft plugin/install seo  
+ddev composer require nystudio107/craft-vite craftcms/redactor # ether/seo is currently in abandoned state
+ddev craft plugin/install vite && ddev craft plugin/install redactor
 ```
 
 > **Note**
