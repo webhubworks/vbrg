@@ -45,7 +45,7 @@ ddev start
 }
 ```
 ```bash
-ddev exec composer dump-autoload -a
+ddev composer dump-autoload -a
 ```
 
 ### 5. Install Craft & Plugins
