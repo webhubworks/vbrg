@@ -68,14 +68,17 @@ ddev craft plugin/install vite && ddev craft plugin/install redactor
 > Do you trust "yiisoft/yii2-composer" to execute code and wish to enable it now? (writes "allow-plugins" to composer.json)
 > ```
 
-### 6. Install Node components
+### 6. Freeze Node version and install Node components
 ```bash
+ddev nvm install lts/*
+node -v > .nvmrc
+git add . && git commit -m "Freeze Node version 🥶"
 ddev npm install
 ```
 
 ## Usage
 ```bash
-ddev npm run dev
+ddev nvm i && ddev npm run dev
 ```
 
 ### CriticalCSS
