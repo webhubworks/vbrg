@@ -51,7 +51,7 @@ ddev composer dump-autoload -a
 ### 5. Install Craft & Plugins
 ```bash
 ddev describe
-ddev craft setup # Confirm everything until 'username'
+ddev craft setup # Confirm everything including 'Install Craft now?' then start customizing at 'Username: [admin]'
 
 git add . && git commit -m "Install Craft CMS"
 
