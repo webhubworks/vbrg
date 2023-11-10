@@ -1,0 +1,8 @@
+baseUrl: $PRIMARY_SITE_URL
+handle: default
+hasUrls: true
+language: de
+name: 'VBRG Opferhilfefonds'
+primary: true
+siteGroup: 14aa6bcd-44bd-403f-9386-cdd3a72f3d2a # VBRG Opferhilfefonds
+sortOrder: 1
