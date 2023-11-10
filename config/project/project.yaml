@@ -1,4 +1,4 @@
-dateModified: 1699620710
+dateModified: 1699620756
 email:
   fromEmail: brosch@webhub.de
   fromName: 'VBRG Opferhilfefonds'
@@ -8,6 +8,11 @@ meta:
     8a32bcd6-82c1-4060-a7c4-bbbe04fa1b42: Common # Common
     14aa6bcd-44bd-403f-9386-cdd3a72f3d2a: 'VBRG Opferhilfefonds' # VBRG Opferhilfefonds
     9363f036-dc6e-47a2-abde-d8f71980c397: 'VBRG Opferhilfefonds' # VBRG Opferhilfefonds
+plugins:
+  vite:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
 system:
   edition: solo
   live: true
