@@ -1,0 +1,15 @@
+{% spaceless %}
+{% macro isActive(slug, inheritClass, activeClass) %}
+  {% if slug in craft.app.request.getSegments %}
+    {{ activeClass }}
+  {% else %}
+    {% if slug == craft.app.request.url %}
+      {{ activeClass }}
+      {% elseif slug == 'startseite' and craft.app.request.url == '/' %}
+        {{ activeClass }}
+    {% else %}
+      {{ inheritClass }}
+    {% endif %}
+  {% endif %}
+{% endmacro %}
+{% endspaceless %}
