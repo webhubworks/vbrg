@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 856568d8-ca9e-4622-9139-2e293bcb4f7e # C2A
+handle: button
+instructions: null
+name: Button
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_button}}'
+  maxBlocks: 1
+  minBlocks: null
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

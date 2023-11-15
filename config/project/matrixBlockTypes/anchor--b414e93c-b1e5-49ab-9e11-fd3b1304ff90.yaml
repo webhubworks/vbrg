@@ -1,0 +1,78 @@
+field: 7557ab82-949f-4746-8743-17eb3e09835f # Button
+fieldLayouts:
+  aa5e2658-eb1e-410a-b3b1-37b551080dcf:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 727ed136-51ae-4465-966c-743da19fd4fe # Label
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1649a646-7376-491a-a192-340b1a2ae512
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d1dd954e-d81c-4104-94bf-dd68a50691dd # Sprunkmarken ID
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: dfe8cd2f-e70a-40b1-bb1e-8b20804bca7f
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 74c841ee-c2a9-486b-ab15-80835fde3ee5
+        userCondition: null
+fields:
+  727ed136-51ae-4465-966c-743da19fd4fe: # Label
+    columnSuffix: qkljuaoq
+    contentColumnType: text
+    fieldGroup: null
+    handle: label
+    instructions: null
+    name: Label
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  d1dd954e-d81c-4104-94bf-dd68a50691dd: # Sprunkmarken ID
+    columnSuffix: hkgezcst
+    contentColumnType: text
+    fieldGroup: null
+    handle: anchor
+    instructions: null
+    name: 'Sprunkmarken ID'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: anchor
+name: Sprungmarke
+sortOrder: 3

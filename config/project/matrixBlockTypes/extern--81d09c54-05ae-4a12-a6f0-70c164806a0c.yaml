@@ -1,0 +1,73 @@
+field: 7557ab82-949f-4746-8743-17eb3e09835f # Button
+fieldLayouts:
+  9cb629d1-6680-4501-b7d6-1ff29b0f14c3:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: d2b43da2-5746-4999-8e72-cd1b825130dc # Label
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9039b999-308c-491b-a4e2-2ad6f0cbca78
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: a899116d-e0f2-4d6f-bfcb-91d638d60094 # URL
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 12b9fd06-24fb-4e5e-a993-5a3a91782866
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: c3ecee97-1222-4603-bcb5-ca8ee1bb2495
+        userCondition: null
+fields:
+  a899116d-e0f2-4d6f-bfcb-91d638d60094: # URL
+    columnSuffix: xrhoucfu
+    contentColumnType: string(255)
+    fieldGroup: null
+    handle: externURL
+    instructions: null
+    name: URL
+    searchable: false
+    settings:
+      maxLength: 255
+      types:
+        - url
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
+  d2b43da2-5746-4999-8e72-cd1b825130dc: # Label
+    columnSuffix: jnllblaj
+    contentColumnType: text
+    fieldGroup: null
+    handle: label
+    instructions: null
+    name: Label
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: extern
+name: Extern
+sortOrder: 2

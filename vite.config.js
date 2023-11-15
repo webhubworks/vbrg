@@ -35,15 +35,6 @@ export default defineConfig(({ command, mode }) => {
             ViteRestart({
                 reload: ['templates/**/*'],
             }),
-            critical({
-                criticalUrl:
-                    env.CRAFT_ENVIRONMENT === 'dev'
-                        ? 'http://localhost/'
-                        : env.PRIMARY_SITE_URL,
-                criticalBase: './public/dist/criticalcss/',
-                criticalPages: [{ uri: '', template: 'index' }],
-                criticalConfig: {},
-            }),
         ],
         publicDir: path.resolve(__dirname, 'src/public'),
         resolve: {

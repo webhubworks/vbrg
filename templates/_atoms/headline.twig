@@ -1,0 +1,17 @@
+{% if headlineType == 'h4' %}
+    <h3 class="h4">
+    {% for row in headline %}
+        <span class="{{ row.color == 'white' ? 'text-white' : 'text-black' }}">{{ row.text }}</span>
+        {{ not loop.last ? '<br />' }}
+    {% endfor %}
+    </h3>
+    {% else %}
+        <{{ headlineType }}>
+        {% for row in headline %}
+            <span class="{{ row.color == 'white' ? 'text-white' : 'text-black' }}">{{ row.text }}</span>
+            {{ not loop.last ? '<br />' }}
+        {% endfor %}
+        </{{ headlineType }}>
+{% endif %}
+
+

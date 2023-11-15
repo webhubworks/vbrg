@@ -9,11 +9,7 @@
 
 {### Blocks #}
 {% block content %}
-
-  <div class="bg-slate-700 p-20 text-4xl text-white font-bold text-center min-h-[20vh]">
-    <h1>Hello webhub!</h1>
+  <div class="container">
+    {% include '_components/content-matrix.twig' %}
   </div>
-
-  <example-component></example-component>
-
 {% endblock %}

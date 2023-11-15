@@ -1,0 +1,94 @@
+field: 7557ab82-949f-4746-8743-17eb3e09835f # Button
+fieldLayouts:
+  8709e1de-5e52-4372-b72b-b271282ed5c5:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: e9dcb45e-e976-4325-95e7-6d0dd5c278b1 # Label
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e5c08591-bd39-491a-8ffb-56ca4d54dd6c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 065ff313-4159-4d38-8c97-514f76753e3d # Seite
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2de0a25c-1ed0-407a-9076-427a01721178
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 2d381ab9-1153-459f-ab50-a490bdf03dd4
+        userCondition: null
+fields:
+  065ff313-4159-4d38-8c97-514f76753e3d: # Seite
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: internPage
+    instructions: null
+    name: Seite
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      branchLimit: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: 1
+      minRelations: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Entry
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\entries\EntryCondition
+      selectionLabel: null
+      showSiteMenu: true
+      sources:
+        - 'section:6a67bde5-479e-4cf2-9c86-2560ff522e41' # Seiten
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+  e9dcb45e-e976-4325-95e7-6d0dd5c278b1: # Label
+    columnSuffix: clzkspii
+    contentColumnType: text
+    fieldGroup: null
+    handle: label
+    instructions: null
+    name: Label
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: intern
+name: Intern
+sortOrder: 1

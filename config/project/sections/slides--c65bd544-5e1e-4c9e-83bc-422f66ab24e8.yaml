@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+handle: slides
+name: Slides
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primäre eintrag Seite'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  9363f036-dc6e-47a2-abde-d8f71980c397: # VBRG Opferhilfefonds
+    enabledByDefault: true
+    hasUrls: true
+    template: slides/_entry
+    uriFormat: 'slides/{slug}'
+structure:
+  maxLevels: null
+  uid: c4dfe9fa-094b-47c9-80f9-c2d097d69cf5
+type: structure

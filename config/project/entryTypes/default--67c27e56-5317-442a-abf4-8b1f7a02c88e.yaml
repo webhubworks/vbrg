@@ -1,0 +1,82 @@
+fieldLayouts:
+  f3ef0015-9ff0-4cf7-b135-cb8c512c3f6e:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 16fc6d9c-8728-47d0-856c-a38d517a53cc
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 111bfe1a-111b-4c7c-b988-2b60918ebf36 # Icon
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a2e81e4b-30b9-48b8-bd90-8ff17ec9ade3
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 423833a3-ef68-41b8-aacd-c03cb7abbac0 # Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ebba2139-e216-4b64-9fa5-2d89a8ce66fd
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 7557ab82-949f-4746-8743-17eb3e09835f # Button
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 32af4137-0448-44ea-b9b2-ae3f8ca674d8
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: 48fbf69e-5aae-48c8-a6e3-5b89946233cf
+        userCondition: null
+handle: default
+hasTitleField: true
+name: Standard
+section: b0760b82-c867-4267-91ca-ba4f189d1e09 # C2A Elemente
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

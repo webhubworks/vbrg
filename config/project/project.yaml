@@ -1,20 +1,149 @@
-dateModified: 1699620756
+dateModified: 1700043639
+elementSources:
+  craft\elements\Entry:
+    -
+      key: '*'
+      type: native
+    -
+      key: singles
+      type: native
+    -
+      heading: Kanäle
+      type: heading
+    -
+      key: 'section:57f706bc-65c7-4618-bade-d6f242497d53' # FAQ
+      type: native
+    -
+      heading: Strukturen
+      type: heading
+    -
+      defaultSort:
+        - structure
+        - asc
+      disabled: false
+      key: 'section:6a67bde5-479e-4cf2-9c86-2560ff522e41' # Seiten
+      tableAttributes:
+        - postDate
+        - expiryDate
+        - author
+        - link
+      type: native
+    -
+      key: 'section:b0760b82-c867-4267-91ca-ba4f189d1e09' # C2A Elemente
+      type: native
 email:
   fromEmail: brosch@webhub.de
   fromName: 'VBRG Opferhilfefonds'
   transportType: craft\mail\transportadapters\Sendmail
+fs:
+  files:
+    hasUrls: true
+    name: Dateien
+    settings:
+      path: uploads/files
+    type: craft\fs\Local
+    url: /uploads/files/
+  icons:
+    hasUrls: true
+    name: Icons
+    settings:
+      path: uploads/icons
+    type: craft\fs\Local
+    url: /uploads/icons/
+  images:
+    hasUrls: true
+    name: Bilder
+    settings:
+      path: uploads/images
+    type: craft\fs\Local
+    url: /uploads/images/
 meta:
   __names__:
-    8a32bcd6-82c1-4060-a7c4-bbbe04fa1b42: Common # Common
+    1a351ce4-7ddf-45eb-9151-61228d9ab658: Einstellungen # Einstellungen
+    1b6de696-885d-4225-b5e3-51850b1ce2bf: 'C2A Element' # C2A Element
+    1bc71551-c949-4982-b169-f1bba8696bec: FAQ # FAQ
+    1fce1f93-751a-4c9a-b930-e49a604eebba: Label # Label
+    5a97eecc-eb31-420d-a6a7-db8f228243a2: Inhalt # Inhalt
+    6a67bde5-479e-4cf2-9c86-2560ff522e41: Seiten # Seiten
+    6acbe757-8b6b-49a8-81b4-020c1a99d3d3: Antwort # Antwort
+    6bf3e70b-795c-44b7-8e0a-7958cca8e303: Copyright # Copyright
+    6e87d9b5-03c9-4ca6-8fdd-c03f6eb9087a: Standard # Standard
+    7cae0180-a618-4bb9-8138-2c1fef9f532a: Title # Title
+    7e233310-d87d-411b-8ced-2becff1c968a: Bilder # Bilder
+    8a32bcd6-82c1-4060-a7c4-bbbe04fa1b42: Allgemein # Allgemein
+    8f66490e-87fc-4a41-a611-ddd4f93a6205: 'Spenden Widget' # Spenden Widget
+    9c6cb273-e941-4c08-a2fe-daca1623031f: Dateien # Dateien
     14aa6bcd-44bd-403f-9386-cdd3a72f3d2a: 'VBRG Opferhilfefonds' # VBRG Opferhilfefonds
+    18b6cee8-11cf-41ff-b4b3-eb973bfc0711: 'Footer Navigation' # Footer Navigation
+    22fe44ff-4d50-4732-b5fe-847cc148adff: E-Mail # E-Mail
+    31f1f990-fbb0-43da-a9c7-c3cbbdb86b09: Anschrift # Anschrift
+    37f48d69-c521-4173-9de9-3aa572eb18df: Text # Text
+    46b292db-e422-45ad-ab69-e9f27bcd91dc: Telefon # Telefon
+    57a7333c-602e-4cd4-a1a0-c91c621f7b91: Elemente # Elemente
+    57f706bc-65c7-4618-bade-d6f242497d53: FAQ # FAQ
+    63a20558-8353-4735-98ab-0f6bf24ecebd: Überschrift # Überschrift
+    065ff313-4159-4d38-8c97-514f76753e3d: Seite # Seite
+    66c19341-d5c9-486c-890c-d87f787de8a8: C2A # C2A
+    67b6d890-4707-4b5e-b5fb-f1a9912ab655: Standard # Standard
+    67c27e56-5317-442a-abf4-8b1f7a02c88e: Standard # Standard
+    81d09c54-05ae-4a12-a6f0-70c164806a0c: Extern # Extern
+    82aedd8f-e6b7-43ec-9182-d26f3eca60f2: Seite # Seite
+    111bfe1a-111b-4c7c-b988-2b60918ebf36: Icon # Icon
+    498dc256-c446-4458-9ef9-17c54d6c601e: Einfach # Einfach
+    727ed136-51ae-4465-966c-743da19fd4fe: Label # Label
+    743c4548-fcd6-4851-8c69-ec237b909652: Button # Button
+    868b011b-4b36-42bc-a3f7-f9a9370bb210: Startseite # Startseite
+    0928f3fc-d81c-4623-9118-0177307414fd: Überschrift # Überschrift
+    950e5e6d-ebc8-49f7-88c1-f5595cc96f10: Titel # Titel
+    7557ab82-949f-4746-8743-17eb3e09835f: Button # Button
     9363f036-dc6e-47a2-abde-d8f71980c397: 'VBRG Opferhilfefonds' # VBRG Opferhilfefonds
+    96329c8e-4311-4aa6-bccd-6025df1cedec: Text # Text
+    423833a3-ef68-41b8-aacd-c03cb7abbac0: Text # Text
+    856568d8-ca9e-4622-9139-2e293bcb4f7e: C2A # C2A
+    a70887b8-63fb-46b6-8a65-2d2dff5ea405: Einstellungen # Einstellungen
+    a899116d-e0f2-4d6f-bfcb-91d638d60094: URL # URL
+    af5c209f-e5d8-4804-b4b0-1234257abf1a: Startseite # Startseite
+    b0760b82-c867-4267-91ca-ba4f189d1e09: 'C2A Elemente' # C2A Elemente
+    b30fe9ee-2f09-4790-bef3-a0595c9885de: Hintergrund # Hintergrund
+    b414e93c-b1e5-49ab-9e11-fd3b1304ff90: Sprungmarke # Sprungmarke
+    bb59a01a-8bce-42bf-af1c-6cb8088e3269: 'PGP Key' # PGP Key
+    c65bd544-5e1e-4c9e-83bc-422f66ab24e8: Slides # Slides
+    d1dd954e-d81c-4104-94bf-dd68a50691dd: 'Sprunkmarken ID' # Sprunkmarken ID
+    d2b43da2-5746-4999-8e72-cd1b825130dc: Label # Label
+    d5d545e4-9bc6-4705-9942-caaa2cf0dc48: 'Haupt Navigation' # Haupt Navigation
+    d6f47ed7-ac48-46b5-9ac5-f66fdf983c6c: Überschrift # Überschrift
+    d9d2ce89-1365-4ff5-9aa7-90d4ac5cfefc: Subline # Subline
+    d41fb132-5a3c-4059-b018-e5695391b9d2: Standard # Standard
+    d221a3d5-d2e5-4dcb-9b14-513bd4590fbe: Einstellungen # Einstellungen
+    dc2702b2-ebdb-48c3-abce-a7e89519ca6d: Intern # Intern
+    df8a52e3-bb45-4a7f-8b3c-30a8f49ff2b7: Text # Text
+    e1aba43e-6407-48b5-a5d5-44f806868174: 'PGP Fingerprint' # PGP Fingerprint
+    e2a809b8-d0ea-42b2-901f-bdffd3f245d9: Icons # Icons
+    e9dcb45e-e976-4325-95e7-6d0dd5c278b1: Label # Label
+    e9ff94c6-92e7-4304-843c-18b84045a1f1: 'Public Schema' # Public Schema
+    f06f4efc-7d95-436a-bab4-de48b3bd1379: Inhalt # Inhalt
+    f53acefa-58a0-4ec4-b080-0cc5e6b8cd85: Einträge # Einträge
+    f189e644-9409-4bf9-a68d-14e3dcd8fefc: Typ # Typ
+    ffbc0646-f9f5-42bf-aa98-45db48cc473d: Slider # Slider
 plugins:
+  ckeditor:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0.0
+  elements-panel:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  seo:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.2.0
   vite:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
 system:
-  edition: solo
+  edition: pro
   live: true
   name: 'VBRG Opferhilfefonds'
   schemaVersion: 4.5.3.0

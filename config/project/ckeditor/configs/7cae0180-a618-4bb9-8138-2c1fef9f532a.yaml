@@ -1,0 +1,10 @@
+css: ".ck.ck-editor__main>.ck-editor__editable{\r\n  background-color: #CF528C;\r\n  }"
+headingLevels:
+  - 1
+  - 2
+js: "return {\r\n  fontColor: {\r\n    colors: [\r\n      {\r\n        color: 'hsl(0, 0%, 0%)',\r\n        label: 'Schwarz',\r\n      },\r\n      {\r\n        color: 'hsl(0, 0%, 100%)',\r\n        label: 'Weiß',\r\n      },\r\n    ],\r\n  },\r\n  heading: {\r\n    options: [\r\n      {\r\n        model: 'paragraph',\r\n        title: 'Paragraph',\r\n        class: 'ck-heading_paragraph',\r\n      },\r\n      {\r\n        model: 'heading1',\r\n        view: 'h1',\r\n        title: 'Heading 1',\r\n        class: 'ck-heading_heading1',\r\n      },\r\n      {\r\n        model: 'heading2',\r\n        view: 'h2',\r\n        title: 'Heading 2',\r\n        class: 'ck-heading_heading2',\r\n      },\r\n    ],\r\n  },\r\n}"
+listPlugin: List
+name: Title
+toolbar:
+  - heading
+  - fontColor

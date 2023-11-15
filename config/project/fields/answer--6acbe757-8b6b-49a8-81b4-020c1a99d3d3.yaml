@@ -1,0 +1,19 @@
+columnSuffix: rhurvrpm
+contentColumnType: text
+fieldGroup: f06f4efc-7d95-436a-bab4-de48b3bd1379 # Inhalt
+handle: answer
+instructions: null
+name: Antwort
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

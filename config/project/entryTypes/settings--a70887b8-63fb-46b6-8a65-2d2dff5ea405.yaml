@@ -1,0 +1,152 @@
+fieldLayouts:
+  16cf29fb-8b84-44ff-9592-06a0261cabbe:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 69421b89-9f93-4074-a254-b3c1e743798d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d5d545e4-9bc6-4705-9942-caaa2cf0dc48 # Haupt Navigation
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 51837e18-8f40-4e6d-9387-071cb67bf526
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: b2f63642-b846-40fa-acbd-24df5c0e092d
+            userCondition: null
+          -
+            elementCondition: null
+            fieldUid: 22fe44ff-4d50-4732-b5fe-847cc148adff # E-Mail
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 14855d20-b4a7-411d-9b27-f9f0a91246e2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 46b292db-e422-45ad-ab69-e9f27bcd91dc # Telefon
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4619da8e-5125-4252-9e9c-3ad0ee8823b4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 31f1f990-fbb0-43da-a9c7-c3cbbdb86b09 # Anschrift
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ee240960-ba80-4718-9f0d-9f14b20355b8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: e1aba43e-6407-48b5-a5d5-44f806868174 # PGP Fingerprint
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0b135827-be89-4170-bcfb-9a6fc808bf10
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: bb59a01a-8bce-42bf-af1c-6cb8088e3269 # PGP Key
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5558c114-2e8e-47c9-8481-6c2c76fbdde8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: cf4be81a-380b-46db-9656-cd54f54d1f64
+            userCondition: null
+          -
+            elementCondition: null
+            fieldUid: 6bf3e70b-795c-44b7-8e0a-7958cca8e303 # Copyright
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 74ff5b1a-320d-4139-aca3-812bee82330f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 18b6cee8-11cf-41ff-b4b3-eb973bfc0711 # Footer Navigation
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d7969ec1-8334-4a4d-9235-88c7f263efc4
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: f02947a7-05d3-461f-9d3e-b79c1332d8da
+        userCondition: null
+handle: settings
+hasTitleField: false
+name: Einstellungen
+section: d221a3d5-d2e5-4dcb-9b14-513bd4590fbe # Einstellungen
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

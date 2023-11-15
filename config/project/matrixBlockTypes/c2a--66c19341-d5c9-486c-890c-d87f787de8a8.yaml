@@ -1,0 +1,62 @@
+field: 5a97eecc-eb31-420d-a6a7-db8f228243a2 # Inhalt
+fieldLayouts:
+  cd2294f3-a039-4141-b92c-5dc88376df16:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 1b6de696-885d-4225-b5e3-51850b1ce2bf # C2A Element
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1bc641d6-1003-4055-a34e-619993538b54
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: a09d8e06-5cbf-4774-b92d-0d656e88148d
+        userCondition: null
+fields:
+  1b6de696-885d-4225-b5e3-51850b1ce2bf: # C2A Element
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: c2aElement
+    instructions: null
+    name: 'C2A Element'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      branchLimit: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: null
+      minRelations: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Entry
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\entries\EntryCondition
+      selectionLabel: null
+      showSiteMenu: true
+      sources:
+        - 'section:b0760b82-c867-4267-91ca-ba4f189d1e09' # C2A Elemente
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+handle: c2a
+name: C2A
+sortOrder: 5

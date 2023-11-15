@@ -1,0 +1,114 @@
+field: 5a97eecc-eb31-420d-a6a7-db8f228243a2 # Inhalt
+fieldLayouts:
+  bb4fbddd-38ee-4619-8077-fd76dda7ca39:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: d6f47ed7-ac48-46b5-9ac5-f66fdf983c6c # Überschrift
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: eb721b1b-df2c-4772-8e92-471abcb2f0a2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d9d2ce89-1365-4ff5-9aa7-90d4ac5cfefc # Subline
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 19bee6e7-665a-46c1-8c6e-a6c179d2dd44
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 96329c8e-4311-4aa6-bccd-6025df1cedec # Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 64deabce-cb2d-4695-be1c-7990e863760e
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 691738d5-51b4-49fe-b2b3-984d56275f86
+        userCondition: null
+fields:
+  96329c8e-4311-4aa6-bccd-6025df1cedec: # Text
+    columnSuffix: gvhdmvro
+    contentColumnType: text
+    fieldGroup: null
+    handle: text
+    instructions: null
+    name: Text
+    searchable: false
+    settings:
+      availableTransforms: ''
+      availableVolumes: '*'
+      ckeConfig: 498dc256-c446-4458-9ef9-17c54d6c601e # Einfach
+      columnType: text
+      defaultTransform: null
+      enableSourceEditingForNonAdmins: false
+      purifierConfig: null
+      purifyHtml: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      showWordCount: false
+      wordLimit: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\ckeditor\Field
+  d6f47ed7-ac48-46b5-9ac5-f66fdf983c6c: # Überschrift
+    columnSuffix: mikmbcev
+    contentColumnType: text
+    fieldGroup: null
+    handle: headline
+    instructions: null
+    name: Überschrift
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  d9d2ce89-1365-4ff5-9aa7-90d4ac5cfefc: # Subline
+    columnSuffix: othuzyww
+    contentColumnType: text
+    fieldGroup: null
+    handle: subline
+    instructions: null
+    name: Subline
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: donate
+name: 'Spenden Widget'
+sortOrder: 6

@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+handle: c2a
+name: 'C2A Elemente'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primäre eintrag Seite'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  9363f036-dc6e-47a2-abde-d8f71980c397: # VBRG Opferhilfefonds
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+structure:
+  maxLevels: null
+  uid: 93eb5aab-4dc2-4790-b75a-23a3ae7d1f45
+type: structure

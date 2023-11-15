@@ -1,0 +1,181 @@
+field: 5a97eecc-eb31-420d-a6a7-db8f228243a2 # Inhalt
+fieldLayouts:
+  22f4e4b2-88ef-455a-b063-4c3f87ce92bb:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: f189e644-9409-4bf9-a68d-14e3dcd8fefc # Typ
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 32d091b9-00df-41a8-93f6-4bed68c78c63
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 0928f3fc-d81c-4623-9118-0177307414fd # Überschrift
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 22c6ab5c-030d-46ac-a3e5-48179b63b020
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 17e081c1-477f-41e7-88c5-ca57c6079a1a
+        userCondition: null
+fields:
+  0928f3fc-d81c-4623-9118-0177307414fd: # Überschrift
+    columnSuffix: mllvkcsz
+    contentColumnType: text
+    fieldGroup: null
+    handle: headline
+    instructions: null
+    name: Überschrift
+    searchable: false
+    settings:
+      addRowLabel: 'Zeile hinzufügen'
+      columnType: text
+      columns:
+        __assoc__:
+          -
+            - col1
+            -
+              __assoc__:
+                -
+                  - heading
+                  - Text
+                -
+                  - handle
+                  - text
+                -
+                  - width
+                  - ''
+                -
+                  - type
+                  - singleline
+          -
+            - col2
+            -
+              __assoc__:
+                -
+                  - heading
+                  - Farbe
+                -
+                  - handle
+                  - color
+                -
+                  - width
+                  - ''
+                -
+                  - type
+                  - select
+                -
+                  - options
+                  -
+                    -
+                      __assoc__:
+                        -
+                          - label
+                          - Schwarz
+                        -
+                          - value
+                          - black
+                        -
+                          - default
+                          - true
+                    -
+                      __assoc__:
+                        -
+                          - label
+                          - Weiß
+                        -
+                          - value
+                          - white
+                        -
+                          - default
+                          - false
+      defaults:
+        -
+          __assoc__:
+            -
+              - col1
+              - ''
+            -
+              - col2
+              - black
+      maxRows: null
+      minRows: null
+      staticRows: false
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Table
+  f189e644-9409-4bf9-a68d-14e3dcd8fefc: # Typ
+    columnSuffix: hwdmqaqv
+    contentColumnType: string(2)
+    fieldGroup: null
+    handle: headlineType
+    instructions: null
+    name: Typ
+    searchable: false
+    settings:
+      columnType: null
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - H1
+            -
+              - value
+              - h1
+            -
+              - default
+              - '1'
+        -
+          __assoc__:
+            -
+              - label
+              - H2
+            -
+              - value
+              - h2
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - H3
+            -
+              - value
+              - h3
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - H4
+            -
+              - value
+              - h4
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+handle: headline
+name: Überschrift
+sortOrder: 1

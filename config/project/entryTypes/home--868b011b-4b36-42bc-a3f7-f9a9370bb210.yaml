@@ -1,0 +1,58 @@
+fieldLayouts:
+  41663783-4b9c-4178-aa88-cdd07bd927c8:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: a6ba0c09-4e3f-48be-bc1c-6f82aab2e8f3
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 5a97eecc-eb31-420d-a6a7-db8f228243a2 # Inhalt
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e806d30f-224f-4f19-9daf-664ecbbb664a
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: 014efad3-c27b-48f2-b01d-3e8e3add44ac
+        userCondition: null
+handle: home
+hasTitleField: false
+name: Startseite
+section: af5c209f-e5d8-4804-b4b0-1234257abf1a # Startseite
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

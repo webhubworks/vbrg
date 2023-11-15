@@ -1,0 +1,12 @@
+columnSuffix: jbmtpsui
+contentColumnType: string
+fieldGroup: 1a351ce4-7ddf-45eb-9151-61228d9ab658 # Einstellungen
+handle: mail
+instructions: null
+name: E-Mail
+searchable: false
+settings:
+  placeholder: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Email

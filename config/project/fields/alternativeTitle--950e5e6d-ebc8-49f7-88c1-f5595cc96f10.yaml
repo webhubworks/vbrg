@@ -1,0 +1,23 @@
+columnSuffix: qkjkoeyt
+contentColumnType: text
+fieldGroup: f06f4efc-7d95-436a-bab4-de48b3bd1379 # Inhalt
+handle: alternativeTitle
+instructions: null
+name: Titel
+searchable: false
+settings:
+  availableTransforms: ''
+  availableVolumes: '*'
+  ckeConfig: 7cae0180-a618-4bb9-8138-2c1fef9f532a # Title
+  columnType: text
+  defaultTransform: null
+  enableSourceEditingForNonAdmins: false
+  purifierConfig: null
+  purifyHtml: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  showWordCount: false
+  wordLimit: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\ckeditor\Field

@@ -1,0 +1,49 @@
+<section class="relative text-white m-8 my-32 lg:mx-16 xl:mx-24 ">
+    {{ svg('@webroot/assets/img/black-bg-1.svg')|attr({ class: 'absolute inset-1 -z-10 block h-full w-full fill-current' }) }}
+
+    <div class="p-8 lg:px-16 lg:pt-16 lg:pb-0">
+        {% if entry.icon is defined and entry.icon[0] %}
+            <div class="flex flex-col lg:flex-row justify-center lg:justify-center mb-12 space-x-4 mx-auto">
+                <div class="relative lg:w-[250px] flex lg:block justify-center mx-auto lg:mx-0 h-[125px] lg:h-auto mb-6 lg:mb-0 flex-shrink-0">
+                    {{ svg(entry.icon[0])|attr({ class: 'text-white fill-current h-[250px] w-[250px] transform -translate-y-1/2 lg:translate-y-0 lg:absolute lg:bottom-0' }) }}
+                </div>
+                <h2 class="text-[60px] text-yellow my-0 text-center lg:text-left">{{ entry.title }}</h2>
+            </div>
+        {% else %}
+            <h2 class="text-[60px] text-yellow mt-0 text-center">{{ entry.title }}</h2>
+        {% endif %}
+        <div class="typo typo--on-black text-center">
+            {{ entry.text }}
+        </div>
+    </div>
+    <div class="px-8 lg:px-0 max-w-2xl mx-auto transform translate-y-1/2">
+
+
+    {% if entry.button %}
+        {% for block in entry.button  %}
+            {% switch block.type %}
+            {% case 'intern' %}
+                {% include '_atoms/button.twig' with {
+                    'label': block.label,
+                    'target': block.internPage[0].url,
+                    'bgImag': 0
+                } %}
+            {% case 'extern' %}
+                {% include '_atoms/button.twig' with {
+                    'label': block.label,
+                    'target': block.externURL,
+                    'extern': true,
+                    'bgImag': 1
+                } %}
+            {% case 'anchor' %}
+                {% include '_atoms/button.twig' with {
+                    'label': block.label,
+                    'target': block.anchor,
+                    'bgImag': 2
+                } %}
+            {% default %}
+            {% endswitch %}
+        {% endfor %}
+    {% endif %}
+    </div>
+</section>

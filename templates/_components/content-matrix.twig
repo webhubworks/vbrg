@@ -1,0 +1,47 @@
+{% do craft.app.elements.eagerLoadElements(
+    className(entry),
+    [entry],
+    [
+        'contentMatrix',
+        'contentMatrix.button:buttonEntry',
+        'contentMatrix.faq:faqEntries',
+        'contentMatrix.c2a:c2aElement',
+        'contentMatrix.c2a:c2aElement.icon',
+        'contentMatrix.c2a:c2aElement.button',
+        'contentMatrix.c2a:c2aElement.button.intern:internPage',
+        'contentMatrix.slider:sliderEntries',
+    ]
+) %}
+{% set contentMatrix = entry.contentMatrix %}
+{% for block in contentMatrix %}
+    {% switch block.type %}
+    {% case "headline" %}
+        <div class="px-6 lg:px-16 xl:px-32 text-center">
+            {% include '_atoms/headline.twig' with {
+                'headline': block.headline,
+                'headlineType': block.headlineType,
+            } %}
+        </div>
+    {% case "text" %}
+        <div class="px-6 lg:px-16 xl:px-32 text-center mx-auto typo typo--on-pink">
+            {{ block.text }}
+        </div>
+    {% case "button" %}
+        <div class="max-w-2xl mx-auto mb-4">
+            {% include '_atoms/button.twig' with {
+                'label': block.label ?? block.buttonEntry[0],
+                'target': block.buttonEntry[0].url,
+                'bgImag': block.bg.value
+            } %}
+        </div>
+    {% case "faq" %}
+        {% include '_components/blocks/faq-list.twig' with {entries: block.faqEntries} %}
+    {% case "c2a" %}
+        {% include '_components/blocks/c2a-element.twig' with {entry: block.c2aElement[0]} %}
+    {% case "donate" %}
+        {% include '_components/blocks/donation-widget.twig' %}
+        {% case "slider" %}
+        {% include '_components/blocks/slider.twig' with {entries: block.sliderEntries} %}
+    {% default %}
+    {% endswitch %}
+{% endfor %}

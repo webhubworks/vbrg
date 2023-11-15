@@ -9,14 +9,13 @@ webhub.de
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5, user-scalable=yes">
   <link rel="home" href="{{ siteUrl }}"/>
   {% hook 'seo' %}
-  {{ craft.vite.includeCriticalCssTags() }}
-  {# When not using Critical CSS, uncomment following line and remove craft.vite.script() before </body> to prevent FOUC #}
-  {# {{ craft.vite.script('src/scripts/app.js', false) }} #}
+  {% set settings = craft.entries.section('settings').with(['footerNavigation', 'mainNavigation']).one() %}
+   {{ craft.vite.script('src/scripts/app.js', false) }}
 </head>
 
-<body {{ craft.app.config.general.devMode ? 'data-dev-mode="true"' }}>
+<body {{ craft.app.config.general.devMode ? 'data-dev-mode="true"' }} class="bg-pink">
 
-<div id="app">
+<div id="app" >
 
   {% include '_layouts/partials/header.twig' ignore missing %}
 
@@ -33,9 +32,6 @@ webhub.de
 
 {# Craft CSRF token #}
 {% include '_inline-scripts/_craft-csrf-token' %}
-
-{# Application script #}
-{{ craft.vite.script('src/scripts/app.js') }}
 
 </body>
 </html>

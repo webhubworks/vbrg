@@ -1,0 +1,70 @@
+fieldLayouts:
+  16fdda8d-981a-4a9b-85a7-c6cc61945153:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: a82c9709-2822-4f6d-b1ec-871cc585a491
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 6acbe757-8b6b-49a8-81b4-020c1a99d3d3 # Antwort
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 25c49401-c3b0-4b4f-be33-9221213a9c87
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 423833a3-ef68-41b8-aacd-c03cb7abbac0 # Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5368f1e2-b187-42ff-80c8-74bf3f34036b
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: d379731c-5a4e-49fe-a0ae-a473e861249e
+        userCondition: null
+handle: default
+hasTitleField: true
+name: Standard
+section: 57f706bc-65c7-4618-bade-d6f242497d53 # FAQ
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

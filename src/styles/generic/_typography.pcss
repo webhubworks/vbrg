@@ -1,0 +1,51 @@
+@import "https://use.typekit.net/tkn7dpb.css";
+
+
+h1{
+    @apply text-5xl uppercase font-black mb-16;
+}
+
+h2{
+    @apply text-4xl uppercase font-black my-12 break-all;
+}
+
+h3{
+    @apply text-3xl font-black my-16;
+}
+
+h4,.h4{
+    @apply text-[30px] font-black my-16;
+}
+
+
+.typo{
+    @apply text-black;
+
+    p{
+        @apply text-xl mb-8;
+    }
+
+    &--on-black{
+        @apply text-white;
+    }
+
+    &--on-pink{
+        @apply text-black;
+        h3{
+            @apply text-white
+        }
+        p strong{
+            @apply text-white;
+        }
+    }
+    &--on-white-in-pink{
+        @apply text-center;
+        h2{
+            @apply text-[60px] leading-[60px] text-pink;
+        }
+        p strong{
+            @apply text-pink;
+        }
+    }
+}
+

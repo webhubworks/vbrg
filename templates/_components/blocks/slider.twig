@@ -1,0 +1,13 @@
+{% set items = [] %}
+
+{% for entry in entries %}
+    {% set items = items|merge([
+        {
+            'id': entry.id,
+            'title': entry.title,
+            'text': entry.text
+        },
+    ]) %}
+{% endfor %}
+
+<slider :items="{{ items|json_encode }}"></slider>

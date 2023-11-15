@@ -1,0 +1,62 @@
+field: 5a97eecc-eb31-420d-a6a7-db8f228243a2 # Inhalt
+fieldLayouts:
+  7964eb75-1a96-45fc-a4a0-57c004a70924:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: f53acefa-58a0-4ec4-b080-0cc5e6b8cd85 # Einträge
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f8b34633-1b3c-4814-b35c-6b1385da7860
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: d64eefe8-4519-42f2-a86a-33f905444b9e
+        userCondition: null
+fields:
+  f53acefa-58a0-4ec4-b080-0cc5e6b8cd85: # Einträge
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: faqEntries
+    instructions: null
+    name: Einträge
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      branchLimit: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: null
+      minRelations: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Entry
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\entries\EntryCondition
+      selectionLabel: null
+      showSiteMenu: true
+      sources:
+        - 'section:57f706bc-65c7-4618-bade-d6f242497d53' # FAQ
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+handle: faq
+name: FAQ
+sortOrder: 4
