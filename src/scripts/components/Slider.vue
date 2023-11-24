@@ -1,5 +1,5 @@
 <script setup>
-import {defineComponent, defineProps, ref} from 'vue';
+import {defineComponent} from 'vue';
 import {Navigation} from 'swiper/modules';
 import {Swiper, SwiperSlide} from 'swiper/vue';
 
@@ -10,22 +10,15 @@ defineComponent({
   SwiperSlide,
 });
 
-defineProps({
-  items: {
-    type: Array,
-  },
-});
-
 const modules = [Navigation];
-
 
 </script>
 
 <template>
-  <div class="flex">
+  <div class="flex justify-center items-center space-x-8">
 
     <button
-        class="gallery-prev bg-transparent text-yellow hover:bg-black hover:text-yellow h-16 w-16 lg:h-[80px] lg:w-[80px] flex items-center justify-center"
+        class="flex-shrink-0 gallery-prev bg-transparent text-yellow hover:bg-black hover:text-yellow h-16 w-16 lg:h-[80px] lg:w-[80px] flex items-center justify-center cursor:pointer rounded-full"
         aria-controls="gallery"
         aria-label="Vorheriges Element"
     >
@@ -49,18 +42,10 @@ const modules = [Navigation];
         :space-between="30"
         :centered-slides="true"
     >
-      <swiper-slide
-          v-for="item in items"
-          :key="item.id">
-        <div class="px-6 lg:px-16 xl:px-32 mx-auto">
-
-          <h2 v-html="item.title" class="text-white"></h2>
-          <div v-html="item.text" class="typo typo--on-pink"></div>
-        </div>
-      </swiper-slide>
+     <slot></slot>
     </swiper>
     <button
-        class="gallery-next bg-transparent text-yellow hover:bg-black hover:text-yellow h-16 w-16 lg:h-[80px] lg:w-[80px] flex items-center justify-center"
+        class="flex-shrink-0 gallery-next bg-transparent text-yellow hover:bg-black hover:text-yellow h-16 w-16 lg:h-[80px] lg:w-[80px] flex items-center justify-center cursor:pointer rounded-full"
         aria-controls="gallery"
         aria-label="Nächstes Element"
     >

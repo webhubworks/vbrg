@@ -3,7 +3,7 @@ import {store} from "@scripts/store";
 </script>
 
 <template>
-  <button @click="store.toggle()" class="fixed ml-auto w-[80px] h-[80px] flex justify-center items-center z-50 bg-yellow text-black hover:bg-black hover:text-yellow my-8 lg:my-12">
+  <button @click="store.toggle()" class="fixed ml-auto w-[80px] h-[80px] flex justify-center items-center z-50 bg-yellow text-black hover:bg-black hover:text-yellow my-8 lg:my-12 rounded-full">
     <span class="sr-only">Toggle navigation</span>
     <span v-if="!store.navigationOpen">
        <svg viewBox="0 0 46 25" class="w-[46px] h-[25px] fill-current" xmlns="http://www.w3.org/2000/svg"><path d="M.656 10.781h44.688v3.438H.656V10.78ZM.656.47h44.688v3.437H.656V.47Zm0 20.625h44.688v3.437H.656v-3.437Z"  fill-rule="nonzero"/></svg>

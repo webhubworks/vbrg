@@ -1,6 +1,6 @@
-<div class="relative text-white my-16 lg:my-32">
-    {{ svg('@webroot/assets/img/white-bg-1.svg')|attr({ class: 'absolute inset-1 -z-10 block h-full w-full fill-current' }) }}
-    <div class="p-8 lg:p-16 xl:p-24 divide-y-2 divide-[#3C3C3B]">
+<section class="relative text-white my-16 lg:my-32">
+    {{ svg('@webroot/assets/img/white-bg-1.svg')|attr({ class: 'absolute inset-1 -z-1 block h-full w-full fill-current' }) }}
+    <div class="p-8 lg:p-16 xl:p-24 divide-y-2 divide-[#3C3C3B] relative">
         {% for entry in entries  %}
             <accordion-item
                     class="py-8"
@@ -13,4 +13,4 @@
             </accordion-item>
         {% endfor %}
     </div>
-</div>
+</section>

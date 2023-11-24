@@ -1,8 +1,10 @@
 <footer class="container py-24">
-    <div class="flex flex-col justify-center items-center xl:grid xl:grid-cols-2 mb-12 gap-8">
+    <div class="flex flex-col justify-center items-center xl:grid xl:grid-cols-2 xl:items-start mb-12 gap-8">
         <div class="mx-auto xl:mx-0">
-            <img src="{{ url('assets/img/logo.svg') }}" width="560" height="100" alt="VBRG Logo" class="mb-8 lg:mb-12 w-full max-w-[560px] h-auto"/>
-            <p class="text-xl text-yellow font-black"> {{ settings.address }}</p>
+            <img src="{{ url('assets/img/vbrg-logo-black.svg') }}" width="600" height="100" alt="VBRG Logo" class="mb-8 lg:mb-12 w-full max-w-[600px] h-auto"/>
+            {% if settings.address %}
+            <p class="text-xl text-yellow font-black xl:ml-12">{{ settings.address }}</p>
+            {% endif %}
         </div>
         <div class="mx-auto xl:mx-0 space-y-8 max-w-2xl">
             {% include '_atoms/button.twig' with {
@@ -15,11 +17,23 @@
                 'target': 'mailto:' ~  settings.mail,
                 'bgImag': 1
             } %}
+
+            <div class="flex justify-center xl:px-32">
+                <div class="mx-auto">
+                    {% if settings.pgpKey %}
+                        <a href="{{ settings.pgpKey[0].url }}" download class="text-left text-lg font-black text-yellow hover:text-black">PGP Schlüssel Download</a>
+                    {% endif %}
+                    {% if settings.pgpFingerprint %}
+                        <p class="text-left text-lg">{{ settings.pgpFingerprint }}</p>
+                    {% endif %}
+
+                </div>
+            </div>
         </div>
     </div>
     <div class="mx-auto mt-24 mb-48 flex justify-center">
         <a href="#app"
-           class="bg-yellow text-black hover:bg-black hover:text-yellow h-16 w-16 lg:h-[80px] lg:w-[80px] flex items-center justify-center">
+           class="bg-yellow text-black hover:bg-black hover:text-yellow h-16 w-16 lg:h-[80px] lg:w-[80px] flex items-center justify-center rounded-full">
             <svg viewBox="0 0 40 45" xmlns="http://www.w3.org/2000/svg" class="h-10 lg:w-[40px] lg:h-auto fill-current">
                 <path d="M39.032 19.468 20 .438.969 19.468l2.063 2.064L18.5 6.062v38.439h3V6.063l15.469 15.469z"
                       fill-rule="nonzero"/>

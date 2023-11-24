@@ -11,11 +11,13 @@ module.exports = {
         },
         extend: {
             backgroundImage: {
+                'body': "url('/assets/img/bg.jpg')",
                 'button-1': "url('/assets/img/button-1.svg')",
                 'button-2': "url('/assets/img/button-2.svg')",
                 'button-3': "url('/assets/img/button-3.svg')"
             },
             fontSize: {
+                'lg' : ['20px', '30px'],
                 'xl': ['25px', '45px'],
                 '2xl': ['35px', '40px'],
                 '3xl': ['45px', '65px'],
@@ -23,9 +25,9 @@ module.exports = {
                 '5xl': ['90px', '110px']
             },
             colors:{
-                'black' :'#1D1D1B',
-                'yellow': '#EEE914',
-                'pink': '#CF528C'
+                'black' :'#282828',
+                'yellow': '#f2e61a',
+                'pink': '#ca508e'
             }
         },
     },

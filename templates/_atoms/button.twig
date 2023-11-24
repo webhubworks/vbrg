@@ -6,8 +6,8 @@
 
 {% if type == 'link' %}
     <a href="{{ target }}" target="{{ linkTarget }}" class="relative block text-center font-black text-2xl text-yellow hover:text-black group px-4 py-5">
-        {{ svg(backgrounds[bgImag])|attr({ class: 'absolute inset-1 -z-10 block h-full w-full fill-current' }) }}
-        <span class="inline-block  align-bottom pt-2 text-black group-hover:text-yellow leading-[35px]">
+        {{ svg(backgrounds[bgImag])|attr({ class: 'absolute inset-1 -z-1 block h-full w-full fill-current' }) }}
+        <span class="inline-block  align-bottom pt-2 text-black group-hover:text-yellow leading-[35px] relative">
              {{ label }}
         </span>
     </a>

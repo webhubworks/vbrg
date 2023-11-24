@@ -1,0 +1,84 @@
+columnSuffix: qxcyhhxp
+contentColumnType: text
+fieldGroup: 8a32bcd6-82c1-4060-a7c4-bbbe04fa1b42 # Allgemein
+handle: headline
+instructions: null
+name: Überschrift
+searchable: false
+settings:
+  addRowLabel: 'Zeile hinzufügen'
+  columnType: text
+  columns:
+    __assoc__:
+      -
+        - col1
+        -
+          __assoc__:
+            -
+              - heading
+              - Text
+            -
+              - handle
+              - text
+            -
+              - width
+              - ''
+            -
+              - type
+              - singleline
+      -
+        - col2
+        -
+          __assoc__:
+            -
+              - heading
+              - Farbe
+            -
+              - handle
+              - color
+            -
+              - width
+              - ''
+            -
+              - type
+              - select
+            -
+              - options
+              -
+                -
+                  __assoc__:
+                    -
+                      - label
+                      - Schwarz
+                    -
+                      - value
+                      - black
+                    -
+                      - default
+                      - true
+                -
+                  __assoc__:
+                    -
+                      - label
+                      - Weiß
+                    -
+                      - value
+                      - white
+                    -
+                      - default
+                      - false
+  defaults:
+    -
+      __assoc__:
+        -
+          - col1
+          - ''
+        -
+          - col2
+          - black
+  maxRows: null
+  minRows: null
+  staticRows: false
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Table
