@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 8a32bcd6-82c1-4060-a7c4-bbbe04fa1b42 # Allgemein
+handle: numbers
+instructions: null
+name: Zahlen
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_numbers}}'
+  maxBlocks: 1
+  minBlocks: 1
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

@@ -23,6 +23,7 @@
     "vite-plugin-restart": "^0.2.0"
   },
   "dependencies": {
+    "countup.js": "^2.8.0",
     "swiper": "^11.0.4",
     "vue": "^3.2.41"
   }

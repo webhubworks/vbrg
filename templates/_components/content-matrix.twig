@@ -40,7 +40,7 @@
         {% include '_components/blocks/c2a-element.twig' with {entry: block.c2aElement[0]} %}
     {% case "donate" %}
         {% include '_components/blocks/donation-widget.twig' %}
-        {% case "slider" %}
+    {% case "slider" %}
         {% include '_components/blocks/slider.twig' with {entries: block.sliderEntries} %}
     {% default %}
     {% endswitch %}

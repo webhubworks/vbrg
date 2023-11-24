@@ -1,4 +1,4 @@
-dateModified: 1700815446
+dateModified: 1700836094
 elementSources:
   craft\elements\Entry:
     -
@@ -59,6 +59,7 @@ fs:
     url: /uploads/images/
 meta:
   __names__:
+    0ef845da-a2ea-42d8-a79d-51c402413f61: Zahlenpaar # Zahlenpaar
     1a351ce4-7ddf-45eb-9151-61228d9ab658: Einstellungen # Einstellungen
     1b6de696-885d-4225-b5e3-51850b1ce2bf: 'C2A Element' # C2A Element
     1bc71551-c949-4982-b169-f1bba8696bec: FAQ # FAQ
@@ -78,6 +79,7 @@ meta:
     18b6cee8-11cf-41ff-b4b3-eb973bfc0711: 'Footer Navigation' # Footer Navigation
     22fe44ff-4d50-4732-b5fe-847cc148adff: E-Mail # E-Mail
     31f1f990-fbb0-43da-a9c7-c3cbbdb86b09: Anschrift # Anschrift
+    36f9b152-6ca9-42e1-8154-e648984bde68: Zahlen # Zahlen
     37f48d69-c521-4173-9de9-3aa572eb18df: Text # Text
     46b292db-e422-45ad-ab69-e9f27bcd91dc: Telefon # Telefon
     57a7333c-602e-4cd4-a1a0-c91c621f7b91: Elemente # Elemente
@@ -93,22 +95,29 @@ meta:
     498dc256-c446-4458-9ef9-17c54d6c601e: Einfach # Einfach
     727ed136-51ae-4465-966c-743da19fd4fe: Label # Label
     743c4548-fcd6-4851-8c69-ec237b909652: Button # Button
+    768b2d22-72c1-49f7-bb66-b225716ca13b: Text # Text
     868b011b-4b36-42bc-a3f7-f9a9370bb210: Startseite # Startseite
     0928f3fc-d81c-4623-9118-0177307414fd: Überschrift # Überschrift
     950e5e6d-ebc8-49f7-88c1-f5595cc96f10: Titel # Titel
+    964d7f16-757d-4192-8340-9ddfce04ec18: Zahlen # Zahlen
     7557ab82-949f-4746-8743-17eb3e09835f: Button # Button
+    7815b433-99a7-43cd-bbb6-5a4a515a73e6: 'Zahl B' # Zahl B
     9363f036-dc6e-47a2-abde-d8f71980c397: 'VBRG Opferhilfefonds' # VBRG Opferhilfefonds
     96329c8e-4311-4aa6-bccd-6025df1cedec: Text # Text
     423833a3-ef68-41b8-aacd-c03cb7abbac0: Text # Text
+    00446948-080e-4ce8-9a73-00eac2a843da: 'Zahl A' # Zahl A
     856568d8-ca9e-4622-9139-2e293bcb4f7e: C2A # C2A
     a70887b8-63fb-46b6-8a65-2d2dff5ea405: Einstellungen # Einstellungen
     a899116d-e0f2-4d6f-bfcb-91d638d60094: URL # URL
     af5c209f-e5d8-4804-b4b0-1234257abf1a: Startseite # Startseite
+    b054c8f3-fb01-4b86-8bd4-2fbfc14d7c74: 'Label B' # Label B
     b0760b82-c867-4267-91ca-ba4f189d1e09: 'C2A Elemente' # C2A Elemente
     b30fe9ee-2f09-4790-bef3-a0595c9885de: Hintergrund # Hintergrund
     b414e93c-b1e5-49ab-9e11-fd3b1304ff90: Sprungmarke # Sprungmarke
     bb59a01a-8bce-42bf-af1c-6cb8088e3269: 'PGP Key' # PGP Key
+    be345a84-e7d3-4b42-90eb-ff3ab0f162d0: 'Label A' # Label A
     c65bd544-5e1e-4c9e-83bc-422f66ab24e8: Slides # Slides
+    d05658d2-17b7-484d-b6c6-d3fc2af57f23: Jahr # Jahr
     d1dd954e-d81c-4104-94bf-dd68a50691dd: 'Sprunkmarken ID' # Sprunkmarken ID
     d2b43da2-5746-4999-8e72-cd1b825130dc: Label # Label
     d5d545e4-9bc6-4705-9942-caaa2cf0dc48: 'Haupt Navigation' # Haupt Navigation

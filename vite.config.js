@@ -4,7 +4,6 @@ import path from 'path';
 import vue from '@vitejs/plugin-vue';
 import viteCompression from 'vite-plugin-compression';
 import ViteRestart from 'vite-plugin-restart';
-import critical from 'rollup-plugin-critical';
 
 // https://vitejs.dev/config/
 export default defineConfig(({ command, mode }) => {

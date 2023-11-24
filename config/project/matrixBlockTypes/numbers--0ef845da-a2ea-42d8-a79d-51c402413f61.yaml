@@ -1,0 +1,210 @@
+field: 964d7f16-757d-4192-8340-9ddfce04ec18 # Zahlen
+fieldLayouts:
+  681e91a0-195a-466d-837b-d0b1afd7b5d5:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: d05658d2-17b7-484d-b6c6-d3fc2af57f23 # Jahr
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d0f0a09c-5a4e-4f85-873d-40d24390d86f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 00446948-080e-4ce8-9a73-00eac2a843da # Zahl A
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bebd0489-35c7-4853-bef6-110ebf3dc439
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 7815b433-99a7-43cd-bbb6-5a4a515a73e6 # Zahl B
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: af184b4e-2c06-4ac0-a83f-8b7f680cbc75
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: be345a84-e7d3-4b42-90eb-ff3ab0f162d0 # Label A
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fcea2107-9267-4aea-a845-27a21d014310
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: b054c8f3-fb01-4b86-8bd4-2fbfc14d7c74 # Label B
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 53b2bbad-8bb4-47cc-9451-7d667ad8e14a
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 768b2d22-72c1-49f7-bb66-b225716ca13b # Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 628a04cb-213e-48b7-a2bc-9b2192c344d2
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: a63d32f9-8438-4c0e-a0a1-e230cffaf492
+        userCondition: null
+fields:
+  768b2d22-72c1-49f7-bb66-b225716ca13b: # Text
+    columnSuffix: crzfqqsp
+    contentColumnType: text
+    fieldGroup: null
+    handle: text
+    instructions: null
+    name: Text
+    searchable: false
+    settings:
+      availableTransforms: ''
+      availableVolumes: '*'
+      ckeConfig: 498dc256-c446-4458-9ef9-17c54d6c601e # Einfach
+      columnType: text
+      defaultTransform: null
+      enableSourceEditingForNonAdmins: false
+      purifierConfig: null
+      purifyHtml: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      showWordCount: false
+      wordLimit: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\ckeditor\Field
+  7815b433-99a7-43cd-bbb6-5a4a515a73e6: # Zahl B
+    columnSuffix: lsnrteiz
+    contentColumnType: text
+    fieldGroup: null
+    handle: numberB
+    instructions: null
+    name: 'Zahl B'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  00446948-080e-4ce8-9a73-00eac2a843da: # Zahl A
+    columnSuffix: wsntiesu
+    contentColumnType: text
+    fieldGroup: null
+    handle: numberA
+    instructions: null
+    name: 'Zahl A'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  b054c8f3-fb01-4b86-8bd4-2fbfc14d7c74: # Label B
+    columnSuffix: ikuhyxpd
+    contentColumnType: text
+    fieldGroup: null
+    handle: labelB
+    instructions: null
+    name: 'Label B'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 2
+      multiline: true
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  be345a84-e7d3-4b42-90eb-ff3ab0f162d0: # Label A
+    columnSuffix: duymeytd
+    contentColumnType: text
+    fieldGroup: null
+    handle: labelA
+    instructions: null
+    name: 'Label A'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 2
+      multiline: true
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  d05658d2-17b7-484d-b6c6-d3fc2af57f23: # Jahr
+    columnSuffix: qpxciguv
+    contentColumnType: text
+    fieldGroup: null
+    handle: year
+    instructions: null
+    name: Jahr
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: numbers
+name: Zahlenpaar
+sortOrder: 1

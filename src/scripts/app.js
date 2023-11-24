@@ -2,8 +2,10 @@ import { createApp } from 'vue';
 import AccordionItem from "@components/AccordionItem.vue";
 import Navigation from "@components/Navigation.vue";
 import NavigationButton from "@components/NavigationButton.vue";
+import Modal from "@components/Modal.vue";
 import Slider from "@components/Slider.vue";
 import KeyVisual from "@components/KeyVisual.vue";
+import CountUp from "@components/CountUp.vue";
 import {SwiperSlide} from 'swiper/vue';
 
 
@@ -16,7 +18,9 @@ const app = createApp({
         AccordionItem,
         Slider,
         SwiperSlide,
-        KeyVisual
+        KeyVisual,
+        CountUp,
+        Modal
     },
 });
 

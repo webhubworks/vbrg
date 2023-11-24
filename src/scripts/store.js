@@ -1,7 +1,7 @@
 import {reactive, watch} from "vue";
 export const store = reactive({
     navigationOpen: false,
-    toggle: () => store.navigationOpen = !store.navigationOpen,
+    toggleNavigation: () => store.navigationOpen = !store.navigationOpen,
 });
 
 export const onKeyEscape = (event) => {
@@ -17,4 +17,3 @@ watch(() => store.navigationOpen, (value) => {
         document.body.classList.remove('overflow-hidden');
     }
 }, {immediate: true});
-
