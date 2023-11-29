@@ -139,6 +139,24 @@ fieldLayouts:
         name: Inhalt
         uid: f02947a7-05d3-461f-9d3e-b79c1332d8da
         userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: a0a7063c-d15c-45dd-97aa-9181fcf74845 # Lottie Animations Datei (JSON)
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 23b0f572-330e-4eb7-a7e4-ddec956b1629
+            userCondition: null
+            warning: null
+            width: 100
+        name: Hero-Animation
+        uid: 74f85d1f-a8e1-4837-8277-b1f32bc6c2b4
+        userCondition: null
 handle: settings
 hasTitleField: false
 name: Einstellungen

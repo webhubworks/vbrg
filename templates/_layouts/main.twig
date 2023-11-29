@@ -9,7 +9,7 @@ webhub.de
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5, user-scalable=yes">
   <link rel="home" href="{{ siteUrl }}"/>
   {% hook 'seo' %}
-  {% set settings = craft.entries.section('settings').with(['footerNavigation', 'mainNavigation', 'pgpKey']).one() %}
+  {% set settings = craft.entries.section('settings').with(['footerNavigation', 'mainNavigation', 'pgpKey', 'lottieJson']).one() %}
    {{ craft.vite.script('src/scripts/app.js', false) }}
 </head>
 

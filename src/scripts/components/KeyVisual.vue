@@ -1,17 +1,25 @@
 <script setup>
+import { Vue3Lottie } from "vue3-lottie"
+
 const props = defineProps({
+  lottieJson: {
+    type: String,
+  },
   size: {
     type: String,
-    default: 'md',
-    validator: (value) => ['md', 'lg'].includes(value),
+    default: "md",
+    validator: (value) => ["md", "lg"].includes(value),
   },
 })
 </script>
 
 <template>
   <div class="relative flex justify-center">
-    <div class="bg-black" :class="size === 'md' ? 'h-[400px] w-[300px]' : 'h-[700px] w-[500px]'">
-
+    <div
+      class="relative z-10 aspect-[1024/780] w-full"
+      :class="size === 'md' ? 'max-w-[512px]' : 'max-w-[1024px]'"
+    >
+      <Vue3Lottie :animationLink="lottieJson" />
     </div>
     <slot />
   </div>

@@ -1,4 +1,4 @@
-dateModified: 1700836094
+dateModified: 1701260617
 elementSources:
   craft\elements\Entry:
     -
@@ -57,6 +57,13 @@ fs:
       path: uploads/images
     type: craft\fs\Local
     url: /uploads/images/
+  lotties:
+    hasUrls: true
+    name: Lotties
+    settings:
+      path: uploads/lotties
+    type: craft\fs\Local
+    url: /uploads/lotties/
 meta:
   __names__:
     0ef845da-a2ea-42d8-a79d-51c402413f61: Zahlenpaar # Zahlenpaar
@@ -107,6 +114,7 @@ meta:
     423833a3-ef68-41b8-aacd-c03cb7abbac0: Text # Text
     00446948-080e-4ce8-9a73-00eac2a843da: 'Zahl A' # Zahl A
     856568d8-ca9e-4622-9139-2e293bcb4f7e: C2A # C2A
+    a0a7063c-d15c-45dd-97aa-9181fcf74845: 'Lottie Animations Datei (JSON)' # Lottie Animations Datei (JSON)
     a70887b8-63fb-46b6-8a65-2d2dff5ea405: Einstellungen # Einstellungen
     a899116d-e0f2-4d6f-bfcb-91d638d60094: URL # URL
     af5c209f-e5d8-4804-b4b0-1234257abf1a: Startseite # Startseite
@@ -115,6 +123,7 @@ meta:
     b30fe9ee-2f09-4790-bef3-a0595c9885de: Hintergrund # Hintergrund
     b414e93c-b1e5-49ab-9e11-fd3b1304ff90: Sprungmarke # Sprungmarke
     bb59a01a-8bce-42bf-af1c-6cb8088e3269: 'PGP Key' # PGP Key
+    bd29ae4a-9182-4b26-b327-e0b62588e947: Lotties # Lotties
     be345a84-e7d3-4b42-90eb-ff3ab0f162d0: 'Label A' # Label A
     c65bd544-5e1e-4c9e-83bc-422f66ab24e8: Slides # Slides
     d05658d2-17b7-484d-b6c6-d3fc2af57f23: Jahr # Jahr

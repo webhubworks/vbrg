@@ -1,0 +1,43 @@
+fieldLayouts:
+  0f635d0b-7105-4f60-875b-aec0f233bfce:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\assets\AssetTitleField
+            uid: 54e604cc-acd2-4805-b5e5-654ba66bc238
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: 100aa831-d428-47f1-aab6-8c3b6881e5c5
+        userCondition: null
+fs: lotties
+handle: lotties
+name: Lotties
+sortOrder: 4
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+transformFs: lotties
+transformSubpath: ''
