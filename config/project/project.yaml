@@ -1,4 +1,4 @@
-dateModified: 1701424956
+dateModified: 1701425527
 elementSources:
   craft\elements\Entry:
     -
@@ -66,6 +66,7 @@ fs:
     url: /uploads/lotties/
 meta:
   __names__:
+    0e112040-7ee8-47f2-a30f-2ce7b539ad9e: Extern # Extern
     0ef845da-a2ea-42d8-a79d-51c402413f61: Zahlenpaar # Zahlenpaar
     1a351ce4-7ddf-45eb-9151-61228d9ab658: Einstellungen # Einstellungen
     1b6de696-885d-4225-b5e3-51850b1ce2bf: 'C2A Element' # C2A Element
@@ -120,6 +121,7 @@ meta:
     a1af40e9-4e10-42af-93c9-5182ee9a70f2: Twingle-ID # Twingle-ID
     a70887b8-63fb-46b6-8a65-2d2dff5ea405: Einstellungen # Einstellungen
     a899116d-e0f2-4d6f-bfcb-91d638d60094: URL # URL
+    ae3d9c08-973e-4ba3-92b9-00575fa43af4: 'Externe URL' # Externe URL
     af5c209f-e5d8-4804-b4b0-1234257abf1a: Startseite # Startseite
     b054c8f3-fb01-4b86-8bd4-2fbfc14d7c74: 'Label B' # Label B
     b0760b82-c867-4267-91ca-ba4f189d1e09: 'C2A Elemente' # C2A Elemente
