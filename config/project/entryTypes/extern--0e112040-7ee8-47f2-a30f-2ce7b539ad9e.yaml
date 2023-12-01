@@ -1,0 +1,66 @@
+fieldLayouts:
+  0fdc9372-7e11-4cc2-a20c-799fbbd703d9:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: cf4ae8b5-5c3f-472a-a18c-1bc100e2a12d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dismissible: false
+            elementCondition: null
+            style: tip
+            tip: 'Leitet auf die externe URL weiter'
+            type: craft\fieldlayoutelements\Tip
+            uid: 7c89fbb9-6b0e-4f71-b06b-3396676bdee1
+            userCondition: null
+          -
+            elementCondition: null
+            fieldUid: ae3d9c08-973e-4ba3-92b9-00575fa43af4 # Externe URL
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2b8567da-d00c-4390-9916-6b7ad3d21b09
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: 5df35af9-0b29-4db9-9e9b-cee263725030
+        userCondition: null
+handle: extern
+hasTitleField: true
+name: Extern
+section: 6a67bde5-479e-4cf2-9c86-2560ff522e41 # Seiten
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 2
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

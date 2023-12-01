@@ -30,7 +30,8 @@
         <div class="max-w-2xl mx-auto mb-4">
             {% include '_atoms/button.twig' with {
                 'label': block.label ?? block.buttonEntry[0],
-                'target': block.buttonEntry[0].url,
+                'target': block.buttonEntry|length ? block.buttonEntry[0].url : block.externalUrl,
+                'extern': block.externalUrl ? true : false,
                 'bgImag': block.bg.value
             } %}
         </div>

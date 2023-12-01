@@ -41,6 +41,18 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            elementCondition: null
+            fieldUid: a1af40e9-4e10-42af-93c9-5182ee9a70f2 # Twingle-ID
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a4a973b9-4cb4-4159-bb32-773b0a03a4ed
+            userCondition: null
+            warning: null
+            width: 100
         name: Content
         uid: 691738d5-51b4-49fe-b2b3-984d56275f86
         userCondition: null
@@ -69,6 +81,26 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\ckeditor\Field
+  a1af40e9-4e10-42af-93c9-5182ee9a70f2: # Twingle-ID
+    columnSuffix: wpmfftgl
+    contentColumnType: text
+    fieldGroup: null
+    handle: twingleId
+    instructions: null
+    name: Twingle-ID
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
   d6f47ed7-ac48-46b5-9ac5-f66fdf983c6c: # Überschrift
     columnSuffix: mikmbcev
     contentColumnType: text

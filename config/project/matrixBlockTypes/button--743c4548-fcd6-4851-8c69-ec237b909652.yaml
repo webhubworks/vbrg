@@ -7,16 +7,28 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
+            fieldUid: 6d790ee1-baaa-4798-a32f-7658fdb87f9b # Externe URL
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f8d2b5f6-a450-42f6-9911-0ad683a56f83
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
             fieldUid: 82aedd8f-e6b7-43ec-9182-d26f3eca60f2 # Seite
             instructions: null
             label: null
-            required: true
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: cdc71c8e-4bf0-4ef4-aa5c-0b0d3c7f50e0
             userCondition: null
             warning: null
-            width: 25
+            width: 50
           -
             elementCondition: null
             fieldUid: 1fce1f93-751a-4c9a-b930-e49a604eebba # Label
@@ -40,7 +52,7 @@ fieldLayouts:
             uid: 823ccee7-235e-4a93-a8aa-b6e5442483e8
             userCondition: null
             warning: null
-            width: 25
+            width: 50
         name: Content
         uid: 33a18723-fb41-47f2-82e4-7939578344d8
         userCondition: null
@@ -52,6 +64,26 @@ fields:
     handle: label
     instructions: null
     name: Label
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  6d790ee1-baaa-4798-a32f-7658fdb87f9b: # Externe URL
+    columnSuffix: fqesdysy
+    contentColumnType: text
+    fieldGroup: null
+    handle: externalUrl
+    instructions: null
+    name: 'Externe URL'
     searchable: false
     settings:
       byteLimit: null
