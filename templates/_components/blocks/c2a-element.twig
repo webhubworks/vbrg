@@ -23,7 +23,7 @@
                 {% case 'intern' %}
                     {% include '_atoms/button.twig' with {
                         'label': block.label,
-                        'target': block.internPage[0].url,
+                        'target': block.internPage|length ? block.internPage[0].url : block.anchor,
                         'bgImag': 0
                     } %}
                 {% case 'extern' %}

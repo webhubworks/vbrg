@@ -1,4 +1,4 @@
-dateModified: 1701419381
+dateModified: 1701424956
 elementSources:
   craft\elements\Entry:
     -
@@ -75,6 +75,7 @@ meta:
     6a67bde5-479e-4cf2-9c86-2560ff522e41: Seiten # Seiten
     6acbe757-8b6b-49a8-81b4-020c1a99d3d3: Antwort # Antwort
     6bf3e70b-795c-44b7-8e0a-7958cca8e303: Copyright # Copyright
+    6d790ee1-baaa-4798-a32f-7658fdb87f9b: 'Externe URL' # Externe URL
     6e87d9b5-03c9-4ca6-8fdd-c03f6eb9087a: Standard # Standard
     6e9782dc-e74a-40e7-9a45-539bb40c0963: Überschrift # Überschrift
     7cae0180-a618-4bb9-8138-2c1fef9f532a: Title # Title
@@ -115,6 +116,7 @@ meta:
     00446948-080e-4ce8-9a73-00eac2a843da: 'Zahl A' # Zahl A
     856568d8-ca9e-4622-9139-2e293bcb4f7e: C2A # C2A
     a0a7063c-d15c-45dd-97aa-9181fcf74845: 'Lottie Animations Datei (JSON)' # Lottie Animations Datei (JSON)
+    a0e42bf6-6118-4872-b280-9bbaa92d382f: Anker # Anker
     a1af40e9-4e10-42af-93c9-5182ee9a70f2: Twingle-ID # Twingle-ID
     a70887b8-63fb-46b6-8a65-2d2dff5ea405: Einstellungen # Einstellungen
     a899116d-e0f2-4d6f-bfcb-91d638d60094: URL # URL
