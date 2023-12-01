@@ -48,7 +48,7 @@ fields:
             - class
             - craft\elements\conditions\entries\EntryCondition
       selectionLabel: null
-      showSiteMenu: false
+      showSiteMenu: true
       sources:
         - 'section:c65bd544-5e1e-4c9e-83bc-422f66ab24e8' # Slides
       targetSiteId: null

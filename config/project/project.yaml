@@ -1,4 +1,4 @@
-dateModified: 1701260617
+dateModified: 1701419381
 elementSources:
   craft\elements\Entry:
     -
@@ -115,6 +115,7 @@ meta:
     00446948-080e-4ce8-9a73-00eac2a843da: 'Zahl A' # Zahl A
     856568d8-ca9e-4622-9139-2e293bcb4f7e: C2A # C2A
     a0a7063c-d15c-45dd-97aa-9181fcf74845: 'Lottie Animations Datei (JSON)' # Lottie Animations Datei (JSON)
+    a1af40e9-4e10-42af-93c9-5182ee9a70f2: Twingle-ID # Twingle-ID
     a70887b8-63fb-46b6-8a65-2d2dff5ea405: Einstellungen # Einstellungen
     a899116d-e0f2-4d6f-bfcb-91d638d60094: URL # URL
     af5c209f-e5d8-4804-b4b0-1234257abf1a: Startseite # Startseite
