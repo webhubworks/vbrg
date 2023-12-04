@@ -208,6 +208,60 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            elementCondition: null
+            heading: 'Spenden Abbinder'
+            type: craft\fieldlayoutelements\Heading
+            uid: acc355b3-dd1b-4def-8918-cd7e7d71f38d
+            userCondition: null
+          -
+            elementCondition: null
+            fieldUid: 19f1daf9-47af-4835-bc91-4e795487da88 # Überschrift
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: aca621fc-ee38-40b3-8eca-d54d8bdcec13
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f30beee0-499f-4658-9905-e803862c3d1b # Subline
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bf6a85be-b1f5-4de1-888d-9c34aeb9d494
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 1b82517c-cbda-495d-a1a1-61e8b009e935 # Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 02a768fb-63f8-49c9-a92b-de5090f1430c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 54ced4ce-7979-44ad-8422-ee16a66ee90d # Bottom-Line
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d0b20b89-bed3-4430-a844-900c1aa852be
+            userCondition: null
+            warning: null
+            width: 100
         name: 'Spenden Widget'
         uid: 4170d7ce-9cff-4696-a347-bc6785971342
         userCondition: null

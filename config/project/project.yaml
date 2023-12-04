@@ -1,4 +1,4 @@
-dateModified: 1701706082
+dateModified: 1701721818
 elementSources:
   craft\elements\Entry:
     -
@@ -79,6 +79,7 @@ meta:
     00f8646b-6022-4e0d-98ea-4a1769ba9d3a: Logos # Logos
     1a351ce4-7ddf-45eb-9151-61228d9ab658: Einstellungen # Einstellungen
     1b6de696-885d-4225-b5e3-51850b1ce2bf: 'C2A Element' # C2A Element
+    1b82517c-cbda-495d-a1a1-61e8b009e935: Text # Text
     1bc71551-c949-4982-b169-f1bba8696bec: FAQ # FAQ
     1f8ec6ba-d128-4576-860a-4e77ca6a5e32: 'Text Ausrichtung Links' # Text Ausrichtung Links
     1fce1f93-751a-4c9a-b930-e49a604eebba: Label # Label
@@ -100,6 +101,7 @@ meta:
     9c6cb273-e941-4c08-a2fe-daca1623031f: Dateien # Dateien
     14aa6bcd-44bd-403f-9386-cdd3a72f3d2a: 'VBRG Opferhilfefonds' # VBRG Opferhilfefonds
     18b6cee8-11cf-41ff-b4b3-eb973bfc0711: 'Footer Navigation' # Footer Navigation
+    19f1daf9-47af-4835-bc91-4e795487da88: Überschrift # Überschrift
     22fe44ff-4d50-4732-b5fe-847cc148adff: E-Mail # E-Mail
     31f1f990-fbb0-43da-a9c7-c3cbbdb86b09: Anschrift # Anschrift
     32c4ee44-c2e0-4025-b3e5-912c4e5354aa: 'Vimeo Akzeptiert' # Vimeo Akzeptiert
@@ -108,6 +110,7 @@ meta:
     37f48d69-c521-4173-9de9-3aa572eb18df: Text # Text
     45bdf26b-b4b7-43db-943e-3fb6e35b7b32: Twingle-ID # Twingle-ID
     46b292db-e422-45ad-ab69-e9f27bcd91dc: Telefon # Telefon
+    54ced4ce-7979-44ad-8422-ee16a66ee90d: Bottom-Line # Bottom-Line
     57a7333c-602e-4cd4-a1a0-c91c621f7b91: Elemente # Elemente
     57f706bc-65c7-4618-bade-d6f242497d53: FAQ # FAQ
     63a20558-8353-4735-98ab-0f6bf24ecebd: Überschrift # Überschrift
@@ -174,6 +177,7 @@ meta:
     ea76a5bf-e15f-4a06-a575-0911bf95789b: Text # Text
     ec47e3ae-af17-4e7c-b839-fbd01a2980f5: Hintergrund # Hintergrund
     f06f4efc-7d95-436a-bab4-de48b3bd1379: Inhalt # Inhalt
+    f30beee0-499f-4658-9905-e803862c3d1b: Subline # Subline
     f53acefa-58a0-4ec4-b080-0cc5e6b8cd85: Einträge # Einträge
     f189e644-9409-4bf9-a68d-14e3dcd8fefc: Typ # Typ
     ffbc0646-f9f5-42bf-aa98-45db48cc473d: Slider # Slider
