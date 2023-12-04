@@ -1,4 +1,4 @@
-dateModified: 1701704090
+dateModified: 1701706082
 elementSources:
   craft\elements\Entry:
     -
@@ -96,6 +96,7 @@ meta:
     7e233310-d87d-411b-8ced-2becff1c968a: Bilder # Bilder
     8a32bcd6-82c1-4060-a7c4-bbbe04fa1b42: Allgemein # Allgemein
     8f66490e-87fc-4a41-a611-ddd4f93a6205: 'Spenden Widget' # Spenden Widget
+    9a0d0b6d-79ef-4400-8b5a-8eaa65e23cdb: Hintergrund # Hintergrund
     9c6cb273-e941-4c08-a2fe-daca1623031f: Dateien # Dateien
     14aa6bcd-44bd-403f-9386-cdd3a72f3d2a: 'VBRG Opferhilfefonds' # VBRG Opferhilfefonds
     18b6cee8-11cf-41ff-b4b3-eb973bfc0711: 'Footer Navigation' # Footer Navigation
@@ -151,6 +152,7 @@ meta:
     b6ea951a-3517-4827-b425-5a014d8576cb: Code # Code
     b30fe9ee-2f09-4790-bef3-a0595c9885de: Hintergrund # Hintergrund
     b414e93c-b1e5-49ab-9e11-fd3b1304ff90: Sprungmarke # Sprungmarke
+    b978549a-c18b-4e9d-a544-6338b67950fa: Hintergrund # Hintergrund
     bb59a01a-8bce-42bf-af1c-6cb8088e3269: 'PGP Key' # PGP Key
     bd29ae4a-9182-4b26-b327-e0b62588e947: Lotties # Lotties
     be345a84-e7d3-4b42-90eb-ff3ab0f162d0: 'Label A' # Label A
@@ -170,6 +172,7 @@ meta:
     e9dcb45e-e976-4325-95e7-6d0dd5c278b1: Label # Label
     e9ff94c6-92e7-4304-843c-18b84045a1f1: 'Public Schema' # Public Schema
     ea76a5bf-e15f-4a06-a575-0911bf95789b: Text # Text
+    ec47e3ae-af17-4e7c-b839-fbd01a2980f5: Hintergrund # Hintergrund
     f06f4efc-7d95-436a-bab4-de48b3bd1379: Inhalt # Inhalt
     f53acefa-58a0-4ec4-b080-0cc5e6b8cd85: Einträge # Einträge
     f189e644-9409-4bf9-a68d-14e3dcd8fefc: Typ # Typ

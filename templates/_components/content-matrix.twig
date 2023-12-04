@@ -10,7 +10,7 @@
         'contentMatrix.c2a:c2aElement.button',
         'contentMatrix.c2a:c2aElement.button.intern:internPage',
         'contentMatrix.slider:sliderEntries',
-        'contentMatrix.logos:logos'
+        'contentMatrix.logos:logos',
     ]
 ) %}
 {% set contentMatrix = entry.contentMatrix %}
@@ -47,7 +47,7 @@
     {% case "logos" %}
         {% include "_components/blocks/logos.twig" with {logos: block.logos} %}
     {% case "faq" %}
-        {% include '_components/blocks/faq-list.twig' with {entries: block.faqEntries, showAll: block.showAll} %}
+        {% include '_components/blocks/faq-list.twig' with {entries: block.faqEntries.with(['button', 'button.intern:internPage']), showAll: block.showAll} %}
     {% case "c2a" %}
         {% include '_components/blocks/c2a-element.twig' with {entry: block.c2aElement[0]} %}
     {% case "donate" %}

@@ -29,6 +29,18 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            elementCondition: null
+            fieldUid: b978549a-c18b-4e9d-a544-6338b67950fa # Hintergrund
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c5ed37fb-e109-4962-9558-d681f1a5edfc
+            userCondition: null
+            warning: null
+            width: 100
         name: Content
         uid: c3ecee97-1222-4603-bcb5-ca8ee1bb2495
         userCondition: null
@@ -48,6 +60,53 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Url
+  b978549a-c18b-4e9d-a544-6338b67950fa: # Hintergrund
+    columnSuffix: yxygdxsq
+    contentColumnType: char
+    fieldGroup: null
+    handle: bg
+    instructions: null
+    name: Hintergrund
+    searchable: false
+    settings:
+      columnType: null
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - '0'
+            -
+              - value
+              - '0'
+            -
+              - default
+              - '1'
+        -
+          __assoc__:
+            -
+              - label
+              - '1'
+            -
+              - value
+              - '1'
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - '2'
+            -
+              - value
+              - '2'
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
   d2b43da2-5746-4999-8e72-cd1b825130dc: # Label
     columnSuffix: jnllblaj
     contentColumnType: text

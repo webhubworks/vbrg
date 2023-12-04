@@ -12,6 +12,42 @@
                     id="{{ entry.id }}">
                 <div class="typo typo--on-white my-12">
                     {{ entry.text }}
+
+                    {% for button in entry.button  %}
+
+                        {% switch button.type %}
+                        {% case "intern" %}
+                            <div class="max-w-2xl">
+                                {% include '_atoms/button.twig' with {
+                                    'label': button.label,
+                                    'target': button.anchor|length ? button.internPage[0].url ~ button.anchor : button.internPage[0].url,
+                                    'extern': false,
+                                    'bgImag': button.bg.value
+                                } %}
+                            </div>
+                        {% case "extern" %}
+                            <div class="max-w-2xl">
+                                {% include '_atoms/button.twig' with {
+                                    'label': button.label,
+                                    'target': button.externURL,
+                                    'extern': true,
+                                    'bgImag': button.bg.value
+                                } %}
+                            </div>
+                        {% case "anchor" %}
+                            <div class="max-w-2xl">
+
+                                {% include '_atoms/button.twig' with {
+                                    'label': button.label,
+                                    'target':button.anchor,
+                                    'extern': false,
+                                    'bgImag': button.bg.value
+                                } %}
+                            </div>
+                        {% default %}
+                        {% endswitch %}
+
+                    {% endfor %}
                 </div>
             </accordion-item>
         {% endfor %}
@@ -19,7 +55,7 @@
 </section>
 
 {% else %}
-    {% set entries = craft.entries.section('faq') %}
+    {% set entries = craft.entries.section('faq').with(['button', 'button.intern:internPage']) %}
 
     <section class="px-6 lg:px-16 xl:px-32 my-12 lg:my-24">
         <div class="divide-y-2 divide-white relative">
@@ -34,6 +70,42 @@
                     id="{{ entry.id }}">
                 <div class="typo my-12">
                     {{ entry.text }}
+
+                    {% for button in entry.button  %}
+
+                        {% switch button.type %}
+                        {% case "intern" %}
+                            <div class="max-w-2xl">
+                            {% include '_atoms/button.twig' with {
+                                'label': button.label,
+                                'target': button.anchor|length ? button.internPage[0].url ~ button.anchor : button.internPage[0].url,
+                                'extern': false,
+                                'bgImag': button.bg.value
+                            } %}
+                            </div>
+                            {% case "extern" %}
+                            <div class="max-w-2xl">
+                            {% include '_atoms/button.twig' with {
+                                    'label': button.label,
+                                    'target': button.externURL,
+                                    'extern': true,
+                                    'bgImag': button.bg.value
+                                } %}
+                            </div>
+                            {% case "anchor" %}
+                            <div class="max-w-2xl">
+
+                                {% include '_atoms/button.twig' with {
+                                    'label': button.label,
+                                    'target':button.anchor,
+                                    'extern': false,
+                                    'bgImag': button.bg.value
+                                } %}
+                            </div>
+                        {% default %}
+                        {% endswitch %}
+
+                    {% endfor %}
                 </div>
             </accordion-item>
         {% endfor %}
