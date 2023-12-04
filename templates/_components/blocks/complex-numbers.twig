@@ -2,7 +2,7 @@
     className(entry),
     [entry],
     [
-        'numbers',
+        'complexNumbers',
         'image'
     ]
 ) %}
@@ -14,7 +14,7 @@
     format: 'webp'
 } %}
 
-<div class="relative text-white overflow-visible">
+<div class="relative text-white overflow-visible lg:px-32">
     <div class="relative">
         <img src="{{ entry.image[0].getUrl(fullWidth) }}" alt="{{ entry.image[0].title }}"
              class="isolate mix-blend-multiply opacity-80">
