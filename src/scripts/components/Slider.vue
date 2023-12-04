@@ -5,6 +5,11 @@ import { defineComponent } from "vue"
 
 import "swiper/css"
 
+const props = defineProps({
+  nextId: String,
+  prevId: String,
+})
+
 defineComponent({
   Swiper,
   SwiperSlide,
@@ -14,8 +19,9 @@ const modules = [Navigation]
 </script>
 
 <template>
-  <div class="flex items-center justify-center space-x-8">
+  <div class="flex items-center justify-center space-x-8" :id="props.id">
     <button
+      :id="props.prevId"
       class="gallery-prev cursor:pointer flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-full bg-transparent text-yellow hover:bg-black hover:text-yellow lg:h-[80px] lg:w-[80px]"
       aria-label="Previous"
     >
@@ -31,15 +37,14 @@ const modules = [Navigation]
       </svg>
       <span class="sr-only">Previous</span>
     </button>
-
     <swiper
       :slides-per-view="1"
       class="mt-12"
       :modules="modules"
       :loop="true"
       :navigation="{
-        nextEl: '.gallery-next',
-        prevEl: '.gallery-prev',
+        nextEl: '#' + props.nextId,
+        prevEl: '#' + props.prevId,
         disabledClass: 'opacity-30',
       }"
       slides-per-view="auto"
@@ -48,7 +53,9 @@ const modules = [Navigation]
     >
       <slot></slot>
     </swiper>
+
     <button
+      :id="props.nextId"
       class="gallery-next cursor:pointer flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-full bg-transparent text-yellow hover:bg-black hover:text-yellow lg:h-[80px] lg:w-[80px]"
       aria-label="Next"
     >

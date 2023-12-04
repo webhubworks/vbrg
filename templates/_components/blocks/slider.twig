@@ -1,6 +1,6 @@
-<slider class="my-24">
+<slider class="my-24" :next-id="'next-'+ {{ id }}" :prev-id="'prev-'+ {{ id }}">
     {% for entry in entries  %}
-        <swiper-slide>
+        <swiper-slide >
             {% if entry.type == "numbers" %}
                     {% include "_components/blocks/number-comparison.twig" %}
                 {% else %}

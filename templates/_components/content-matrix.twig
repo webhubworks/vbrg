@@ -53,7 +53,7 @@
     {% case "donate" %}
         {% include '_components/blocks/donation-widget.twig' %}
     {% case "slider" %}
-        {% include '_components/blocks/slider.twig' with {entries: block.sliderEntries} %}
+        {% include '_components/blocks/slider.twig' with {entries: block.sliderEntries, id:block.id} %}
     {% default %}
     {% endswitch %}
 {% endfor %}
