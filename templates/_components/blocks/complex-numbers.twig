@@ -14,10 +14,10 @@
     format: 'webp'
 } %}
 
-<div class="relative text-white overflow-visible lg:px-32">
+<div class="lg:px-32">
     <div class="relative">
         <img src="{{ entry.image[0].getUrl(fullWidth) }}" alt="{{ entry.image[0].title }}"
-             class="isolate mix-blend-multiply opacity-80">
+             class=" mix-blend-multiply " style="transform: translate3d(0, 0, 0);">
 
         <div class=" absolute bottom-0 left-0 right-0 w-full  h-full">
             <div class="p-8 lg:p-24 flex justify-center items-end space-x-16 xl:space-x-32 h-full">

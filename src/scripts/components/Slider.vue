@@ -77,3 +77,16 @@ const modules = [Navigation]
     </button>
   </div>
 </template>
+
+<style>
+.swiper {
+  z-index: auto;
+}
+.swiper-slide,
+.swiper-wrapper,
+.swiper-backface-hidden .swiper-slide {
+  backface-visibility: hidden;
+  transform: none;
+  z-index: auto;
+}
+</style>
