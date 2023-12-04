@@ -1,3 +1,4 @@
+{% if block.showDonationWidget %}
 <section id="donation" class="my-16 lg:my-32">
     {% if settings.lottieJson[0].url %}
         <key-visual size="md" lottie-json="{{ settings.lottieJson[0].url }}" class="transform translate-y-16">
@@ -9,29 +10,33 @@
         {{ svg('@webroot/assets/img/white-bg-1.svg')|attr({ class: 'absolute inset-1 -z-1 block h-full w-full fill-current' }) }}
 
         <div class="px-8 py-16 lg:px-16 xl:px-24 relative">
-            <h2 class="text-pink text-center text-2xl lg:text-[60px] lg:leading-[60px] mb-6">{{ block.headline }}</h2>
-            <h3 class="text-black text-center text-xl lg:text-[30px] lg:leading-[60px] my-0">{{ block.subline }}</h3>
+            <h2 class="text-pink text-center text-2xl lg:text-[60px] lg:leading-[60px] mb-6">{{ settings.donationHeadline }}</h2>
+            <h3 class="text-black text-center text-xl lg:text-[30px] lg:leading-[60px] my-0">{{ settings.donationSubline }}</h3>
             <!-- twingle -->
-            {% if block.twingleId %}
-                <div class="max-w-5xl mx-auto">
-
-
+            {% if settings.twingleId %}
+                <div class="max-w-5xl mx-auto ">
                 <script type="text/javascript">
+
+
+
                     (function() {
-                        var u="https://spenden.twingle.de/embed/genericorganisation/genericproject/{{ block.twingleId }}/widget";
+                        var u="https://spenden.twingle.de/embed/genericorganisation/genericproject/{{ settings.twingleId }}/widget";
                         var id = '_' + Math.random().toString(36).substr(2, 9);
                         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-                        document.write('<div id="twingle-public-embed-' + id + '"></div>');
+                        document.write('<div class="twingle-wrapper" id="twingle-public-embed-' + id + '"></div>');
                         g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'/'+id; s.parentNode.insertBefore(g,s);
                     })();
+
+
                 </script>
                 </div>
             {% endif %}
             <!-- twingle -->
 
             <div class="typo typo--on-white-in-pink">
-                {{ block.text }}
+                {{ settings.donationText }}
             </div>
         </div>
     </div>
 </section>
+{% endif %}

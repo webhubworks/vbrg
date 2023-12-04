@@ -1,41 +1,41 @@
 field: 5a97eecc-eb31-420d-a6a7-db8f228243a2 # Inhalt
 fieldLayouts:
-  bb4fbddd-38ee-4619-8077-fd76dda7ca39:
+  cd9c0f4e-7f38-4364-984b-9819f9d9e336:
     tabs:
       -
         elementCondition: null
         elements:
           -
             elementCondition: null
-            fieldUid: 4b643d6e-123d-4476-a205-964684585195 # Spenden Widget anzeigen
+            fieldUid: cc4293be-9e3d-4424-9654-9429ba67e524 # Vimeo ID
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: b22c82cc-a8ec-4fad-bed0-a98351070597
+            uid: f683462f-6abf-416d-a6a7-eaa73a375b5a
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: 691738d5-51b4-49fe-b2b3-984d56275f86
+        uid: 76d84189-b1ab-4b72-a350-2b277da5f42d
         userCondition: null
 fields:
-  4b643d6e-123d-4476-a205-964684585195: # Spenden Widget anzeigen
-    columnSuffix: fwrklorl
-    contentColumnType: boolean
+  cc4293be-9e3d-4424-9654-9429ba67e524: # Vimeo ID
+    columnSuffix: jjahwebi
+    contentColumnType: string(255)
     fieldGroup: null
-    handle: showDonationWidget
+    handle: vimeoId
     instructions: null
-    name: 'Spenden Widget anzeigen'
+    name: 'Vimeo ID'
     searchable: false
     settings:
-      default: true
-      offLabel: null
-      onLabel: null
+      maxLength: 255
+      types:
+        - url
     translationKeyFormat: null
     translationMethod: none
-    type: craft\fields\Lightswitch
-handle: donate
-name: 'Spenden Widget'
-sortOrder: 6
+    type: craft\fields\Url
+handle: video
+name: Video
+sortOrder: 8

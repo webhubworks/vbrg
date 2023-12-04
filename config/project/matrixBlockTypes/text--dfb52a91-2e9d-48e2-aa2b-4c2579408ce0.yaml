@@ -1,28 +1,28 @@
-field: 5a97eecc-eb31-420d-a6a7-db8f228243a2 # Inhalt
+field: c6e90878-c245-4504-a9e1-abae79f2f1ed # Abbinder (Inhalt mit weißem Hintergrund)
 fieldLayouts:
-  bd05ae2a-d80f-4404-8b07-c1b61b645305:
+  be22bf22-09d3-4b3b-af9e-4ef19f890746:
     tabs:
       -
         elementCondition: null
         elements:
           -
             elementCondition: null
-            fieldUid: 37f48d69-c521-4173-9de9-3aa572eb18df # Text
+            fieldUid: 4e8964da-a75d-478c-ab7b-a962fcbbac5f # Text
             instructions: null
             label: null
-            required: true
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: b2a4fa73-32d8-4153-aef0-5916ae5aabc8
+            uid: 7656a963-2ada-4489-ba36-480cce00e0de
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: b4caf994-e405-464f-b09e-3faf23aa1551
+        uid: 6fdc22f6-e1a4-40d7-86c8-40c5377840b2
         userCondition: null
 fields:
-  37f48d69-c521-4173-9de9-3aa572eb18df: # Text
-    columnSuffix: rzjjyqgl
+  4e8964da-a75d-478c-ab7b-a962fcbbac5f: # Text
+    columnSuffix: dmlifcwq
     contentColumnType: text
     fieldGroup: null
     handle: text
@@ -43,7 +43,7 @@ fields:
       showWordCount: false
       wordLimit: null
     translationKeyFormat: null
-    translationMethod: site
+    translationMethod: none
     type: craft\ckeditor\Field
 handle: text
 name: Text

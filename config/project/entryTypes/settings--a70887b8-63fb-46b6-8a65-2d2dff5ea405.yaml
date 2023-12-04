@@ -157,6 +157,60 @@ fieldLayouts:
         name: Hero-Animation
         uid: 74f85d1f-a8e1-4837-8277-b1f32bc6c2b4
         userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 034da04e-c8fe-4d73-95f4-c6fcb81b8aaf # Überschrift
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 22518f6a-c3dc-40e9-ba7b-162535554e5b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: c164e33e-b9a3-4e2f-acfc-1132e4e74598 # Subline
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f9b47d54-b97a-4a67-83d6-dd180a6e4d0d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: ea76a5bf-e15f-4a06-a575-0911bf95789b # Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8b31a0bc-7b6e-43e3-a513-0ef8597961a7
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 45bdf26b-b4b7-43db-943e-3fb6e35b7b32 # Twingle-ID
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a3bf9390-d4e1-4dc6-9598-d6beec2116a7
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Spenden Widget'
+        uid: 4170d7ce-9cff-4696-a347-bc6785971342
+        userCondition: null
 handle: settings
 hasTitleField: false
 name: Einstellungen

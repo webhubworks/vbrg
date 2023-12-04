@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 8a32bcd6-82c1-4060-a7c4-bbbe04fa1b42 # Allgemein
+handle: bottomMatrix
+instructions: null
+name: 'Abbinder (Inhalt mit weißem Hintergrund)'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_bottommatrix}}'
+  maxBlocks: null
+  minBlocks: null
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

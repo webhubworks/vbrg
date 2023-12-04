@@ -24,14 +24,31 @@ h4,.h4{
         @apply text-lg lg:text-xl mb-8;
     }
 
+    ul, ol{
+        @apply text-lg lg:text-xl pb-8 ml-4;
+    }
+
+    ul li{
+        list-style-type: '–' ;
+        @apply pl-4;
+
+    }
     &--on-black{
         @apply text-white;
+    }
+
+    &--on-white{
+        @apply text-black;
+
+        h3{
+            @apply mb-4;
+        }
     }
 
     &--on-pink{
         @apply text-black;
         h3{
-            @apply text-white
+            @apply text-white;
         }
         p strong{
             @apply text-white;

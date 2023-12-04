@@ -1,0 +1,73 @@
+field: 5a97eecc-eb31-420d-a6a7-db8f228243a2 # Inhalt
+fieldLayouts:
+  fced2a7a-9327-4749-980d-10e1cac87d98:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: b6ea951a-3517-4827-b425-5a014d8576cb # Quelle
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 06f7d8b8-5d94-433a-ab36-39a1a8c2c82f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 721ebd1a-c624-4f93-868e-ac32b5da012e # Höhe
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a282108f-f86c-460c-b3f6-45eef3ed1123
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: f8fb3795-69fe-4d52-a2e0-6dbb304d58a8
+        userCondition: null
+fields:
+  721ebd1a-c624-4f93-868e-ac32b5da012e: # Höhe
+    columnSuffix: qywpttpt
+    contentColumnType: text
+    fieldGroup: null
+    handle: height
+    instructions: null
+    name: Höhe
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  b6ea951a-3517-4827-b425-5a014d8576cb: # Quelle
+    columnSuffix: gkmfvtbr
+    contentColumnType: string(255)
+    fieldGroup: null
+    handle: src
+    instructions: null
+    name: Quelle
+    searchable: false
+    settings:
+      maxLength: 255
+      types:
+        - url
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
+handle: iframe
+name: iFrame
+sortOrder: 9

@@ -1,0 +1,46 @@
+{% do craft.app.elements.eagerLoadElements(
+    className(entry),
+    [entry],
+    [
+        'bottomMatrix',
+        'bottomMatrix.logos:logos'
+    ]
+) %}
+{% set bottomMatrix = entry.bottomMatrix %}
+{% if bottomMatrix %}
+    <div class="mb-24">
+        <div class="h-24 flex items-start overflow-hidden">
+            <img src="{{ url('assets/img/full-white-bg.svg') }}" class="object-top"/>
+        </div>
+        <div class="bg-white pb-12 py-2">
+            <div class="container">
+                {% for block in bottomMatrix %}
+                    {% switch block.type %}
+                    {% case "headline" %}
+                        <div class="px-6 lg:px-16 xl:px-32 text-pink text-2xl lg:text-[60px] lg:leading-[60px]">
+                            <h2>
+                                {{ block.headline }}
+                            </h2>
+                        </div>
+                    {% case "text" %}
+                        <div class="px-6 lg:px-16 xl:px-32 typo typo--on-white">
+                            {{ block.text }}
+                        </div>
+                    {% case "logos" %}
+                        {% include "_components/blocks/logos.twig" with {logos: block.logos} %}
+                    {% case "iFrame" %}
+                        <div class="px-6 lg:px-16 xl:px-32 my-12">
+                            {{ block.src|raw }}
+                        </div>
+
+                    {% default %}
+                    {% endswitch %}
+                {% endfor %}
+
+            </div>
+        </div>
+        <div class="h-12 overflow-hidden flex items-end w-full">
+            <img src="{{ url('assets/img/full-white-bg.svg') }}" class="object-bottom"/>
+        </div>
+    </div>
+{% endif %}
