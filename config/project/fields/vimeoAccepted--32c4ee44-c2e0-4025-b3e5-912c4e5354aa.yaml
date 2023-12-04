@@ -1,0 +1,23 @@
+columnSuffix: frsrzftq
+contentColumnType: text
+fieldGroup: 1a351ce4-7ddf-45eb-9151-61228d9ab658 # Einstellungen
+handle: vimeoAccepted
+instructions: null
+name: 'Vimeo Akzeptiert'
+searchable: false
+settings:
+  availableTransforms: ''
+  availableVolumes: '*'
+  ckeConfig: 498dc256-c446-4458-9ef9-17c54d6c601e # Einfach
+  columnType: text
+  defaultTransform: null
+  enableSourceEditingForNonAdmins: false
+  purifierConfig: null
+  purifyHtml: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  showWordCount: false
+  wordLimit: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\ckeditor\Field

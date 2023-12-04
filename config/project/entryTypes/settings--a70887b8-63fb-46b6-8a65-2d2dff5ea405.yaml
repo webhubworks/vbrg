@@ -211,6 +211,36 @@ fieldLayouts:
         name: 'Spenden Widget'
         uid: 4170d7ce-9cff-4696-a347-bc6785971342
         userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 944adad1-808f-4800-b1ef-4246c62199ea # Vimeo Consent
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 03481619-f852-4e1f-832b-941996358c1c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 32c4ee44-c2e0-4025-b3e5-912c4e5354aa # Vimeo Akzeptiert
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 665317dd-689f-4f88-a69e-1cc70b562583
+            userCondition: null
+            warning: null
+            width: 100
+        name: Vimeo
+        uid: 23682e08-8085-4cf1-99d3-e9d068df75da
+        userCondition: null
 handle: settings
 hasTitleField: false
 name: Einstellungen

@@ -10,6 +10,7 @@
         'contentMatrix.c2a:c2aElement.button',
         'contentMatrix.c2a:c2aElement.button.intern:internPage',
         'contentMatrix.slider:sliderEntries',
+        'contentMatrix.logos:logos'
     ]
 ) %}
 {% set contentMatrix = entry.contentMatrix %}
@@ -23,7 +24,7 @@
             } %}
         </div>
     {% case "text" %}
-        <div class="px-6 lg:px-16 xl:px-32 text-center mx-auto typo typo--on-pink">
+        <div class="px-6 lg:px-16 xl:px-32 {{ block.textAlignLeft ? 'text-left typo--reduced-margin' : 'text-center' }} mx-auto typo typo--on-pink">
             {{ block.text }}
         </div>
     {% case "button" %}
@@ -35,6 +36,16 @@
                 'bgImag': block.bg.value
             } %}
         </div>
+    {% case "iframe" %}
+        <div class="px-6 lg:px-16 xl:px-32 my-12 lg:my-24">
+            {{ block.src|raw }}
+        </div>
+    {% case "video" %}
+        <div class="px-6 lg:px-16 xl:px-32 my-12 lg:my-24">
+        {% include "_components/blocks/vimeo.twig" %}
+        </div>
+    {% case "logos" %}
+        {% include "_components/blocks/logos.twig" with {logos: block.logos} %}
     {% case "faq" %}
         {% include '_components/blocks/faq-list.twig' with {entries: block.faqEntries} %}
     {% case "c2a" %}

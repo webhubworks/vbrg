@@ -1,0 +1,9 @@
+
+
+<vimeo-video
+        :consent="{{ settings.vimeoConsent|striptags('<a>')|json_encode }}"
+        :accepted="{{ settings.vimeoAccepted|json_encode }}"
+        src="{{ block.vimeoUrl|raw }}"
+        :id="{{ block.id }}"
+>
+</vimeo-video>

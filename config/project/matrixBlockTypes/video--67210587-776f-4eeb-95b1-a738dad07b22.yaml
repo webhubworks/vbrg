@@ -7,7 +7,7 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
-            fieldUid: cc4293be-9e3d-4424-9654-9429ba67e524 # Vimeo ID
+            fieldUid: cc4293be-9e3d-4424-9654-9429ba67e524 # Vimeo URL
             instructions: null
             label: null
             required: false
@@ -21,13 +21,13 @@ fieldLayouts:
         uid: 76d84189-b1ab-4b72-a350-2b277da5f42d
         userCondition: null
 fields:
-  cc4293be-9e3d-4424-9654-9429ba67e524: # Vimeo ID
+  cc4293be-9e3d-4424-9654-9429ba67e524: # Vimeo URL
     columnSuffix: jjahwebi
     contentColumnType: string(255)
     fieldGroup: null
-    handle: vimeoId
+    handle: vimeoUrl
     instructions: null
-    name: 'Vimeo ID'
+    name: 'Vimeo URL'
     searchable: false
     settings:
       maxLength: 255

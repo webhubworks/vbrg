@@ -49,7 +49,7 @@ fieldLayouts:
             userCondition: null
           -
             elementCondition: null
-            fieldUid: c6e90878-c245-4504-a9e1-abae79f2f1ed # Abbinder (Inhalt mit weißem Hintergrund)
+            fieldUid: c6e90878-c245-4504-a9e1-abae79f2f1ed
             instructions: null
             label: null
             required: false
