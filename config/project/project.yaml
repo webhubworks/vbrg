@@ -1,4 +1,4 @@
-dateModified: 1701698633
+dateModified: 1701704090
 elementSources:
   craft\elements\Entry:
     -
@@ -73,6 +73,7 @@ fs:
     url: /uploads/lotties/
 meta:
   __names__:
+    0e4e677c-5cf5-4208-9b73-f0295a8b4c44: 'Alle anzeigen' # Alle anzeigen
     0e112040-7ee8-47f2-a30f-2ce7b539ad9e: Extern # Extern
     0ef845da-a2ea-42d8-a79d-51c402413f61: Zahlenpaar # Zahlenpaar
     00f8646b-6022-4e0d-98ea-4a1769ba9d3a: Logos # Logos
