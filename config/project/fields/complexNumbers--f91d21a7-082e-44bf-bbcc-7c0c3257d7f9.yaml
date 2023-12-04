@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 8a32bcd6-82c1-4060-a7c4-bbbe04fa1b42 # Allgemein
+handle: complexNumbers
+instructions: null
+name: 'Komplexe Zahlen'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_complexnumbers}}'
+  maxBlocks: 2
+  minBlocks: null
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

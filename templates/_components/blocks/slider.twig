@@ -1,18 +1,15 @@
-<slider class="my-24" :next-id="'next-'+ {{ id }}" :prev-id="'prev-'+ {{ id }}">
+<slider class="my-24" :next-id="'next-'+ {{ id }}" :prev-id="'prev-'+ {{ id }}" :length="{{ entries|length }}">
     {% for entry in entries  %}
         <swiper-slide >
-            {% if entry.type == "numbers" %}
-                    {% include "_components/blocks/number-comparison.twig" %}
-                {% else %}
-                    <div class="px-6 lg:px-16 xl:px-32 mx-auto text-center">
-                        {% if entry.headline is defined and entry.headline|length %}
-                            {% include '_atoms/headline.twig' with {headline: entry.headline, headlineType: "h3"} %}
-                        {% else %}
-                            <h3 class="text-black">{{ entry.title }}</h3>
-                        {% endif %}
-                        <div class="typo typo--on-pink">{{ entry.text }}</div>
-                    </div>
-            {% endif %}
+            {% switch entry.type %}
+            {% case "numbers" %}
+                {% include "_components/blocks/number-comparison.twig" %}
+            {% case "complexNumbers" %}
+                    {% include "_components/blocks/complex-numbers.twig" %}
+            {% default %}
+            {% endswitch %}
+
+
 
         </swiper-slide>
     {% endfor %}

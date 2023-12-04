@@ -8,6 +8,7 @@ import "swiper/css"
 const props = defineProps({
   nextId: String,
   prevId: String,
+  length: Number,
 })
 
 defineComponent({
@@ -21,6 +22,7 @@ const modules = [Navigation]
 <template>
   <div class="flex items-center justify-center space-x-8" :id="props.id">
     <button
+      v-if="props.length > 1"
       :id="props.prevId"
       class="gallery-prev cursor:pointer flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-full bg-transparent text-yellow hover:bg-black hover:text-yellow lg:h-[80px] lg:w-[80px]"
       aria-label="Previous"
@@ -42,6 +44,7 @@ const modules = [Navigation]
       class="mt-12"
       :modules="modules"
       :loop="true"
+      :watch-overflow="true"
       :navigation="{
         nextEl: '#' + props.nextId,
         prevEl: '#' + props.prevId,
@@ -55,6 +58,7 @@ const modules = [Navigation]
     </swiper>
 
     <button
+      v-if="props.length > 1"
       :id="props.nextId"
       class="gallery-next cursor:pointer flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-full bg-transparent text-yellow hover:bg-black hover:text-yellow lg:h-[80px] lg:w-[80px]"
       aria-label="Next"

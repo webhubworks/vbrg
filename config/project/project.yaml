@@ -1,4 +1,4 @@
-dateModified: 1701721818
+dateModified: 1701728850
 elementSources:
   craft\elements\Entry:
     -
@@ -111,13 +111,13 @@ meta:
     45bdf26b-b4b7-43db-943e-3fb6e35b7b32: Twingle-ID # Twingle-ID
     46b292db-e422-45ad-ab69-e9f27bcd91dc: Telefon # Telefon
     54ced4ce-7979-44ad-8422-ee16a66ee90d: Bottom-Line # Bottom-Line
+    55c8e2cc-b28a-483a-8193-0be8087ebff9: Max # Max
     57a7333c-602e-4cd4-a1a0-c91c621f7b91: Elemente # Elemente
     57f706bc-65c7-4618-bade-d6f242497d53: FAQ # FAQ
     63a20558-8353-4735-98ab-0f6bf24ecebd: Überschrift # Überschrift
     64a1e764-c772-4bf2-a9f1-728ecf30ba65: Logos # Logos
     065ff313-4159-4d38-8c97-514f76753e3d: Seite # Seite
     66c19341-d5c9-486c-890c-d87f787de8a8: C2A # C2A
-    67b6d890-4707-4b5e-b5fb-f1a9912ab655: Standard # Standard
     67c27e56-5317-442a-abf4-8b1f7a02c88e: Standard # Standard
     81d09c54-05ae-4a12-a6f0-70c164806a0c: Extern # Extern
     82aedd8f-e6b7-43ec-9182-d26f3eca60f2: Seite # Seite
@@ -127,8 +127,9 @@ meta:
     498dc256-c446-4458-9ef9-17c54d6c601e: Einfach # Einfach
     727ed136-51ae-4465-966c-743da19fd4fe: Label # Label
     743c4548-fcd6-4851-8c69-ec237b909652: Button # Button
-    768b2d22-72c1-49f7-bb66-b225716ca13b: Text # Text
+    768b2d22-72c1-49f7-bb66-b225716ca13b: Overlay-Text # Overlay-Text
     868b011b-4b36-42bc-a3f7-f9a9370bb210: Startseite # Startseite
+    885ce981-14b1-463a-b1df-5cce901c92ca: Bild # Bild
     926d9948-ec4a-4748-b4c3-c46afcabe74d: Spendenwidget # Spendenwidget
     0928f3fc-d81c-4623-9118-0177307414fd: Überschrift # Überschrift
     944adad1-808f-4800-b1ef-4246c62199ea: 'Vimeo Consent' # Vimeo Consent
@@ -144,6 +145,7 @@ meta:
     67210587-776f-4eeb-95b1-a738dad07b22: Video # Video
     a0a7063c-d15c-45dd-97aa-9181fcf74845: 'Lottie Animations Datei (JSON)' # Lottie Animations Datei (JSON)
     a0e42bf6-6118-4872-b280-9bbaa92d382f: Anker # Anker
+    a042ef9c-02cf-4374-87cf-ccd45b906543: Werte # Werte
     a70887b8-63fb-46b6-8a65-2d2dff5ea405: Einstellungen # Einstellungen
     a899116d-e0f2-4d6f-bfcb-91d638d60094: URL # URL
     a4953701-7eb3-408c-a1d4-ce6495319099: Logos # Logos
@@ -152,15 +154,18 @@ meta:
     af5c209f-e5d8-4804-b4b0-1234257abf1a: Startseite # Startseite
     b054c8f3-fb01-4b86-8bd4-2fbfc14d7c74: 'Label B' # Label B
     b0760b82-c867-4267-91ca-ba4f189d1e09: 'C2A Elemente' # C2A Elemente
+    b3c9395b-e358-4656-be67-426688cf783b: 'Komplexe Zahlen' # Komplexe Zahlen
     b6ea951a-3517-4827-b425-5a014d8576cb: Code # Code
     b30fe9ee-2f09-4790-bef3-a0595c9885de: Hintergrund # Hintergrund
     b414e93c-b1e5-49ab-9e11-fd3b1304ff90: Sprungmarke # Sprungmarke
+    b2535d65-9cab-4869-a555-f843d4ab8c11: Gruppe # Gruppe
     b978549a-c18b-4e9d-a544-6338b67950fa: Hintergrund # Hintergrund
     bb59a01a-8bce-42bf-af1c-6cb8088e3269: 'PGP Key' # PGP Key
     bd29ae4a-9182-4b26-b327-e0b62588e947: Lotties # Lotties
     be345a84-e7d3-4b42-90eb-ff3ab0f162d0: 'Label A' # Label A
     c65bd544-5e1e-4c9e-83bc-422f66ab24e8: Slides # Slides
     c164e33e-b9a3-4e2f-acfc-1132e4e74598: Subline # Subline
+    cbd77df4-3d3b-4d39-be8c-24549474c68b: Label # Label
     cc4293be-9e3d-4424-9654-9429ba67e524: 'Vimeo URL' # Vimeo URL
     d05658d2-17b7-484d-b6c6-d3fc2af57f23: Jahr # Jahr
     d1dd954e-d81c-4104-94bf-dd68a50691dd: 'Sprunkmarken ID' # Sprunkmarken ID
@@ -177,8 +182,10 @@ meta:
     ea76a5bf-e15f-4a06-a575-0911bf95789b: Text # Text
     ec47e3ae-af17-4e7c-b839-fbd01a2980f5: Hintergrund # Hintergrund
     f06f4efc-7d95-436a-bab4-de48b3bd1379: Inhalt # Inhalt
+    f17bf5b5-c9cf-4880-838d-b741c0e51e01: Invertiert # Invertiert
     f30beee0-499f-4658-9905-e803862c3d1b: Subline # Subline
     f53acefa-58a0-4ec4-b080-0cc5e6b8cd85: Einträge # Einträge
+    f91d21a7-082e-44bf-bbcc-7c0c3257d7f9: 'Komplexe Zahlen' # Komplexe Zahlen
     f189e644-9409-4bf9-a68d-14e3dcd8fefc: Typ # Typ
     ffbc0646-f9f5-42bf-aa98-45db48cc473d: Slider # Slider
 plugins:
