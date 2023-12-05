@@ -1,12 +1,14 @@
 {% if block.showDonationWidget %}
     <section id="donation" class="my-16 lg:my-32">
+
         {% if settings.lottieJson[0].url %}
-            <key-visual size="md" lottie-json="{{ settings.lottieJson[0].url }}" class="transform translate-y-16">
+            <key-visual size="md" lottie-json="{{ settings.lottieJson[0].url }}" class="transform translate-y-16 z-30">
                 <img src="{{ url('assets/img/logo-opfer-hilfefonds.svg') }}"
                      class="w-[80%] max-w-[700px] h-auto mx-auto lg:w-auto lg:h-[168px] absolute bottom-12 z-[40]"
                      alt="VBRG Opfer Hilfefonds"/>
             </key-visual>
         {% endif %}
+
         <div class="relative text-white z-20">
             {{ svg('@webroot/assets/img/white-bg-1.svg')|attr({ class: 'absolute inset-1 -z-1 block h-full w-full fill-current' }) }}
 
