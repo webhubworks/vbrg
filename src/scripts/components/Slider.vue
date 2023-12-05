@@ -63,7 +63,7 @@ const modules = [Navigation]
     <button
       v-if="props.length > 1"
       :id="props.nextId"
-      class="gallery-next cursor:pointer sm:mr-0flex-shrink-0 flex h-8 w-8 items-center justify-center rounded-full bg-transparent text-yellow hover:bg-black hover:text-yellow sm:h-16 sm:w-16 lg:h-[80px] lg:w-[80px]"
+      class="gallery-next cursor:pointer sm:mr-0flex-shrink-0 flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-transparent text-yellow hover:bg-black hover:text-yellow sm:h-16 sm:w-16 lg:h-[80px] lg:w-[80px]"
       aria-label="Next"
     >
       <svg
