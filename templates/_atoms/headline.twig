@@ -1,17 +1,24 @@
 {% if headlineType == 'h4' %}
     <h3 class="h4">
-    {% for row in headline %}
-        <span class="{{ row.color == 'white' ? 'text-white' : 'text-black' }}">{{ row.text|replace({'[br-lg]': '<br class="hidden md:inline" />'})|raw }}</span>
-        {{ not loop.last ? '<br />' }}
-    {% endfor %}
-    </h3>
-    {% else %}
-        <{{ headlineType }}>
         {% for row in headline %}
             <span class="{{ row.color == 'white' ? 'text-white' : 'text-black' }}">{{ row.text|replace({'[br-lg]': '<br class="hidden md:inline" />'})|raw }}</span>
-            {{ not loop.last ? '<br  />' }}
+            {{ not loop.last ? '<br />' }}
         {% endfor %}
-        </{{ headlineType }}>
+    </h3>
+{% elseif headlineType == 'h2-h3' %}
+    <h2 class="h3">
+        {% for row in headline %}
+            <span class="{{ row.color == 'white' ? 'text-white' : 'text-black' }}">{{ row.text|replace({'[br-lg]': '<br class="hidden md:inline" />'})|raw }}</span>
+            {{ not loop.last ? '<br />' }}
+        {% endfor %}
+    </h2>
+{% else %}
+    <{{ headlineType }}>
+    {% for row in headline %}
+        <span class="{{ row.color == 'white' ? 'text-white' : 'text-black' }}">{{ row.text|replace({'[br-lg]': '<br class="hidden md:inline" />'})|raw }}</span>
+        {{ not loop.last ? '<br  />' }}
+    {% endfor %}
+    </{{ headlineType }}>
 {% endif %}
 
 

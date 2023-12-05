@@ -70,7 +70,7 @@
 
     <div class="px-6 lg:px-16 xl:px-32 mx-auto text-center transform -translate-y-[3rem] lg:-translate-y-[7rem] pt-0">
         {% if entry.headline is defined and entry.headline|length %}
-            {% include '_atoms/headline.twig' with {headline: entry.headline, headlineType: "h3"} %}
+            {% include '_atoms/headline.twig' with {headline: entry.headline, headlineType: "h2-h3"} %}
         {% else %}
             <h3 class="text-black">{{ entry.title }}</h3>
         {% endif %}
