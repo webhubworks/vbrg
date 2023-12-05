@@ -5,13 +5,13 @@ import { store } from "@scripts/store"
 <template>
   <button
     @click="store.toggleNavigation()"
-    class="fixed z-[60] my-8 ml-auto flex h-[80px] w-[80px] items-center justify-center rounded-full bg-yellow text-black hover:bg-black hover:text-yellow lg:my-12"
+    class="fixed z-[60] my-4 ml-auto flex h-[56px] w-[56px] items-center justify-center rounded-full bg-yellow text-black hover:bg-black hover:text-yellow sm:my-8 sm:h-[80px] sm:w-[80px] lg:my-12"
   >
     <span class="sr-only">Toggle navigation</span>
     <span v-if="!store.navigationOpen">
       <svg
         viewBox="0 0 46 25"
-        class="h-[25px] w-[46px] fill-current"
+        class="h-5 w-auto fill-current sm:h-[25px] sm:w-[46px]"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
@@ -24,7 +24,7 @@ import { store } from "@scripts/store"
     <span v-else>
       <svg
         viewBox="0 0 44 44"
-        class="h-[44px] w-[44px] fill-current"
+        class="h-5 w-[44px] w-auto fill-current sm:h-[44px]"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path

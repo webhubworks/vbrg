@@ -48,16 +48,16 @@ onUnmounted(() => {
   <teleport to="body">
     <transition name="fade">
       <div class="modal" v-if="isModalOpen">
-        <div class="relative max-w-7xl">
+        <div class="relative m-8 max-w-7xl sm:m-0">
           <button
             @click="closeModal"
             ref="closeButton"
             autofocus
-            class="absolute right-0 top-0 z-50 ml-auto flex h-[80px] w-[80px] -translate-y-1/2 translate-x-1/2 transform items-center justify-center rounded-full bg-yellow text-black hover:bg-black hover:text-yellow focus:outline-none focus:ring-2 focus:ring-black"
+            class="absolute right-0 top-0 z-50 ml-auto flex h-[56px] w-[56px] -translate-y-1/2 translate-x-1/2 transform items-center justify-center rounded-full bg-yellow text-black hover:bg-black hover:text-yellow focus:outline-none focus:ring-2 focus:ring-black sm:h-[80px] sm:w-[80px]"
           >
             <svg
               viewBox="0 0 44 44"
-              class="h-[44px] w-[44px] fill-current"
+              class="h-5 w-auto fill-current sm:h-[44px] sm:w-[44px]"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
@@ -69,7 +69,7 @@ onUnmounted(() => {
           </button>
           <div class="relative text-white">
             <slot name="bg"></slot>
-            <div class="relative p-16 lg:p-24">
+            <div class="relative p-8 sm:p-16 lg:p-24">
               <div class="h-full max-h-[70vh] overflow-y-scroll">
                 <div class="typo typo--on-white">
                   <slot></slot>

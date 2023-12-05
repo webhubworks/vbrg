@@ -51,17 +51,15 @@
     </div>
     </div>
     <p class="text-center text-lg">&copy; {{ now|date('Y') }} {{ settings.copyright }}</p>
-    <ul class="flex justify-center my-8">
+    <ul class="flex flex-col sm:flex-row justify-center items-center my-8">
         {% for page in settings.footerNavigation %}
             <li class="font-black text-xl">
                 <a href="{{ page.url }}"
                    class="text-yellow hover:text-black">
                     {{ page.title }}
                 </a>
-                {{ not loop.last ? '<span class="mx-4">&middot</span>' }}
+                {{ not loop.last ? '<span class="mx-4 hidden sm:block">&middot</span>' }}
             </li>
         {% endfor %}
     </ul>
 </footer>
-
-<img src="/uploads/images/_1440xAUTO_crop_center-center_90_none/818/pic_2023-12-04-215822_ztfp.webp" class="mix-blend-multiply">
