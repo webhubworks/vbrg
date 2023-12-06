@@ -11,8 +11,20 @@
 {% block content %}
 
   <div class="container">
-    <div class="bg-green-300 p-8 text-green-800 text-center">
-      <h1>We have a 503 here. The service is unavailable.</h1>
+    <div class="px-6 lg:px-16 xl:px-32 text-center">
+      {% include "_atoms/headline.twig" with {
+        headline: [
+          {
+            text: "Fehler 404",
+            color: "white",
+          },
+          {
+            text: "Seite nicht gefunden",
+            color: "black",
+          }
+        ],
+        headlineType: "h1",
+      } %}
     </div>
   </div>
 
