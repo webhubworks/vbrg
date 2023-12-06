@@ -1,10 +1,11 @@
 <header>
+    {% if settings.mainNavigation|length %}
     <div class="mr-4 sm:mr-8 lg:container flex justify-end">
         <navigation-button></navigation-button>
     </div>
 
     <navigation>
-        <div class="px-10 md:px-20 lg:px-40 pt-12 pb-48 min-h-screen flex flex-col justify-between">
+        <div class="px-10 md:px-20 lg:px-40 pt-24 lg:pt-12 pb-48 min-h-screen flex flex-col justify-between">
             <div class="flex justify-center w-full items-center mb-20">
                 <a href="/" class="block w-full max-w-[470px]">
                     <img src="{{ url('assets/img/vbrg-logo-white.svg') }}" width="480" height="80" alt="VBRG Logo" class="w-full max-w-[560px] h-auto"/>
@@ -14,7 +15,7 @@
             <nav>
                 <ul>
                     {% for page in settings.mainNavigation %}
-                        <li class="font-black text-[50px] text-center">
+                        <li class="font-black text-lg sm:text-xl lg:text-[50px] text-center">
                             <a href="{{ page.url }}"
                                class="text-yellow hover:text-white">
                                 {{ page.title }}
@@ -24,18 +25,19 @@
                 </ul>
             </nav>
 
-            <ul class="flex justify-center my-8">
+            <ul class="flex flex-col sm:flex-row justify-center items-center my-8">
                 {% for page in settings.footerNavigation %}
-                    <li class="font-black text-xl">
+                    <li class="font-black text-base lg:text-xl">
                         <a href="{{ page.url }}"
                            class="text-yellow hover:text-white">
                             {{ page.title }}
                         </a>
-                        {{ not loop.last ? '<span class="mx-4 text-white">&middot</span>' }}
+                        {{ not loop.last ? '<span class="mx-4 hidden sm:inline-flex">&middot</span>' }}
                     </li>
                 {% endfor %}
             </ul>
         </div>
     </navigation>
+    {% endif %}
 </header>
 

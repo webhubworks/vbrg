@@ -13,7 +13,7 @@
             {{ svg('@webroot/assets/img/white-bg-1.svg')|attr({ class: 'absolute inset-1 -z-1 block h-full w-full fill-current' }) }}
 
             <div class="px-8 py-16 lg:px-16 xl:px-24 relative">
-                <h2 class="text-pink text-center text-2xl lg:text-[60px] lg:leading-[60px] mb-6">{{ settings.donationHeadline }}</h2>
+                <h2 class="text-pink text-center text-2xl lg:text-[60px] lg:leading-[60px] mb-6">{{ settings.donationHeadline|replace({'[br-lg]': '<br class="hidden md:inline" />',  '[br-sm]': '<br class="inline md:hidden" />'})|raw }}</h2>
                 <h3 class="text-black text-center text-xl lg:text-[30px] lg:leading-[60px] my-0">{{ settings.donationSubline }}</h3>
                 {% if settings.twingleId %}
                     <div class="max-w-5xl mx-auto ">
@@ -43,7 +43,7 @@
         <div class="px-6 text-center mb-24">
             {% if settings.donationBottomHeadline %}
                 <h2>
-                    <span class="text-white">{{ settings.donationBottomHeadline }}</span>
+                    <span class="text-white">{{ settings.donationBottomHeadline|replace({'[br-lg]': '<br class="hidden md:inline" />',  '[br-sm]': '<br class="inline md:hidden" />'})|raw }}</span>
                 </h2>
             {% endif %}
             {% if settings.donationBottomSubline %}
