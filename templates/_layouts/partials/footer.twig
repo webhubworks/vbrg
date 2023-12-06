@@ -58,7 +58,7 @@
                    class="text-yellow hover:text-black">
                     {{ page.title }}
                 </a>
-                {{ not loop.last ? '<span class="mx-4 hidden sm:block">&middot</span>' }}
+                {{ not loop.last ? '<span class="mx-4 hidden sm:inline-flex">&middot</span>' }}
             </li>
         {% endfor %}
     </ul>

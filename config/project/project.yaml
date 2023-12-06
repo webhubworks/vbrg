@@ -1,4 +1,4 @@
-dateModified: 1701728850
+dateModified: 1701860871
 elementSources:
   craft\elements\Entry:
     -
@@ -110,6 +110,7 @@ meta:
     37f48d69-c521-4173-9de9-3aa572eb18df: Text # Text
     45bdf26b-b4b7-43db-943e-3fb6e35b7b32: Twingle-ID # Twingle-ID
     46b292db-e422-45ad-ab69-e9f27bcd91dc: Telefon # Telefon
+    47aa66e9-91bf-449d-bd0e-41b52b27ad0e: Redakteure # Redakteure
     54ced4ce-7979-44ad-8422-ee16a66ee90d: Bottom-Line # Bottom-Line
     55c8e2cc-b28a-483a-8193-0be8087ebff9: Max # Max
     57a7333c-602e-4cd4-a1a0-c91c621f7b91: Elemente # Elemente
@@ -211,9 +212,3 @@ system:
   name: 'VBRG Opferhilfefonds'
   schemaVersion: 4.5.3.0
   timeZone: America/Los_Angeles
-users:
-  allowPublicRegistration: false
-  defaultGroup: null
-  photoSubpath: null
-  photoVolumeUid: null
-  requireEmailVerification: true
