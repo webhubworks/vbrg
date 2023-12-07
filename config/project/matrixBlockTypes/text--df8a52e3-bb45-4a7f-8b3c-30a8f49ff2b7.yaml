@@ -17,10 +17,37 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            elementCondition: null
+            fieldUid: 1f8ec6ba-d128-4576-860a-4e77ca6a5e32 # Text Ausrichtung Links
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 00c0f1ac-9f66-444e-b15c-0caa5a9d9286
+            userCondition: null
+            warning: null
+            width: 100
         name: Content
         uid: b4caf994-e405-464f-b09e-3faf23aa1551
         userCondition: null
 fields:
+  1f8ec6ba-d128-4576-860a-4e77ca6a5e32: # Text Ausrichtung Links
+    columnSuffix: rkgywaqk
+    contentColumnType: boolean
+    fieldGroup: null
+    handle: textAlignLeft
+    instructions: null
+    name: 'Text Ausrichtung Links'
+    searchable: false
+    settings:
+      default: false
+      offLabel: null
+      onLabel: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Lightswitch
   37f48d69-c521-4173-9de9-3aa572eb18df: # Text
     columnSuffix: rzjjyqgl
     contentColumnType: text
@@ -43,7 +70,7 @@ fields:
       showWordCount: false
       wordLimit: null
     translationKeyFormat: null
-    translationMethod: none
+    translationMethod: site
     type: craft\ckeditor\Field
 handle: text
 name: Text

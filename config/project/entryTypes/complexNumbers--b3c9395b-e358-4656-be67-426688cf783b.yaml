@@ -1,0 +1,112 @@
+fieldLayouts:
+  6ea749e3-4bc7-4a9a-b58d-2ff2db8db950:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 1cbdfada-1281-478a-bc6e-7cd68de248eb
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 885ce981-14b1-463a-b1df-5cce901c92ca # Bild
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9351acc0-7cea-4671-b647-a8e48bd6a9ca
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 55c8e2cc-b28a-483a-8193-0be8087ebff9 # Max
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 910c1629-66a7-4481-b4da-3229fb204c4f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f91d21a7-082e-44bf-bbcc-7c0c3257d7f9 # Komplexe Zahlen
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 944be590-33f1-41a1-bda5-d06f48c5d505
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 6e9782dc-e74a-40e7-9a45-539bb40c0963 # Überschrift
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e42e00a3-fa32-4952-bf8c-790c2c4d1d5e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            heading: Overlay
+            type: craft\fieldlayoutelements\Heading
+            uid: c74e7fb2-b61a-4131-a950-e4a8d1c4d4ae
+            userCondition: null
+          -
+            elementCondition: null
+            fieldUid: 423833a3-ef68-41b8-aacd-c03cb7abbac0 # Text
+            instructions: null
+            label: Overlay-Text
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1256cd90-54ab-4f2b-8a53-e8b3f5cb9696
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: 44736c6d-e5d9-4fe2-a484-5217307f677b
+        userCondition: null
+handle: complexNumbers
+hasTitleField: true
+name: 'Komplexe Zahlen'
+section: c65bd544-5e1e-4c9e-83bc-422f66ab24e8 # Slides
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 3
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

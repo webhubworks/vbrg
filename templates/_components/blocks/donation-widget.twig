@@ -1,37 +1,66 @@
-<section id="donation" class="my-16 lg:my-32">
-    {% if settings.lottieJson[0].url %}
-        <key-visual size="md" lottie-json="{{ settings.lottieJson[0].url }}" class="transform translate-y-16">
-        <img src="{{ url('assets/img/logo-opfer-hilfefonds.svg') }}" class="w-[80%] max-w-[700px] h-auto mx-auto lg:w-auto lg:h-[168px] absolute bottom-12 z-[40]"
-             alt="VBRG Opfer Hilfefonds"/>
-        </key-visual>
-    {% endif %}
-    <div class="relative text-white z-20">
-        {{ svg('@webroot/assets/img/white-bg-1.svg')|attr({ class: 'absolute inset-1 -z-1 block h-full w-full fill-current' }) }}
+{% if block.showDonationWidget %}
+    <section id="donation" class="my-16 lg:my-32">
+        {% if settings.lottieJson[0].url %}
+            <key-visual size="md" lottie-json="{{ settings.lottieJson[0].url }}" class="transform translate-y-16 z-30">
+                <img src="{{ url('assets/img/logo-opfer-hilfefonds.svg') }}"
+                     class="w-[80%] max-w-[700px] h-auto mx-auto lg:w-auto lg:h-[168px] absolute bottom-12 z-[40]"
+                     alt="VBRG Opfer Hilfefonds"/>
+            </key-visual>
+        {% endif %}
+        <div class="relative text-white z-20">
+            {{ svg('@webroot/assets/img/white-bg-1.svg')|attr({ class: 'absolute inset-1 -z-1 block h-full w-full fill-current' }) }}
 
-        <div class="px-8 py-16 lg:px-16 xl:px-24 relative">
-            <h2 class="text-pink text-center text-2xl lg:text-[60px] lg:leading-[60px] mb-6">{{ block.headline }}</h2>
-            <h3 class="text-black text-center text-xl lg:text-[30px] lg:leading-[60px] my-0">{{ block.subline }}</h3>
-            <!-- twingle -->
-            {% if block.twingleId %}
-                <div class="max-w-5xl mx-auto">
-
-
-                <script type="text/javascript">
-                    (function() {
-                        var u="https://spenden.twingle.de/embed/genericorganisation/genericproject/{{ block.twingleId }}/widget";
-                        var id = '_' + Math.random().toString(36).substr(2, 9);
-                        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-                        document.write('<div id="twingle-public-embed-' + id + '"></div>');
-                        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'/'+id; s.parentNode.insertBefore(g,s);
-                    })();
-                </script>
+            <div class="px-8 py-16 lg:px-16 xl:px-24 relative">
+                <h2 class="text-pink text-center text-2xl lg:text-[60px] lg:leading-[60px] mb-6">{{ settings.donationHeadline|replace({'[br-lg]': '<br class="hidden md:inline" />',  '[br-sm]': '<br class="inline md:hidden" />'})|raw }}</h2>
+                <h3 class="text-black text-center text-xl lg:text-[30px] lg:leading-[60px] my-0">{{ settings.donationSubline }}</h3>
+                {% if settings.twingleId %}
+                    <div class="max-w-5xl mx-auto ">
+                        <script type="text/javascript">
+                            (function () {
+                                var u = "https://spenden.twingle.de/embed/genericorganisation/genericproject/{{ settings.twingleId }}/widget";
+                                var id = '_' + Math.random().toString(36).substr(2, 9);
+                                var d = document, g = d.createElement('script'),
+                                    s = d.getElementsByTagName('script')[0];
+                                document.write('<div class="twingle-wrapper" id="twingle-public-embed-' + id + '"></div>');
+                                g.type = 'text/javascript';
+                                g.async = true;
+                                g.defer = true;
+                                g.src = u + '/' + id;
+                                s.parentNode.insertBefore(g, s);
+                            })();
+                        </script>
+                    </div>
+                {% endif %}
+                <div class="typo typo--on-white-in-pink">
+                    {{ settings.donationText }}
                 </div>
-            {% endif %}
-            <!-- twingle -->
-
-            <div class="typo typo--on-white-in-pink">
-                {{ block.text }}
             </div>
         </div>
-    </div>
-</section>
+    </section>
+    <section id="donation" class="my-16 lg:my-32">
+        <div class="px-6 text-center mb-24">
+            {% if settings.donationBottomHeadline %}
+                <h2>
+                    <span class="text-white">{{ settings.donationBottomHeadline|replace({'[br-lg]': '<br class="hidden md:inline" />',  '[br-sm]': '<br class="inline md:hidden" />'})|raw }}</span>
+                </h2>
+            {% endif %}
+            {% if settings.donationBottomSubline %}
+                <h3 class="text-xl lg:text-2xl text-center font-black">
+                    <span class="text-black">{{ settings.donationBottomSubline|nl2br }}</span>
+                </h3>
+            {% endif %}
+        </div>
+        {% if settings.donationBottomText %}
+            <div class="px-6 lg:px-16 xl:px-32 text-center mx-auto typo typo--on-pink">
+                {{ settings.donationBottomText }}
+            </div>
+        {% endif %}
+        {% if settings.donationBottomLine %}
+            <div class="px-6 lg:px-8 xl:px-16 text-center my-24">
+                <p class="text-xl lg:text-2xl font-black text-center">
+                    <span class="text-white">{{ settings.donationBottomLine|nl2br }}</span>
+                </p>
+            </div>
+        {% endif %}
+    </section>
+{% endif %}

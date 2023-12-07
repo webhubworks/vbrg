@@ -1,0 +1,145 @@
+field: f91d21a7-082e-44bf-bbcc-7c0c3257d7f9 # Komplexe Zahlen
+fieldLayouts:
+  053b9281-fe83-484c-a0e5-62f1b5406445:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: cbd77df4-3d3b-4d39-be8c-24549474c68b # Label
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 94a0c70d-1158-4ae3-9289-b124a2c539ee
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: a042ef9c-02cf-4374-87cf-ccd45b906543 # Werte
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5147b128-e2fd-4e3f-b5af-567a6d1d9324
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f17bf5b5-c9cf-4880-838d-b741c0e51e01 # Invertiert
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c6c703ef-4f34-4b4d-b2a1-4c4629a704a3
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: ab860037-0a0d-47b3-8300-09a8471d90ab
+        userCondition: null
+fields:
+  a042ef9c-02cf-4374-87cf-ccd45b906543: # Werte
+    columnSuffix: esneiblp
+    contentColumnType: text
+    fieldGroup: null
+    handle: werte
+    instructions: null
+    name: Werte
+    searchable: false
+    settings:
+      addRowLabel: 'Zeile hinzufügen'
+      columnType: text
+      columns:
+        __assoc__:
+          -
+            - col1
+            -
+              __assoc__:
+                -
+                  - heading
+                  - Label
+                -
+                  - handle
+                  - label
+                -
+                  - width
+                  - ''
+                -
+                  - type
+                  - singleline
+          -
+            - col2
+            -
+              __assoc__:
+                -
+                  - heading
+                  - Wert
+                -
+                  - handle
+                  - value
+                -
+                  - width
+                  - ''
+                -
+                  - type
+                  - singleline
+      defaults:
+        -
+          __assoc__:
+            -
+              - col1
+              - ''
+            -
+              - col2
+              - ''
+      maxRows: null
+      minRows: null
+      staticRows: false
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Table
+  cbd77df4-3d3b-4d39-be8c-24549474c68b: # Label
+    columnSuffix: bagmmyon
+    contentColumnType: text
+    fieldGroup: null
+    handle: label
+    instructions: null
+    name: Label
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  f17bf5b5-c9cf-4880-838d-b741c0e51e01: # Invertiert
+    columnSuffix: yvluznfa
+    contentColumnType: boolean
+    fieldGroup: null
+    handle: inverted
+    instructions: null
+    name: Invertiert
+    searchable: false
+    settings:
+      default: false
+      offLabel: null
+      onLabel: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Lightswitch
+handle: group
+name: Gruppe
+sortOrder: 1

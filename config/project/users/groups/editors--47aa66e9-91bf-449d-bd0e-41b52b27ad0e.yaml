@@ -1,0 +1,116 @@
+description: ''
+handle: editors
+name: Redakteure
+permissions:
+  - accesscp
+  - accesscpwhensystemisoff
+  - accessplugin-seo
+  - accesssitewhensystemisoff
+  - 'createentries:57f706bc-65c7-4618-bade-d6f242497d53' # FAQ
+  - 'createentries:6a67bde5-479e-4cf2-9c86-2560ff522e41' # Seiten
+  - 'createentries:b0760b82-c867-4267-91ca-ba4f189d1e09' # C2A Elemente
+  - 'createentries:c65bd544-5e1e-4c9e-83bc-422f66ab24e8' # Slides
+  - 'createfolders:00f8646b-6022-4e0d-98ea-4a1769ba9d3a' # Logos
+  - 'createfolders:7e233310-d87d-411b-8ced-2becff1c968a' # Bilder
+  - 'createfolders:9c6cb273-e941-4c08-a2fe-daca1623031f' # Dateien
+  - 'createfolders:bd29ae4a-9182-4b26-b327-e0b62588e947' # Lotties
+  - 'createfolders:e2a809b8-d0ea-42b2-901f-bdffd3f245d9' # Icons
+  - 'deleteassets:00f8646b-6022-4e0d-98ea-4a1769ba9d3a' # Logos
+  - 'deleteassets:7e233310-d87d-411b-8ced-2becff1c968a' # Bilder
+  - 'deleteassets:9c6cb273-e941-4c08-a2fe-daca1623031f' # Dateien
+  - 'deleteassets:bd29ae4a-9182-4b26-b327-e0b62588e947' # Lotties
+  - 'deleteassets:e2a809b8-d0ea-42b2-901f-bdffd3f245d9' # Icons
+  - 'deleteentries:57f706bc-65c7-4618-bade-d6f242497d53' # FAQ
+  - 'deleteentries:6a67bde5-479e-4cf2-9c86-2560ff522e41' # Seiten
+  - 'deleteentries:b0760b82-c867-4267-91ca-ba4f189d1e09' # C2A Elemente
+  - 'deleteentries:c65bd544-5e1e-4c9e-83bc-422f66ab24e8' # Slides
+  - 'deletepeerassets:00f8646b-6022-4e0d-98ea-4a1769ba9d3a' # Logos
+  - 'deletepeerassets:7e233310-d87d-411b-8ced-2becff1c968a' # Bilder
+  - 'deletepeerassets:9c6cb273-e941-4c08-a2fe-daca1623031f' # Dateien
+  - 'deletepeerassets:bd29ae4a-9182-4b26-b327-e0b62588e947' # Lotties
+  - 'deletepeerassets:e2a809b8-d0ea-42b2-901f-bdffd3f245d9' # Icons
+  - 'deletepeerentries:57f706bc-65c7-4618-bade-d6f242497d53' # FAQ
+  - 'deletepeerentries:6a67bde5-479e-4cf2-9c86-2560ff522e41' # Seiten
+  - 'deletepeerentries:b0760b82-c867-4267-91ca-ba4f189d1e09' # C2A Elemente
+  - 'deletepeerentries:c65bd544-5e1e-4c9e-83bc-422f66ab24e8' # Slides
+  - 'deletepeerentrydrafts:57f706bc-65c7-4618-bade-d6f242497d53' # FAQ
+  - 'deletepeerentrydrafts:6a67bde5-479e-4cf2-9c86-2560ff522e41' # Seiten
+  - 'deletepeerentrydrafts:af5c209f-e5d8-4804-b4b0-1234257abf1a' # Startseite
+  - 'deletepeerentrydrafts:b0760b82-c867-4267-91ca-ba4f189d1e09' # C2A Elemente
+  - 'deletepeerentrydrafts:c65bd544-5e1e-4c9e-83bc-422f66ab24e8' # Slides
+  - 'deletepeerentrydrafts:d221a3d5-d2e5-4dcb-9b14-513bd4590fbe' # Einstellungen
+  - 'editimages:00f8646b-6022-4e0d-98ea-4a1769ba9d3a' # Logos
+  - 'editimages:7e233310-d87d-411b-8ced-2becff1c968a' # Bilder
+  - 'editimages:9c6cb273-e941-4c08-a2fe-daca1623031f' # Dateien
+  - 'editimages:bd29ae4a-9182-4b26-b327-e0b62588e947' # Lotties
+  - 'editimages:e2a809b8-d0ea-42b2-901f-bdffd3f245d9' # Icons
+  - 'editpeerimages:00f8646b-6022-4e0d-98ea-4a1769ba9d3a' # Logos
+  - 'editpeerimages:7e233310-d87d-411b-8ced-2becff1c968a' # Bilder
+  - 'editpeerimages:9c6cb273-e941-4c08-a2fe-daca1623031f' # Dateien
+  - 'editpeerimages:bd29ae4a-9182-4b26-b327-e0b62588e947' # Lotties
+  - 'editpeerimages:e2a809b8-d0ea-42b2-901f-bdffd3f245d9' # Icons
+  - 'editsite:9363f036-dc6e-47a2-abde-d8f71980c397' # VBRG Opferhilfefonds
+  - manageredirects
+  - managesitemap
+  - 'replacefiles:00f8646b-6022-4e0d-98ea-4a1769ba9d3a' # Logos
+  - 'replacefiles:7e233310-d87d-411b-8ced-2becff1c968a' # Bilder
+  - 'replacefiles:9c6cb273-e941-4c08-a2fe-daca1623031f' # Dateien
+  - 'replacefiles:bd29ae4a-9182-4b26-b327-e0b62588e947' # Lotties
+  - 'replacefiles:e2a809b8-d0ea-42b2-901f-bdffd3f245d9' # Icons
+  - 'replacepeerfiles:00f8646b-6022-4e0d-98ea-4a1769ba9d3a' # Logos
+  - 'replacepeerfiles:7e233310-d87d-411b-8ced-2becff1c968a' # Bilder
+  - 'replacepeerfiles:9c6cb273-e941-4c08-a2fe-daca1623031f' # Dateien
+  - 'replacepeerfiles:bd29ae4a-9182-4b26-b327-e0b62588e947' # Lotties
+  - 'replacepeerfiles:e2a809b8-d0ea-42b2-901f-bdffd3f245d9' # Icons
+  - 'saveassets:00f8646b-6022-4e0d-98ea-4a1769ba9d3a' # Logos
+  - 'saveassets:7e233310-d87d-411b-8ced-2becff1c968a' # Bilder
+  - 'saveassets:9c6cb273-e941-4c08-a2fe-daca1623031f' # Dateien
+  - 'saveassets:bd29ae4a-9182-4b26-b327-e0b62588e947' # Lotties
+  - 'saveassets:e2a809b8-d0ea-42b2-901f-bdffd3f245d9' # Icons
+  - 'saveentries:57f706bc-65c7-4618-bade-d6f242497d53' # FAQ
+  - 'saveentries:6a67bde5-479e-4cf2-9c86-2560ff522e41' # Seiten
+  - 'saveentries:af5c209f-e5d8-4804-b4b0-1234257abf1a' # Startseite
+  - 'saveentries:b0760b82-c867-4267-91ca-ba4f189d1e09' # C2A Elemente
+  - 'saveentries:c65bd544-5e1e-4c9e-83bc-422f66ab24e8' # Slides
+  - 'saveentries:d221a3d5-d2e5-4dcb-9b14-513bd4590fbe' # Einstellungen
+  - 'savepeerassets:00f8646b-6022-4e0d-98ea-4a1769ba9d3a' # Logos
+  - 'savepeerassets:7e233310-d87d-411b-8ced-2becff1c968a' # Bilder
+  - 'savepeerassets:9c6cb273-e941-4c08-a2fe-daca1623031f' # Dateien
+  - 'savepeerassets:bd29ae4a-9182-4b26-b327-e0b62588e947' # Lotties
+  - 'savepeerassets:e2a809b8-d0ea-42b2-901f-bdffd3f245d9' # Icons
+  - 'savepeerentries:57f706bc-65c7-4618-bade-d6f242497d53' # FAQ
+  - 'savepeerentries:6a67bde5-479e-4cf2-9c86-2560ff522e41' # Seiten
+  - 'savepeerentries:b0760b82-c867-4267-91ca-ba4f189d1e09' # C2A Elemente
+  - 'savepeerentries:c65bd544-5e1e-4c9e-83bc-422f66ab24e8' # Slides
+  - 'savepeerentrydrafts:57f706bc-65c7-4618-bade-d6f242497d53' # FAQ
+  - 'savepeerentrydrafts:6a67bde5-479e-4cf2-9c86-2560ff522e41' # Seiten
+  - 'savepeerentrydrafts:af5c209f-e5d8-4804-b4b0-1234257abf1a' # Startseite
+  - 'savepeerentrydrafts:b0760b82-c867-4267-91ca-ba4f189d1e09' # C2A Elemente
+  - 'savepeerentrydrafts:c65bd544-5e1e-4c9e-83bc-422f66ab24e8' # Slides
+  - 'savepeerentrydrafts:d221a3d5-d2e5-4dcb-9b14-513bd4590fbe' # Einstellungen
+  - 'viewassets:00f8646b-6022-4e0d-98ea-4a1769ba9d3a' # Logos
+  - 'viewassets:7e233310-d87d-411b-8ced-2becff1c968a' # Bilder
+  - 'viewassets:9c6cb273-e941-4c08-a2fe-daca1623031f' # Dateien
+  - 'viewassets:bd29ae4a-9182-4b26-b327-e0b62588e947' # Lotties
+  - 'viewassets:e2a809b8-d0ea-42b2-901f-bdffd3f245d9' # Icons
+  - 'viewentries:57f706bc-65c7-4618-bade-d6f242497d53' # FAQ
+  - 'viewentries:6a67bde5-479e-4cf2-9c86-2560ff522e41' # Seiten
+  - 'viewentries:af5c209f-e5d8-4804-b4b0-1234257abf1a' # Startseite
+  - 'viewentries:b0760b82-c867-4267-91ca-ba4f189d1e09' # C2A Elemente
+  - 'viewentries:c65bd544-5e1e-4c9e-83bc-422f66ab24e8' # Slides
+  - 'viewentries:d221a3d5-d2e5-4dcb-9b14-513bd4590fbe' # Einstellungen
+  - 'viewpeerassets:00f8646b-6022-4e0d-98ea-4a1769ba9d3a' # Logos
+  - 'viewpeerassets:7e233310-d87d-411b-8ced-2becff1c968a' # Bilder
+  - 'viewpeerassets:9c6cb273-e941-4c08-a2fe-daca1623031f' # Dateien
+  - 'viewpeerassets:bd29ae4a-9182-4b26-b327-e0b62588e947' # Lotties
+  - 'viewpeerassets:e2a809b8-d0ea-42b2-901f-bdffd3f245d9' # Icons
+  - 'viewpeerentries:57f706bc-65c7-4618-bade-d6f242497d53' # FAQ
+  - 'viewpeerentries:6a67bde5-479e-4cf2-9c86-2560ff522e41' # Seiten
+  - 'viewpeerentries:b0760b82-c867-4267-91ca-ba4f189d1e09' # C2A Elemente
+  - 'viewpeerentries:c65bd544-5e1e-4c9e-83bc-422f66ab24e8' # Slides
+  - 'viewpeerentrydrafts:57f706bc-65c7-4618-bade-d6f242497d53' # FAQ
+  - 'viewpeerentrydrafts:6a67bde5-479e-4cf2-9c86-2560ff522e41' # Seiten
+  - 'viewpeerentrydrafts:af5c209f-e5d8-4804-b4b0-1234257abf1a' # Startseite
+  - 'viewpeerentrydrafts:b0760b82-c867-4267-91ca-ba4f189d1e09' # C2A Elemente
+  - 'viewpeerentrydrafts:c65bd544-5e1e-4c9e-83bc-422f66ab24e8' # Slides
+  - 'viewpeerentrydrafts:d221a3d5-d2e5-4dcb-9b14-513bd4590fbe' # Einstellungen

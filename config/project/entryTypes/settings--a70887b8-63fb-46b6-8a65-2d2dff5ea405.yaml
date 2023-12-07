@@ -157,6 +157,144 @@ fieldLayouts:
         name: Hero-Animation
         uid: 74f85d1f-a8e1-4837-8277-b1f32bc6c2b4
         userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 034da04e-c8fe-4d73-95f4-c6fcb81b8aaf # Überschrift
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 22518f6a-c3dc-40e9-ba7b-162535554e5b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: c164e33e-b9a3-4e2f-acfc-1132e4e74598 # Subline
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f9b47d54-b97a-4a67-83d6-dd180a6e4d0d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: ea76a5bf-e15f-4a06-a575-0911bf95789b # Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8b31a0bc-7b6e-43e3-a513-0ef8597961a7
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 45bdf26b-b4b7-43db-943e-3fb6e35b7b32 # Twingle-ID
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a3bf9390-d4e1-4dc6-9598-d6beec2116a7
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            heading: 'Spenden Abbinder'
+            type: craft\fieldlayoutelements\Heading
+            uid: acc355b3-dd1b-4def-8918-cd7e7d71f38d
+            userCondition: null
+          -
+            elementCondition: null
+            fieldUid: 19f1daf9-47af-4835-bc91-4e795487da88 # Überschrift
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: aca621fc-ee38-40b3-8eca-d54d8bdcec13
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f30beee0-499f-4658-9905-e803862c3d1b # Subline
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bf6a85be-b1f5-4de1-888d-9c34aeb9d494
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 1b82517c-cbda-495d-a1a1-61e8b009e935 # Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 02a768fb-63f8-49c9-a92b-de5090f1430c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 54ced4ce-7979-44ad-8422-ee16a66ee90d # Bottom-Line
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d0b20b89-bed3-4430-a844-900c1aa852be
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Spenden Widget'
+        uid: 4170d7ce-9cff-4696-a347-bc6785971342
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 944adad1-808f-4800-b1ef-4246c62199ea # Vimeo Consent
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 03481619-f852-4e1f-832b-941996358c1c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 32c4ee44-c2e0-4025-b3e5-912c4e5354aa # Vimeo Akzeptiert
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 665317dd-689f-4f88-a69e-1cc70b562583
+            userCondition: null
+            warning: null
+            width: 100
+        name: Vimeo
+        uid: 23682e08-8085-4cf1-99d3-e9d068df75da
+        userCondition: null
 handle: settings
 hasTitleField: false
 name: Einstellungen

@@ -1,19 +1,18 @@
-{### Extends #}
+{# ## Extends #}
 {% extends '_layouts/main.twig' %}
 
-{### Permissions #}
+{# ## Permissions #}
 
-{### Macros #}
+{# ## Macros #}
 
-{### Data logic #}
-
+{# ## Data logic #}
 {% if entry.type == "extern" %}
-  {% redirect entry.externalURL 301 %}
+    {% redirect entry.externalURL 301 %}
 {% endif %}
 
-{### Blocks #}
+{# ## Blocks #}
 {% block content %}
-  <div class="container pt-40">
-    {% include '_components/content-matrix.twig' %}
-  </div>
+    <div class="container">
+        {% include '_components/content-matrix.twig' %}
+    </div>
 {% endblock %}

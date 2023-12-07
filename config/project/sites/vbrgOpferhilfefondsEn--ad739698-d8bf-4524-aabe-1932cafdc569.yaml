@@ -1,0 +1,9 @@
+baseUrl: '@web/'
+enabled: '1'
+handle: vbrgOpferhilfefondsEn
+hasUrls: true
+language: en
+name: 'VBRG Opferhilfefonds EN'
+primary: false
+siteGroup: 14aa6bcd-44bd-403f-9386-cdd3a72f3d2a # VBRG Opferhilfefonds
+sortOrder: 2

@@ -1,0 +1,143 @@
+field: 5a97eecc-eb31-420d-a6a7-db8f228243a2 # Inhalt
+fieldLayouts:
+  5dc63b6d-4de4-4318-9dc0-ae4fab5140c1:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 5732acd3-df13-413b-8c73-97a31a7f33a1 # Überschrift
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3536d0a3-2140-463f-8c3d-456000ffef79
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 3d09106d-6cd3-4ed5-b95b-24522bc71982 # Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d0531a28-6c9a-4b2c-84f4-0858da10df39
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 64a1e764-c772-4bf2-a9f1-728ecf30ba65 # Logos
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 57e1a1d3-9723-4269-9dd0-7a6b27638ab7
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 2411b16c-467a-4cce-b0a4-5d66fe7fb87e
+        userCondition: null
+fields:
+  3d09106d-6cd3-4ed5-b95b-24522bc71982: # Text
+    columnSuffix: tytuezur
+    contentColumnType: text
+    fieldGroup: null
+    handle: text
+    instructions: null
+    name: Text
+    searchable: false
+    settings:
+      availableTransforms: ''
+      availableVolumes: '*'
+      ckeConfig: 498dc256-c446-4458-9ef9-17c54d6c601e # Einfach
+      columnType: text
+      defaultTransform: null
+      enableSourceEditingForNonAdmins: false
+      purifierConfig: null
+      purifyHtml: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      showWordCount: false
+      wordLimit: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\ckeditor\Field
+  64a1e764-c772-4bf2-a9f1-728ecf30ba65: # Logos
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: logos
+    instructions: null
+    name: Logos
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds: null
+      branchLimit: null
+      defaultUploadLocationSource: 'volume:00f8646b-6022-4e0d-98ea-4a1769ba9d3a' # Logos
+      defaultUploadLocationSubpath: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: null
+      minRelations: null
+      previewMode: full
+      restrictFiles: false
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:9c6cb273-e941-4c08-a2fe-daca1623031f' # Dateien
+      restrictedLocationSubpath: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Asset
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\assets\AssetCondition
+      selectionLabel: null
+      showSiteMenu: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      sources:
+        - 'volume:00f8646b-6022-4e0d-98ea-4a1769ba9d3a' # Logos
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  5732acd3-df13-413b-8c73-97a31a7f33a1: # Überschrift
+    columnSuffix: atqgoxlq
+    contentColumnType: text
+    fieldGroup: null
+    handle: headline
+    instructions: null
+    name: Überschrift
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: logos
+name: Logos
+sortOrder: 10

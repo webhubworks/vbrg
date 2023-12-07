@@ -1,4 +1,4 @@
-dateModified: 1701425527
+dateModified: 1701860871
 elementSources:
   craft\elements\Entry:
     -
@@ -57,6 +57,13 @@ fs:
       path: uploads/images
     type: craft\fs\Local
     url: /uploads/images/
+  logos:
+    hasUrls: true
+    name: Logos
+    settings:
+      path: uploads/logos
+    type: craft\fs\Local
+    url: /uploads/logos/
   lotties:
     hasUrls: true
     name: Lotties
@@ -66,12 +73,18 @@ fs:
     url: /uploads/lotties/
 meta:
   __names__:
+    0e4e677c-5cf5-4208-9b73-f0295a8b4c44: 'Alle anzeigen' # Alle anzeigen
     0e112040-7ee8-47f2-a30f-2ce7b539ad9e: Extern # Extern
     0ef845da-a2ea-42d8-a79d-51c402413f61: Zahlenpaar # Zahlenpaar
+    00f8646b-6022-4e0d-98ea-4a1769ba9d3a: Logos # Logos
     1a351ce4-7ddf-45eb-9151-61228d9ab658: Einstellungen # Einstellungen
     1b6de696-885d-4225-b5e3-51850b1ce2bf: 'C2A Element' # C2A Element
+    1b82517c-cbda-495d-a1a1-61e8b009e935: Text # Text
     1bc71551-c949-4982-b169-f1bba8696bec: FAQ # FAQ
+    1f8ec6ba-d128-4576-860a-4e77ca6a5e32: 'Text Ausrichtung Links' # Text Ausrichtung Links
     1fce1f93-751a-4c9a-b930-e49a604eebba: Label # Label
+    3d09106d-6cd3-4ed5-b95b-24522bc71982: Text # Text
+    4b643d6e-123d-4476-a205-964684585195: 'Spenden Widget anzeigen' # Spenden Widget anzeigen
     5a97eecc-eb31-420d-a6a7-db8f228243a2: Inhalt # Inhalt
     6a67bde5-479e-4cf2-9c86-2560ff522e41: Seiten # Seiten
     6acbe757-8b6b-49a8-81b4-020c1a99d3d3: Antwort # Antwort
@@ -80,63 +93,85 @@ meta:
     6e87d9b5-03c9-4ca6-8fdd-c03f6eb9087a: Standard # Standard
     6e9782dc-e74a-40e7-9a45-539bb40c0963: Überschrift # Überschrift
     7cae0180-a618-4bb9-8138-2c1fef9f532a: Title # Title
+    7d4a511d-73bc-48f2-8059-de3689d7543d: Überschrift # Überschrift
     7e233310-d87d-411b-8ced-2becff1c968a: Bilder # Bilder
     8a32bcd6-82c1-4060-a7c4-bbbe04fa1b42: Allgemein # Allgemein
     8f66490e-87fc-4a41-a611-ddd4f93a6205: 'Spenden Widget' # Spenden Widget
+    9a0d0b6d-79ef-4400-8b5a-8eaa65e23cdb: Hintergrund # Hintergrund
     9c6cb273-e941-4c08-a2fe-daca1623031f: Dateien # Dateien
     14aa6bcd-44bd-403f-9386-cdd3a72f3d2a: 'VBRG Opferhilfefonds' # VBRG Opferhilfefonds
     18b6cee8-11cf-41ff-b4b3-eb973bfc0711: 'Footer Navigation' # Footer Navigation
+    19f1daf9-47af-4835-bc91-4e795487da88: Überschrift # Überschrift
     22fe44ff-4d50-4732-b5fe-847cc148adff: E-Mail # E-Mail
     31f1f990-fbb0-43da-a9c7-c3cbbdb86b09: Anschrift # Anschrift
+    32c4ee44-c2e0-4025-b3e5-912c4e5354aa: 'Vimeo Akzeptiert' # Vimeo Akzeptiert
+    034da04e-c8fe-4d73-95f4-c6fcb81b8aaf: Überschrift # Überschrift
     36f9b152-6ca9-42e1-8154-e648984bde68: Zahlen # Zahlen
     37f48d69-c521-4173-9de9-3aa572eb18df: Text # Text
+    45bdf26b-b4b7-43db-943e-3fb6e35b7b32: Twingle-ID # Twingle-ID
     46b292db-e422-45ad-ab69-e9f27bcd91dc: Telefon # Telefon
+    47aa66e9-91bf-449d-bd0e-41b52b27ad0e: Redakteure # Redakteure
+    54ced4ce-7979-44ad-8422-ee16a66ee90d: Bottom-Line # Bottom-Line
+    55c8e2cc-b28a-483a-8193-0be8087ebff9: Max # Max
     57a7333c-602e-4cd4-a1a0-c91c621f7b91: Elemente # Elemente
     57f706bc-65c7-4618-bade-d6f242497d53: FAQ # FAQ
     63a20558-8353-4735-98ab-0f6bf24ecebd: Überschrift # Überschrift
+    64a1e764-c772-4bf2-a9f1-728ecf30ba65: Logos # Logos
     065ff313-4159-4d38-8c97-514f76753e3d: Seite # Seite
     66c19341-d5c9-486c-890c-d87f787de8a8: C2A # C2A
-    67b6d890-4707-4b5e-b5fb-f1a9912ab655: Standard # Standard
     67c27e56-5317-442a-abf4-8b1f7a02c88e: Standard # Standard
     81d09c54-05ae-4a12-a6f0-70c164806a0c: Extern # Extern
     82aedd8f-e6b7-43ec-9182-d26f3eca60f2: Seite # Seite
+    87dfc647-870d-4519-8056-6245827cabec: Text # Text
     111bfe1a-111b-4c7c-b988-2b60918ebf36: Icon # Icon
+    283db39c-21b8-4af6-8a2b-e424f775efaf: iFrame # iFrame
     498dc256-c446-4458-9ef9-17c54d6c601e: Einfach # Einfach
     727ed136-51ae-4465-966c-743da19fd4fe: Label # Label
     743c4548-fcd6-4851-8c69-ec237b909652: Button # Button
-    768b2d22-72c1-49f7-bb66-b225716ca13b: Text # Text
+    768b2d22-72c1-49f7-bb66-b225716ca13b: Overlay-Text # Overlay-Text
     868b011b-4b36-42bc-a3f7-f9a9370bb210: Startseite # Startseite
+    885ce981-14b1-463a-b1df-5cce901c92ca: Bild # Bild
+    926d9948-ec4a-4748-b4c3-c46afcabe74d: Spendenwidget # Spendenwidget
     0928f3fc-d81c-4623-9118-0177307414fd: Überschrift # Überschrift
+    944adad1-808f-4800-b1ef-4246c62199ea: 'Vimeo Consent' # Vimeo Consent
     950e5e6d-ebc8-49f7-88c1-f5595cc96f10: Titel # Titel
     964d7f16-757d-4192-8340-9ddfce04ec18: Zahlen # Zahlen
+    5732acd3-df13-413b-8c73-97a31a7f33a1: Überschrift # Überschrift
     7557ab82-949f-4746-8743-17eb3e09835f: Button # Button
     7815b433-99a7-43cd-bbb6-5a4a515a73e6: 'Zahl B' # Zahl B
     9363f036-dc6e-47a2-abde-d8f71980c397: 'VBRG Opferhilfefonds' # VBRG Opferhilfefonds
-    96329c8e-4311-4aa6-bccd-6025df1cedec: Text # Text
     423833a3-ef68-41b8-aacd-c03cb7abbac0: Text # Text
     00446948-080e-4ce8-9a73-00eac2a843da: 'Zahl A' # Zahl A
     856568d8-ca9e-4622-9139-2e293bcb4f7e: C2A # C2A
+    67210587-776f-4eeb-95b1-a738dad07b22: Video # Video
     a0a7063c-d15c-45dd-97aa-9181fcf74845: 'Lottie Animations Datei (JSON)' # Lottie Animations Datei (JSON)
     a0e42bf6-6118-4872-b280-9bbaa92d382f: Anker # Anker
-    a1af40e9-4e10-42af-93c9-5182ee9a70f2: Twingle-ID # Twingle-ID
+    a042ef9c-02cf-4374-87cf-ccd45b906543: Werte # Werte
     a70887b8-63fb-46b6-8a65-2d2dff5ea405: Einstellungen # Einstellungen
     a899116d-e0f2-4d6f-bfcb-91d638d60094: URL # URL
+    a4953701-7eb3-408c-a1d4-ce6495319099: Logos # Logos
+    ad739698-d8bf-4524-aabe-1932cafdc569: 'VBRG Opferhilfefonds EN' # VBRG Opferhilfefonds EN
     ae3d9c08-973e-4ba3-92b9-00575fa43af4: 'Externe URL' # Externe URL
     af5c209f-e5d8-4804-b4b0-1234257abf1a: Startseite # Startseite
     b054c8f3-fb01-4b86-8bd4-2fbfc14d7c74: 'Label B' # Label B
     b0760b82-c867-4267-91ca-ba4f189d1e09: 'C2A Elemente' # C2A Elemente
+    b3c9395b-e358-4656-be67-426688cf783b: 'Komplexe Zahlen' # Komplexe Zahlen
+    b6ea951a-3517-4827-b425-5a014d8576cb: Code # Code
     b30fe9ee-2f09-4790-bef3-a0595c9885de: Hintergrund # Hintergrund
     b414e93c-b1e5-49ab-9e11-fd3b1304ff90: Sprungmarke # Sprungmarke
+    b2535d65-9cab-4869-a555-f843d4ab8c11: Gruppe # Gruppe
+    b978549a-c18b-4e9d-a544-6338b67950fa: Hintergrund # Hintergrund
     bb59a01a-8bce-42bf-af1c-6cb8088e3269: 'PGP Key' # PGP Key
     bd29ae4a-9182-4b26-b327-e0b62588e947: Lotties # Lotties
     be345a84-e7d3-4b42-90eb-ff3ab0f162d0: 'Label A' # Label A
     c65bd544-5e1e-4c9e-83bc-422f66ab24e8: Slides # Slides
+    c164e33e-b9a3-4e2f-acfc-1132e4e74598: Subline # Subline
+    cbd77df4-3d3b-4d39-be8c-24549474c68b: Label # Label
+    cc4293be-9e3d-4424-9654-9429ba67e524: 'Vimeo URL' # Vimeo URL
     d05658d2-17b7-484d-b6c6-d3fc2af57f23: Jahr # Jahr
     d1dd954e-d81c-4104-94bf-dd68a50691dd: 'Sprunkmarken ID' # Sprunkmarken ID
     d2b43da2-5746-4999-8e72-cd1b825130dc: Label # Label
     d5d545e4-9bc6-4705-9942-caaa2cf0dc48: 'Haupt Navigation' # Haupt Navigation
-    d6f47ed7-ac48-46b5-9ac5-f66fdf983c6c: Überschrift # Überschrift
-    d9d2ce89-1365-4ff5-9aa7-90d4ac5cfefc: Subline # Subline
     d41fb132-5a3c-4059-b018-e5695391b9d2: Standard # Standard
     d221a3d5-d2e5-4dcb-9b14-513bd4590fbe: Einstellungen # Einstellungen
     dc2702b2-ebdb-48c3-abce-a7e89519ca6d: Intern # Intern
@@ -145,8 +180,13 @@ meta:
     e2a809b8-d0ea-42b2-901f-bdffd3f245d9: Icons # Icons
     e9dcb45e-e976-4325-95e7-6d0dd5c278b1: Label # Label
     e9ff94c6-92e7-4304-843c-18b84045a1f1: 'Public Schema' # Public Schema
+    ea76a5bf-e15f-4a06-a575-0911bf95789b: Text # Text
+    ec47e3ae-af17-4e7c-b839-fbd01a2980f5: Hintergrund # Hintergrund
     f06f4efc-7d95-436a-bab4-de48b3bd1379: Inhalt # Inhalt
+    f17bf5b5-c9cf-4880-838d-b741c0e51e01: Invertiert # Invertiert
+    f30beee0-499f-4658-9905-e803862c3d1b: Subline # Subline
     f53acefa-58a0-4ec4-b080-0cc5e6b8cd85: Einträge # Einträge
+    f91d21a7-082e-44bf-bbcc-7c0c3257d7f9: 'Komplexe Zahlen' # Komplexe Zahlen
     f189e644-9409-4bf9-a68d-14e3dcd8fefc: Typ # Typ
     ffbc0646-f9f5-42bf-aa98-45db48cc473d: Slider # Slider
 plugins:
@@ -172,9 +212,3 @@ system:
   name: 'VBRG Opferhilfefonds'
   schemaVersion: 4.5.3.0
   timeZone: America/Los_Angeles
-users:
-  allowPublicRegistration: false
-  defaultGroup: null
-  photoSubpath: null
-  photoVolumeUid: null
-  requireEmailVerification: true

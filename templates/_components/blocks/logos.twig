@@ -1,0 +1,23 @@
+<div class="relative text-white z-20 my-24">
+    {{ svg('@webroot/assets/img/white-bg-1.svg')|attr({ class: 'absolute inset-1 -z-1 block h-full w-full fill-current' }) }}
+    <div class="px-6 lg:px-16 xl:px-32 relative py-16">
+        <div class="mb-12 typo typo--on-white">
+            <h2 class="text-left">{{ block.headline }}</h2>
+            <p class="text-center text-lg lg:text-xl xl:text-2xl">{{ block.text }}</p>
+        </div>
+        <div class="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 items-center gap-12">
+            {% for logo in logos %}
+                <div class="flex justify-start items-center aspect-video">
+                    {% if logo.externalUrl %}
+                        <a href="{{ logo.externalUrl }}" target="_blank" class="max-w-full h-auto"><img
+                                    src="{{ logo.getUrl }}" alt="{{ logo.alt }}" width="{{ logo.getWidth }}"
+                                    height="{{ logo.getHeight }}"/></a>
+                    {% else %}
+                        <img src="{{ logo.getUrl }}" alt="{{ logo.alt ? logo.alt : logo.title }}"
+                             class="max-w-full h-auto" width="{{ logo.getWidth }}" height="{{ logo.getHeight }}"/>
+                    {% endif %}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

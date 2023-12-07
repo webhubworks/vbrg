@@ -75,7 +75,7 @@ fields:
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
-    translationMethod: none
+    translationMethod: site
     type: craft\fields\PlainText
   6d790ee1-baaa-4798-a32f-7658fdb87f9b: # Externe URL
     columnSuffix: fqesdysy

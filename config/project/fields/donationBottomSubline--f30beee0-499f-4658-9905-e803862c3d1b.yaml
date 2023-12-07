@@ -1,0 +1,19 @@
+columnSuffix: xnhuvaoe
+contentColumnType: text
+fieldGroup: 926d9948-ec4a-4748-b4c3-c46afcabe74d # Spendenwidget
+handle: donationBottomSubline
+instructions: null
+name: Subline
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 2
+  multiline: true
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\PlainText

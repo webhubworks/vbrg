@@ -1,11 +1,12 @@
 {% set type = type is defined ? type : 'link' %}
+{% set typoSizeClass = typoSizeClass is defined ? typoSizeClass : 'text-lg sm:text-xl' %}
 {% set bgImag = bgImag is defined ? bgImag : 0 %}
 {% set linkTarget = extern is defined and extern ? '_blank' : '_self' %}
 
 {% set backgrounds = ['@webroot/assets/img/button-1.svg','@webroot/assets/img/button-2.svg','@webroot/assets/img/button-3.svg'] %}
 
 {% if type == 'link' %}
-    <a href="{{ target }}" target="{{ linkTarget }}" class="relative block text-center font-black text-2xl text-yellow hover:text-black group px-4 py-5">
+    <a href="{{ target }}" target="{{ linkTarget }}" class="relative block max-w-[90%] sm:max-w-none mx-auto text-center font-black {{ typoSizeClass}} text-yellow hover:text-black group px-3 sm:px-4 py-2 sm:py-5">
         {{ svg(backgrounds[bgImag])|attr({ class: 'absolute inset-1 -z-1 block h-full w-full fill-current' }) }}
         <span class="inline-block  align-bottom pt-2 text-black group-hover:text-yellow leading-[35px] relative">
              {{ label }}

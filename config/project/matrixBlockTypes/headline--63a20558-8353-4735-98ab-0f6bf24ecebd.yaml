@@ -116,7 +116,7 @@ fields:
       minRows: null
       staticRows: false
     translationKeyFormat: null
-    translationMethod: none
+    translationMethod: site
     type: craft\fields\Table
   f189e644-9409-4bf9-a68d-14e3dcd8fefc: # Typ
     columnSuffix: hwdmqaqv

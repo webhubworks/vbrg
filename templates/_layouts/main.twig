@@ -16,7 +16,6 @@ webhub.de
 <body {{ craft.app.config.general.devMode ? 'data-dev-mode="true"' }}>
 
 <div id="app" >
-
   {% include '_layouts/partials/header.twig' ignore missing %}
   {% include '_layouts/partials/intro.twig' %}
   <main>
@@ -25,13 +24,8 @@ webhub.de
     {% endblock %}
 
   </main>
-
   {% include '_layouts/partials/footer.twig' ignore missing %}
-
 </div>
-
-{# Craft CSRF token #}
-{% include '_inline-scripts/_craft-csrf-token.twig' %}
-
+{# Craft CSRF token {% include '_inline-scripts/_craft-csrf-token.twig' %} #}
 </body>
 </html>

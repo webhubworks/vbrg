@@ -1,0 +1,114 @@
+field: 5a97eecc-eb31-420d-a6a7-db8f228243a2 # Inhalt
+fieldLayouts:
+  fced2a7a-9327-4749-980d-10e1cac87d98:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 7d4a511d-73bc-48f2-8059-de3689d7543d # Überschrift
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: df60c951-f938-4196-b3c3-b70427546d8c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 87dfc647-870d-4519-8056-6245827cabec # Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 556118a7-7a29-463b-b8a1-21fc44af251c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b6ea951a-3517-4827-b425-5a014d8576cb # Code
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 06f7d8b8-5d94-433a-ab36-39a1a8c2c82f
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: f8fb3795-69fe-4d52-a2e0-6dbb304d58a8
+        userCondition: null
+fields:
+  7d4a511d-73bc-48f2-8059-de3689d7543d: # Überschrift
+    columnSuffix: fbrwxqti
+    contentColumnType: text
+    fieldGroup: null
+    handle: headline
+    instructions: null
+    name: Überschrift
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  87dfc647-870d-4519-8056-6245827cabec: # Text
+    columnSuffix: xlefqelz
+    contentColumnType: text
+    fieldGroup: null
+    handle: text
+    instructions: null
+    name: Text
+    searchable: false
+    settings:
+      availableTransforms: ''
+      availableVolumes: '*'
+      ckeConfig: 498dc256-c446-4458-9ef9-17c54d6c601e # Einfach
+      columnType: text
+      defaultTransform: null
+      enableSourceEditingForNonAdmins: false
+      purifierConfig: null
+      purifyHtml: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      showWordCount: false
+      wordLimit: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\ckeditor\Field
+  b6ea951a-3517-4827-b425-5a014d8576cb: # Code
+    columnSuffix: gkmfvtbr
+    contentColumnType: text
+    fieldGroup: null
+    handle: src
+    instructions: null
+    name: Code
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: true
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: iframe
+name: iFrame
+sortOrder: 9

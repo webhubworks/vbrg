@@ -1,15 +1,19 @@
 @import "https://use.typekit.net/tkn7dpb.css";
 
 h1{
-    @apply text-4xl lg:text-5xl uppercase font-black mb-16;
+    @apply text-3xl sm:text-4xl lg:text-5xl uppercase font-black mb-16;
 }
 
 h2{
-    @apply text-3xl lg:text-4xl uppercase font-black my-12 break-all;
+    @apply text-2xl sm:text-3xl lg:text-4xl uppercase font-black my-12;
 }
 
-h3{
-    @apply text-2xl lg:text-3xl font-bold my-16;
+h3,.h3{
+    @apply text-xl sm:text-2xl font-black my-16;
+}
+
+.h3{
+    @apply normal-case break-normal;
 }
 
 h4,.h4{
@@ -24,14 +28,31 @@ h4,.h4{
         @apply text-lg lg:text-xl mb-8;
     }
 
+    ul, ol{
+        @apply text-lg lg:text-xl pb-8 ml-4;
+    }
+
+    ul li{
+        list-style-type: '–' ;
+        @apply pl-4;
+
+    }
     &--on-black{
         @apply text-white;
     }
 
-    &--on-pink{
+    &--on-white{
         @apply text-black;
+
         h3{
-            @apply text-white
+            @apply mb-4;
+        }
+    }
+
+    &--on-pink{
+        @apply text-black font-medium;
+        h3{
+            @apply text-white;
         }
         p strong{
             @apply text-white;
@@ -44,6 +65,11 @@ h4,.h4{
         }
         p strong{
             @apply text-pink;
+        }
+    }
+    &--reduced-margin{
+        h3{
+            @apply mb-4;
         }
     }
 }

@@ -10,6 +10,7 @@
         'contentMatrix.c2a:c2aElement.button',
         'contentMatrix.c2a:c2aElement.button.intern:internPage',
         'contentMatrix.slider:sliderEntries',
+        'contentMatrix.logos:logos',
     ]
 ) %}
 {% set contentMatrix = entry.contentMatrix %}
@@ -23,11 +24,11 @@
             } %}
         </div>
     {% case "text" %}
-        <div class="px-6 lg:px-16 xl:px-32 text-center mx-auto typo typo--on-pink">
+        <div class="px-6 lg:px-16 xl:px-32 {{ block.textAlignLeft ? 'text-left typo--reduced-margin' : 'text-center' }} mx-auto typo typo--on-pink">
             {{ block.text }}
         </div>
     {% case "button" %}
-        <div class="max-w-2xl mx-auto mb-4">
+        <div class="max-w-3xl mx-auto mb-4">
             {% include '_atoms/button.twig' with {
                 'label': block.label ?? block.buttonEntry[0],
                 'target': block.buttonEntry|length ? block.buttonEntry[0].url : block.externalUrl,
@@ -35,14 +36,24 @@
                 'bgImag': block.bg.value
             } %}
         </div>
+    {% case "iframe" %}
+        <div class="px-6 lg:px-16 xl:px-32 my-12 lg:my-24">
+            {{ block.src|raw }}
+        </div>
+    {% case "video" %}
+        <div class="px-6 lg:px-16 xl:px-32 my-12 lg:my-24">
+            {% include "_components/blocks/vimeo.twig" %}
+        </div>
+    {% case "logos" %}
+        {% include "_components/blocks/logos.twig" with {logos: block.logos} %}
     {% case "faq" %}
-        {% include '_components/blocks/faq-list.twig' with {entries: block.faqEntries} %}
+        {% include '_components/blocks/faq-list.twig' with {entries: block.faqEntries.with(['button', 'button.intern:internPage']), showAll: block.showAll} %}
     {% case "c2a" %}
         {% include '_components/blocks/c2a-element.twig' with {entry: block.c2aElement[0]} %}
     {% case "donate" %}
         {% include '_components/blocks/donation-widget.twig' %}
     {% case "slider" %}
-        {% include '_components/blocks/slider.twig' with {entries: block.sliderEntries} %}
+        {% include '_components/blocks/slider.twig' with {entries: block.sliderEntries, id:block.id} %}
     {% default %}
     {% endswitch %}
 {% endfor %}
