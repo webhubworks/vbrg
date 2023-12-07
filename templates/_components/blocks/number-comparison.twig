@@ -13,24 +13,21 @@
             <count-up number="{{ block.numberA }}" label="{{ block.labelA|nl2br }}"></count-up>
             <div class="mx-auto w-full flex flex-col space-y-5">
                 <div class="bg-black rounded-full aspect-square w-20 md:w-32 lg:w-[160px] font-black text-base sm:text-2xl md:text-xl lg:text-[44px] inline-flex justify-center items-center text-white mx-auto ">{{ block.year }}</div>
-
                 <div class="h-12 w-12 mx-auto">
                     <modal button-classes="font-black text-xl whitespace-nowrap flex items-center absolute bg-yellow text-black rounded-full overflow-hidden group focus:outline-none focus:ring-2 focus:ring-black">
                         <template v-slot:bg>
                             {{ svg('@webroot/assets/img/white-bg-1.svg')|attr({ class: 'absolute inset-1 -z-1 block h-full w-full fill-current' }) }}
                         </template>
                         <template v-slot:button>
-
-                            <svg viewBox="0 0 55 50" class="h-10 w-10 mt-4 mr-3 ml-1" xmlns="http://www.w3.org/2000/svg">
+                            <svg viewBox="0 0 55 50" class="h-10 w-10 mt-4 mr-3 ml-1"
+                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M-10 43.808 16.708 16.23a2.746 2.746 0 0 1 3.538-.346l9.238 6.346 15.98-16.462h-4.432c-1.543 0-2.794-1.292-2.794-2.884C38.238 1.292 39.489 0 41.032 0h11.174c.373 0 .742.077 1.08.23.667.305 1.196.85 1.49 1.54.15.35.224.73.224 1.115v11.538c0 1.592-1.252 2.885-2.794 2.885s-2.793-1.293-2.793-2.885V9.846L31.83 28a2.746 2.746 0 0 1-3.539.346L19.054 22-8.1 50"
                                       fill="#282828" fill-rule="evenodd"/>
                             </svg>
                             <span class="hidden sm:group-hover:inline-flex px-4 ">Zeige Statistik</span>
                         </template>
-
                         {{ block.text }}
                     </modal>
-
                 </div>
             </div>
             <count-up number="{{ block.numberB }}" label="{{ block.labelB|nl2br }}"></count-up>

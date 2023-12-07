@@ -1,115 +1,104 @@
 {% if not showAll %}
-
-
-<section class="relative text-white my-16 lg:my-32">
-    {{ svg('@webroot/assets/img/white-bg-1.svg')|attr({ class: 'absolute inset-1 -z-1 block h-full w-full fill-current' }) }}
-    <div class="p-8 lg:p-16 xl:p-24 divide-y-2 divide-[#3C3C3B] relative">
-        {% for entry in entries  %}
-            <accordion-item
-                    class="py-8"
-                    title="{{ entry.title }}"
-                    subline="{{ entry.answer }}"
-                    id="{{ entry.id }}">
-                <div class="typo typo--on-white my-12">
-                    {{ entry.text }}
-
-                    {% for button in entry.button  %}
-
-                        {% switch button.type %}
-                        {% case "intern" %}
-                            <div class="max-w-2xl">
-                                {% include '_atoms/button.twig' with {
-                                    'label': button.label,
-                                    'target': button.anchor|length ? button.internPage[0].url ~ button.anchor : button.internPage[0].url,
-                                    'extern': false,
-                                    'bgImag': button.bg.value
-                                } %}
-                            </div>
-                        {% case "extern" %}
-                            <div class="max-w-2xl">
-                                {% include '_atoms/button.twig' with {
-                                    'label': button.label,
-                                    'target': button.externURL,
-                                    'extern': true,
-                                    'bgImag': button.bg.value
-                                } %}
-                            </div>
-                        {% case "anchor" %}
-                            <div class="max-w-2xl">
-
-                                {% include '_atoms/button.twig' with {
-                                    'label': button.label,
-                                    'target':button.anchor,
-                                    'extern': false,
-                                    'bgImag': button.bg.value
-                                } %}
-                            </div>
-                        {% default %}
-                        {% endswitch %}
-
-                    {% endfor %}
-                </div>
-            </accordion-item>
-        {% endfor %}
-    </div>
-</section>
+    <section class="relative text-white my-16 lg:my-32">
+        {{ svg('@webroot/assets/img/white-bg-1.svg')|attr({ class: 'absolute inset-1 -z-1 block h-full w-full fill-current' }) }}
+        <div class="p-8 lg:p-16 xl:p-24 divide-y-2 divide-[#3C3C3B] relative">
+            {% for entry in entries %}
+                <accordion-item
+                        class="py-8"
+                        title="{{ entry.title }}"
+                        subline="{{ entry.answer }}"
+                        id="{{ entry.id }}">
+                    <div class="typo typo--on-white my-12">
+                        {{ entry.text }}
+                        {% for button in entry.button %}
+                            {% switch button.type %}
+                            {% case "intern" %}
+                                <div class="max-w-2xl">
+                                    {% include '_atoms/button.twig' with {
+                                        'label': button.label,
+                                        'target': button.anchor|length ? button.internPage[0].url ~ button.anchor : button.internPage[0].url,
+                                        'extern': false,
+                                        'bgImag': button.bg.value
+                                    } %}
+                                </div>
+                            {% case "extern" %}
+                                <div class="max-w-2xl">
+                                    {% include '_atoms/button.twig' with {
+                                        'label': button.label,
+                                        'target': button.externURL,
+                                        'extern': true,
+                                        'bgImag': button.bg.value
+                                    } %}
+                                </div>
+                            {% case "anchor" %}
+                                <div class="max-w-2xl">
+                                    {% include '_atoms/button.twig' with {
+                                        'label': button.label,
+                                        'target':button.anchor,
+                                        'extern': false,
+                                        'bgImag': button.bg.value
+                                    } %}
+                                </div>
+                            {% default %}
+                            {% endswitch %}
+                        {% endfor %}
+                    </div>
+                </accordion-item>
+            {% endfor %}
+        </div>
+    </section>
 
 {% else %}
     {% set entries = craft.entries.section('faq').with(['button', 'button.intern:internPage']) %}
 
     <section class="px-6 lg:px-16 xl:px-32 my-12 lg:my-24">
         <div class="divide-y-2 divide-white relative">
-        {% for entry in entries  %}
-            <accordion-item
-                    class="py-10"
-                    icon-classes="h-8 w-8 fill-current text-white lg:mt-0 lg:h-[60px] lg:w-[60px] flex-shrink-0"
-                    summary-classes="text-white text-xl md:text-2xl lg:text-[60px] lg:leading-[70px] font-black pr-12"
-                    subline-classes="hidden"
-                    title="{{ entry.title }}"
-                    subline="{{ entry.answer }}"
-                    id="{{ entry.id }}">
-                <div class="typo my-12">
-                    {{ entry.text }}
-
-                    {% for button in entry.button  %}
-
-                        {% switch button.type %}
-                        {% case "intern" %}
-                            <div class="max-w-2xl">
-                            {% include '_atoms/button.twig' with {
-                                'label': button.label,
-                                'target': button.anchor|length ? button.internPage[0].url ~ button.anchor : button.internPage[0].url,
-                                'extern': false,
-                                'bgImag': button.bg.value
-                            } %}
-                            </div>
+            {% for entry in entries %}
+                <accordion-item
+                        class="py-10"
+                        icon-classes="h-8 w-8 fill-current text-white lg:mt-0 lg:h-[60px] lg:w-[60px] flex-shrink-0"
+                        summary-classes="text-white text-xl md:text-2xl lg:text-[60px] lg:leading-[70px] font-black pr-12"
+                        subline-classes="hidden"
+                        title="{{ entry.title }}"
+                        subline="{{ entry.answer }}"
+                        id="{{ entry.id }}">
+                    <div class="typo my-12">
+                        {{ entry.text }}
+                        {% for button in entry.button %}
+                            {% switch button.type %}
+                            {% case "intern" %}
+                                <div class="max-w-2xl">
+                                    {% include '_atoms/button.twig' with {
+                                        'label': button.label,
+                                        'target': button.anchor|length ? button.internPage[0].url ~ button.anchor : button.internPage[0].url,
+                                        'extern': false,
+                                        'bgImag': button.bg.value
+                                    } %}
+                                </div>
                             {% case "extern" %}
-                            <div class="max-w-2xl">
-                            {% include '_atoms/button.twig' with {
-                                    'label': button.label,
-                                    'target': button.externURL,
-                                    'extern': true,
-                                    'bgImag': button.bg.value
-                                } %}
-                            </div>
+                                <div class="max-w-2xl">
+                                    {% include '_atoms/button.twig' with {
+                                        'label': button.label,
+                                        'target': button.externURL,
+                                        'extern': true,
+                                        'bgImag': button.bg.value
+                                    } %}
+                                </div>
                             {% case "anchor" %}
-                            <div class="max-w-2xl">
-
-                                {% include '_atoms/button.twig' with {
-                                    'label': button.label,
-                                    'target':button.anchor,
-                                    'extern': false,
-                                    'bgImag': button.bg.value
-                                } %}
-                            </div>
-                        {% default %}
-                        {% endswitch %}
-
-                    {% endfor %}
-                </div>
-            </accordion-item>
-        {% endfor %}
+                                <div class="max-w-2xl">
+                                    {% include '_atoms/button.twig' with {
+                                        'label': button.label,
+                                        'target':button.anchor,
+                                        'extern': false,
+                                        'bgImag': button.bg.value
+                                    } %}
+                                </div>
+                            {% default %}
+                            {% endswitch %}
+                        {% endfor %}
+                    </div>
+                </accordion-item>
+            {% endfor %}
         </div>
     </section>
-
 {% endif %}

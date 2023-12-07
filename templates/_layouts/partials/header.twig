@@ -3,7 +3,6 @@
     <div class="mr-4 sm:mr-8 lg:container flex justify-end">
         <navigation-button></navigation-button>
     </div>
-
     <navigation>
         <div class="px-10 md:px-20 lg:px-40 pt-24 lg:pt-12 pb-48 min-h-screen flex flex-col justify-between">
             <div class="flex justify-center w-full items-center mb-20">
@@ -11,7 +10,6 @@
                     <img src="{{ url('assets/img/vbrg-logo-white.svg') }}" width="480" height="80" alt="VBRG Logo" class="w-full max-w-[560px] h-auto"/>
                 </a>
             </div>
-
             <nav>
                 <ul>
                     {% for page in settings.mainNavigation %}
@@ -24,7 +22,6 @@
                     {% endfor %}
                 </ul>
             </nav>
-
             <ul class="flex flex-col sm:flex-row justify-center items-center my-8">
                 {% for page in settings.footerNavigation %}
                     <li class="font-black text-base lg:text-xl">
@@ -40,4 +37,3 @@
     </navigation>
     {% endif %}
 </header>
-
