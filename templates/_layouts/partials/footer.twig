@@ -1,9 +1,9 @@
 <footer class="container py-24">
     <div class="flex flex-col justify-center items-center xl:grid xl:grid-cols-2 xl:items-start mb-12 gap-24">
         <div class="mx-auto xl:mx-0">
-            <img src="{{ url('assets/img/vbrg-logo-black.svg') }}" width="600" height="100" alt="VBRG Logo" class="mb-8 lg:mb-12 w-full max-w-[600px] h-auto"/>
+            <img src="{{ url('assets/img/vbrg-logo-black.svg') }}" width="600" height="100" alt="VBRG Logo" class="mb-8 lg:mb-14 w-full max-w-[600px] h-auto"/>
             {% if settings.address %}
-            <p class="text-xl lg:text-[30px] text-black font-black xl:ml-12">{{ settings.address }}</p>
+            <p class="text-xl text-black font-black xl:ml-12 ">{{ settings.address }}</p>
             {% endif %}
         </div>
         <div class="mx-auto xl:mx-0 space-y-8 max-w-2xl">
@@ -50,7 +50,7 @@
             </div>
     </div>
     </div>
-    <p class="text-center text-lg">&copy; {{ now|date('Y') }} {{ settings.copyright }}</p>
+    <p class="text-center text-base">&copy; {{ now|date('Y') }} {{ settings.copyright }}</p>
     <ul class="flex flex-col sm:flex-row justify-center items-center my-8">
         {% for page in settings.footerNavigation %}
             <li class="font-black text-xl">

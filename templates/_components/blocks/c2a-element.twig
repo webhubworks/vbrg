@@ -24,20 +24,23 @@
                     {% include '_atoms/button.twig' with {
                         'label': block.label,
                         'target': block.internPage|length ? block.internPage[0].url : block.anchor,
-                        'bgImag': 0
+                        'bgImag': 0,
+                        'typoSizeClass': 'text-lg sm:text-2xl md:text-3xl md:leading-[40px] uppercase'
                     } %}
                 {% case 'extern' %}
                     {% include '_atoms/button.twig' with {
                         'label': block.label,
                         'target': block.externURL,
                         'extern': true,
-                        'bgImag': 1
+                        'bgImag': 1,
+                        'typoSizeClass': 'text-lg sm:text-2xl md:text-3xl md:leading-[40px] uppercase',
                     } %}
                 {% case 'anchor' %}
                     {% include '_atoms/button.twig' with {
                         'label': block.label,
                         'target': block.anchor,
-                        'bgImag': 2
+                        'bgImag': 2,
+                        'typoSizeClass': 'text-lg sm:text-2xl md:text-3xl md:leading-[40px] uppercase',
                     } %}
                 {% default %}
                 {% endswitch %}
