@@ -1,0 +1,47 @@
+{% do craft.app.elements.eagerLoadElements(
+    className(entry),
+    [entry],
+    [
+        'complexNumbers',
+        'image'
+    ]
+) %}
+
+{% set fullWidth = {
+    mode: 'crop',
+    width: 640,
+    height: 640,
+    quality: 90,
+    format: 'webp'
+} %}
+  {% if entry.image|length %}
+      <div class="relative overflow-visible pt-16 lg:pt-[150px]">
+          <img src="{{ entry.image[0].getUrl(fullWidth) }}" alt="{{ entry.image[0].title }}"
+               class="rounded-full h-32 lg:h-[300px] w-32 lg:w-[300px] mx-auto block transform -translate-y-1/2 absolute z-10 left-1/2 -translate-x-1/2">
+          <div class="relative text-white overflow-visible mt-3 lg:mt-[75px] mb-3 lg:mb-[75px]">
+
+              {{ svg('@webroot/assets/img/white-bg-1.svg')|attr({ class: 'absolute inset-1 -z-1 block h-full w-full fill-current' }) }}
+              <div class="relative items-center pt-20 lg:pt-24 pb-16 px-6 sm:px-16 xl:px-24 overflow-visible">
+
+                  <div class="typo typo--on-white">
+                      <blockquote>
+                          {{ entry.quote }}
+                          <cite>{{ entry.nameAndJob|nl2br }}</cite>
+                      </blockquote>
+                  </div>
+              </div>
+          </div>
+      </div>
+  {% else %}
+      <div class="relative text-white overflow-visible my-3">
+          {{ svg('@webroot/assets/img/white-bg-1.svg')|attr({ class: 'absolute inset-1 -z-1 block h-full w-full fill-current' }) }}
+          <div class="relative items-center py-16 px-6 sm:px-16 xl:px-24 overflow-visible">
+              <div class="typo typo--on-white">
+                  <blockquote>
+                      {{ entry.quote }}
+                      <cite>{{ entry.nameAndJob|nl2br }}</cite>
+                  </blockquote>
+              </div>
+          </div>
+      </div>
+  {% endif %}

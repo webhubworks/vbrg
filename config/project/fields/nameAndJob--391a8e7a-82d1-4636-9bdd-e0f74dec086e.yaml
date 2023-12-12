@@ -1,0 +1,19 @@
+columnSuffix: dviuumkm
+contentColumnType: text
+fieldGroup: 8a32bcd6-82c1-4060-a7c4-bbbe04fa1b42 # Allgemein
+handle: nameAndJob
+instructions: null
+name: 'Name und Berufsbezeichnung'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 2
+  multiline: true
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\PlainText

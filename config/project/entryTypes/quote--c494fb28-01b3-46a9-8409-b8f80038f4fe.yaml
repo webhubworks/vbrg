@@ -1,0 +1,82 @@
+fieldLayouts:
+  2b74ef64-21d1-4381-9d9f-dd384905fa27:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: c57013ce-0457-454b-9f82-3ccd8612556c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 885ce981-14b1-463a-b1df-5cce901c92ca # Bild
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b3d30a09-f803-4800-8c56-35a36945f928
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d3c0f93a-4e10-41e8-975b-ec2484674321 # Zitat
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 08cb7917-813c-4591-9b5f-1d627451ac8e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 391a8e7a-82d1-4636-9bdd-e0f74dec086e # Name und Berufsbezeichnung
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3dd75868-2f7e-4f8d-941f-a91a669db859
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: f94065b9-f55f-40b8-9bf0-084b9c3ae220
+        userCondition: null
+handle: quote
+hasTitleField: true
+name: Zitat
+section: c65bd544-5e1e-4c9e-83bc-422f66ab24e8 # Slides
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 4
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

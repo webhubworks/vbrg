@@ -6,6 +6,8 @@
                 {% include "_components/blocks/number-comparison.twig" %}
             {% case "complexNumbers" %}
                     {% include "_components/blocks/complex-numbers.twig" %}
+            {% case "quote" %}
+                    {% include "_components/blocks/quote.twig" %}
             {% default %}
             {% endswitch %}
         </swiper-slide>

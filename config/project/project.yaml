@@ -1,4 +1,4 @@
-dateModified: 1702396773
+dateModified: 1702397361
 elementSources:
   craft\elements\Entry:
     -
@@ -129,6 +129,7 @@ meta:
     87dfc647-870d-4519-8056-6245827cabec: Text # Text
     111bfe1a-111b-4c7c-b988-2b60918ebf36: Icon # Icon
     283db39c-21b8-4af6-8a2b-e424f775efaf: iFrame # iFrame
+    391a8e7a-82d1-4636-9bdd-e0f74dec086e: 'Name und Berufsbezeichnung' # Name und Berufsbezeichnung
     498dc256-c446-4458-9ef9-17c54d6c601e: Einfach # Einfach
     727ed136-51ae-4465-966c-743da19fd4fe: Label # Label
     743c4548-fcd6-4851-8c69-ec237b909652: Button # Button
@@ -170,11 +171,13 @@ meta:
     be345a84-e7d3-4b42-90eb-ff3ab0f162d0: 'Label A' # Label A
     c65bd544-5e1e-4c9e-83bc-422f66ab24e8: Slides # Slides
     c164e33e-b9a3-4e2f-acfc-1132e4e74598: Subline # Subline
+    c494fb28-01b3-46a9-8409-b8f80038f4fe: Zitat # Zitat
     cbd77df4-3d3b-4d39-be8c-24549474c68b: Label # Label
     cc4293be-9e3d-4424-9654-9429ba67e524: 'Vimeo URL' # Vimeo URL
     d05658d2-17b7-484d-b6c6-d3fc2af57f23: Jahr # Jahr
     d1dd954e-d81c-4104-94bf-dd68a50691dd: 'Sprunkmarken ID' # Sprunkmarken ID
     d2b43da2-5746-4999-8e72-cd1b825130dc: Label # Label
+    d3c0f93a-4e10-41e8-975b-ec2484674321: Zitat # Zitat
     d5d545e4-9bc6-4705-9942-caaa2cf0dc48: 'Haupt Navigation' # Haupt Navigation
     d41fb132-5a3c-4059-b018-e5695391b9d2: Standard # Standard
     d221a3d5-d2e5-4dcb-9b14-513bd4590fbe: Einstellungen # Einstellungen
