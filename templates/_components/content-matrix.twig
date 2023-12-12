@@ -24,7 +24,7 @@
             } %}
         </div>
     {% case "text" %}
-        <div class="px-6 lg:px-16 xl:px-32 {{ block.textAlignLeft ? 'text-left typo--reduced-margin' : 'text-center' }} mx-auto typo typo--on-pink">
+        <div class="px-6 lg:px-16 xl:px-32 {{ block.textAlignLeft ? 'text-left typo--reduced-margin' : 'text-center typo--center' }} mx-auto typo typo--on-pink">
             {{ block.text }}
         </div>
     {% case "button" %}
@@ -33,6 +33,7 @@
                 'label': block.label ?? block.buttonEntry[0],
                 'target': block.buttonEntry|length ? block.buttonEntry[0].url : block.externalUrl,
                 'extern': block.externalUrl ? true : false,
+                'anchor': block.anchor,
                 'bgImag': block.bg.value
             } %}
         </div>
@@ -45,15 +46,21 @@
             {% include "_components/blocks/vimeo.twig" %}
         </div>
     {% case "logos" %}
+        <div id="{{ block.anchorID ?? block.id }}">
         {% include "_components/blocks/logos.twig" with {logos: block.logos} %}
+        </div>
     {% case "faq" %}
+        <div id="{{ block.anchorID ?? block.id }}">
         {% include '_components/blocks/faq-list.twig' with {entries: block.faqEntries.with(['button', 'button.intern:internPage']), showAll: block.showAll} %}
+        </div>
     {% case "c2a" %}
         {% include '_components/blocks/c2a-element.twig' with {entry: block.c2aElement[0]} %}
     {% case "donate" %}
         {% include '_components/blocks/donation-widget.twig' %}
     {% case "slider" %}
+        <div id="{{ block.anchorID ?? block.id }}">
         {% include '_components/blocks/slider.twig' with {entries: block.sliderEntries, id:block.id} %}
+        </div>
     {% default %}
     {% endswitch %}
 {% endfor %}
