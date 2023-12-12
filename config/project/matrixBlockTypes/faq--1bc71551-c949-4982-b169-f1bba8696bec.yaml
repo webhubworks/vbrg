@@ -29,6 +29,18 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            elementCondition: null
+            fieldUid: eb3d7b5f-e491-49f6-bcd6-e42f66eca7f8 # Anker ID
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: cfe13784-2665-4ffb-8b40-ee6e0b1b42a0
+            userCondition: null
+            warning: null
+            width: 50
         name: Content
         uid: d64eefe8-4519-42f2-a86a-33f905444b9e
         userCondition: null
@@ -48,6 +60,26 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Lightswitch
+  eb3d7b5f-e491-49f6-bcd6-e42f66eca7f8: # Anker ID
+    columnSuffix: qemdnffk
+    contentColumnType: text
+    fieldGroup: null
+    handle: anchorID
+    instructions: null
+    name: 'Anker ID'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
   f53acefa-58a0-4ec4-b080-0cc5e6b8cd85: # Einträge
     columnSuffix: null
     contentColumnType: string

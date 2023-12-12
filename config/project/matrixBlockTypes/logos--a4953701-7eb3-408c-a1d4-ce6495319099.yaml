@@ -41,6 +41,18 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            elementCondition: null
+            fieldUid: 25febb54-5317-41fe-a933-265684a36e1b # Anker ID
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c55e679d-945c-4ffe-91b0-b683f42f5137
+            userCondition: null
+            warning: null
+            width: 50
         name: Content
         uid: 2411b16c-467a-4cce-b0a4-5d66fe7fb87e
         userCondition: null
@@ -69,6 +81,26 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\ckeditor\Field
+  25febb54-5317-41fe-a933-265684a36e1b: # Anker ID
+    columnSuffix: tmqpsaxy
+    contentColumnType: text
+    fieldGroup: null
+    handle: anchorID
+    instructions: null
+    name: 'Anker ID'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
   64a1e764-c772-4bf2-a9f1-728ecf30ba65: # Logos
     columnSuffix: null
     contentColumnType: string

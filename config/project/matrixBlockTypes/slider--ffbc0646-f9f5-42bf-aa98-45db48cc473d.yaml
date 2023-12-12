@@ -17,10 +17,42 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            elementCondition: null
+            fieldUid: 42a7ccf9-cff4-4390-ae74-946a852f6d71 # Anker ID
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 641540c7-1dc5-46f2-9122-8f72d9d4d28c
+            userCondition: null
+            warning: null
+            width: 50
         name: Content
         uid: 4ed45227-e24a-4382-9a77-1ac020c8270e
         userCondition: null
 fields:
+  42a7ccf9-cff4-4390-ae74-946a852f6d71: # Anker ID
+    columnSuffix: czeirvkv
+    contentColumnType: text
+    fieldGroup: null
+    handle: anchorID
+    instructions: null
+    name: 'Anker ID'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
   57a7333c-602e-4cd4-a1a0-c91c621f7b91: # Elemente
     columnSuffix: null
     contentColumnType: string
