@@ -12,7 +12,9 @@
         {% for block in entry.numbers %}
             <count-up number="{{ block.numberA }}" label="{{ block.labelA|nl2br }}"></count-up>
             <div class="mx-auto w-full flex flex-col space-y-5">
-                <div class="bg-black rounded-full aspect-square w-20 md:w-32 lg:w-[160px] font-black text-base sm:text-2xl md:text-xl lg:text-[44px] inline-flex justify-center items-center text-white mx-auto ">{{ block.year }}</div>
+                {% if block.year  %}
+                    <div class="bg-black rounded-full aspect-square w-20 md:w-32 lg:w-[160px] font-black text-base sm:text-2xl md:text-xl lg:text-[44px] inline-flex justify-center items-center text-white mx-auto ">{{ block.year }}</div>
+                {% endif %}
                 <div class="h-12 w-12 mx-auto">
                     <modal button-classes="font-black text-xl whitespace-nowrap flex items-center absolute bg-yellow text-black rounded-full overflow-hidden group focus:outline-none focus:ring-2 focus:ring-black">
                         <template v-slot:bg>
