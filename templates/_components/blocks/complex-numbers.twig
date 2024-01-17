@@ -35,7 +35,7 @@
                                     </svg>
                                     <span class="hidden sm:group-hover:inline-flex px-4 ">Zeige Statistik</span>
                                 </template>
-                                {{ entry.text }}
+                                {{ entry.text|replace({'[shy]': '&shy;'})|raw }}
                             </modal>
                         </div>
                     {% endif %}
@@ -50,7 +50,7 @@
                                          style="height: calc(100 / {{ entry.max }} * {{ group.value }} * 1%)">
                                         <span class="mx-auto mb-2 md:mb-4 xl:mb-6 font-black text-base xl:text-xl"> {{ group.value }}</span>
                                     </div>
-                                    <div class="mx-auto text-base text-white font-black">{{ group.label }}</div>
+                                    <div class="mx-auto text-base text-white font-black">{{ group.label|replace({'[shy]': '&shy;'})|raw }}</div>
                                 </div>
                             {% endfor %}
                         </div>

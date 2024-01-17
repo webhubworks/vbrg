@@ -32,7 +32,7 @@ const modules = [Navigation]
     >
       <svg
         viewBox="0 0 52 45"
-        class="h-10 fill-current lg:h-auto lg:w-[40px]"
+        class="h-6 fill-current lg:h-auto lg:w-[40px]"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
@@ -68,7 +68,7 @@ const modules = [Navigation]
     >
       <svg
         viewBox="0 0 52 45"
-        class="h-10 fill-current lg:h-auto lg:w-[40px]"
+        class="h-6 fill-current lg:h-auto lg:w-[40px]"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path

@@ -1,4 +1,4 @@
-dateModified: 1702397361
+dateModified: 1705499447
 elementSources:
   craft\elements\Entry:
     -
@@ -105,6 +105,7 @@ meta:
     19f1daf9-47af-4835-bc91-4e795487da88: Überschrift # Überschrift
     22fe44ff-4d50-4732-b5fe-847cc148adff: E-Mail # E-Mail
     25febb54-5317-41fe-a933-265684a36e1b: 'Anker ID' # Anker ID
+    27a22ebe-4f80-4db9-a6d5-478ee65cb1ca: Donate # Donate
     31f1f990-fbb0-43da-a9c7-c3cbbdb86b09: Anschrift # Anschrift
     32c4ee44-c2e0-4025-b3e5-912c4e5354aa: 'Vimeo Akzeptiert' # Vimeo Akzeptiert
     034da04e-c8fe-4d73-95f4-c6fcb81b8aaf: Überschrift # Überschrift
@@ -196,6 +197,7 @@ meta:
     f53acefa-58a0-4ec4-b080-0cc5e6b8cd85: Einträge # Einträge
     f91d21a7-082e-44bf-bbcc-7c0c3257d7f9: 'Komplexe Zahlen' # Komplexe Zahlen
     f189e644-9409-4bf9-a68d-14e3dcd8fefc: Typ # Typ
+    f362f19b-51b2-471e-878f-aa10ed49f232: Donate # Donate
     ffbc0646-f9f5-42bf-aa98-45db48cc473d: Slider # Slider
 plugins:
   ckeditor:

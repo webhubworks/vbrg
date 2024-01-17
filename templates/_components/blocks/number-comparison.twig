@@ -8,9 +8,9 @@
 
 <div class="relative text-white overflow-visible">
     {{ svg('@webroot/assets/img/white-bg-1.svg')|attr({ class: 'absolute inset-1 -z-1 block h-full w-full fill-current' }) }}
-    <div class="grid grid-cols-3 relative items-center py-16 px-6 sm:px-16 xl:px-24">
+    <div class="grid grid-cols-3 relative items-center py-16 px-4 sm:px-16 xl:px-24">
         {% for block in entry.numbers %}
-            <count-up number="{{ block.numberA }}" label="{{ block.labelA|nl2br }}"></count-up>
+            <count-up number="{{ block.numberA }}" label="{{ block.labelA|replace({'[shy]': '&shy;'})|raw|nl2br }}"></count-up>
             <div class="mx-auto w-full flex flex-col space-y-5">
                 {% if block.year  %}
                     <div class="bg-black rounded-full aspect-square w-20 md:w-32 lg:w-[160px] font-black text-base sm:text-2xl md:text-xl lg:text-[44px] inline-flex justify-center items-center text-white mx-auto ">{{ block.year }}</div>
@@ -28,7 +28,7 @@
                             </svg>
                             <span class="hidden sm:group-hover:inline-flex px-4 ">Zeige Statistik</span>
                         </template>
-                        {{ block.text }}
+                        {{ block.text|replace({'[shy]': '&shy;'})|raw }}
                     </modal>
                 </div>
             </div>

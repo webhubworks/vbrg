@@ -1,0 +1,29 @@
+defaultPlacement: end
+enableVersioning: true
+handle: donate
+name: Donate
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primäre eintrag Seite'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  9363f036-dc6e-47a2-abde-d8f71980c397: # VBRG Opferhilfefonds
+    enabledByDefault: true
+    hasUrls: true
+    template: donate.twig
+    uriFormat: donate
+  ad739698-d8bf-4524-aabe-1932cafdc569: # VBRG Opferhilfefonds EN
+    enabledByDefault: true
+    hasUrls: true
+    template: donate.twig
+    uriFormat: donate
+type: single
