@@ -2,11 +2,11 @@
     {% if settings.lottieJson[0].url %}
         <key-visual size="lg" lottie-json="{{ settings.lottieJson[0].url }}">
             <img src="{{ url('assets/img/logo-opfer-hilfefonds.svg') }}"
-                 class="w-[90%] max-w-[700px] h-auto lg:w-auto lg:h-[218px] z-[30] absolute bottom-24"
+                 class="w-[90%] max-w-[700px] h-auto lg:w-auto lg:h-[218px] z-[30] absolute bottom-8 md:bottom-24"
                  alt="VBRG Opfer Hilfefonds"/>
         </key-visual>
     {% endif %}
-    <div class="max-w-2xl mx-auto mb-4 transform -translate-y-[3rem] sm:-translate-y-[4rem] relative z-20">
+    <div class="max-w-2xl mx-auto mb-4 transform -translate-y-[1rem] sm:-translate-y-[4rem] relative z-20">
         {% include '_atoms/button.twig' with {
             'label':  'JETZT ONLINE SPENDEN!',
             'target': '#donation',
