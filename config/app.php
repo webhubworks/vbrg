@@ -22,13 +22,4 @@ use sitemodule\SiteModule;
 
 return [
     'id' => App::env('APP_ID') ?: 'CraftCMS',
-    'modules' => [
-        'site-module' => [
-            'class' => SiteModule::class,
-            'components' => []
-        ],
-    ],
-    'bootstrap' => [
-        'site-module',
-    ],
 ];

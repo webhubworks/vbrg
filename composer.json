@@ -14,12 +14,6 @@
     "spatie/craft-ray": "^2.0",
     "yiisoft/yii2-shell": "^2.0.3"
   },
-  "autoload": {
-    "psr-4": {
-      "modules\\": "modules/",
-      "sitemodule\\": "modules/sitemodule/src"
-    }
-  },
   "config": {
     "allow-plugins": {
       "craftcms/plugin-installer": true,
