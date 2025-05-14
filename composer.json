@@ -1,7 +1,7 @@
 {
   "require": {
     "craftcms/ckeditor": "3.6.0",
-    "craftcms/cms": "^4.4.0",
+    "craftcms/cms": "^4.15.3",
     "ether/seo": "4.2.1",
     "nystudio107/craft-vite": "^4.0",
     "putyourlightson/craft-elements-panel": "2.0.0",
