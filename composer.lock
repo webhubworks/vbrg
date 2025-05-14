@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3e323c37738f3c531607e9c45bb2d1a5",
+    "content-hash": "b881daad9822833c707305f87ba12794",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -5704,6 +5704,134 @@
                 "urlify"
             ],
             "time": "2022-01-24T19:08:46+00:00"
+        },
+        {
+            "name": "webhubworks/craft-panoptikum-cell",
+            "version": "4.0.1",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:webhubworks/craft-panoptikum-cell.git",
+                "reference": "7c108c54efe92ff5f0656be9159c05c564a172e8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webhubworks/craft-panoptikum-cell/zipball/7c108c54efe92ff5f0656be9159c05c564a172e8",
+                "reference": "7c108c54efe92ff5f0656be9159c05c564a172e8",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://webhub.repo.repman.io/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": ">=8.0.0",
+                "webhubworks/panoptikum-cell": "^1.1.1"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "handle": "_craft-panoptikum-cell",
+                "name": "webhubworks/craft-panoptikum-cell",
+                "developer": "webhub",
+                "documentationUrl": "",
+                "class": "webhubworks\\craftpanoptikumcell\\Panoptikum"
+            },
+            "autoload": {
+                "psr-4": {
+                    "webhubworks\\craftpanoptikumcell\\": "src/"
+                }
+            },
+            "notification-url": "https://webhub.repo.repman.io/downloads",
+            "description": "A craft wrapper around the webhubworks/panoptikum-cell package",
+            "support": {
+                "source": "https://github.com/webhubworks/craft-panoptikum-cell/tree/4.0.1",
+                "issues": "https://github.com/webhubworks/craft-panoptikum-cell/issues"
+            },
+            "time": "2025-04-28T08:52:34+00:00"
+        },
+        {
+            "name": "webhubworks/panoptikum-cell",
+            "version": "1.4.0",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:webhubworks/panoptikum-cell.git",
+                "reference": "96fb87c212ad36aabf2f89c1e55c42cabab4b8ea"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webhubworks/panoptikum-cell/zipball/96fb87c212ad36aabf2f89c1e55c42cabab4b8ea",
+                "reference": "96fb87c212ad36aabf2f89c1e55c42cabab4b8ea",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://webhub.repo.repman.io/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "ext-json": "*",
+                "guzzlehttp/guzzle": "^6.0 | ^7.0",
+                "php": "^7.0 | ^8.0"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.0",
+                "mockery/mockery": "^1.6",
+                "pestphp/pest": "^2.0.0",
+                "spatie/ray": "^1.28"
+            },
+            "bin": [
+                "bin/panoptikum-git-commands.sh"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "WebhubWorks\\PanoptikumCell\\": "src"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "WebhubWorks\\PanoptikumCell\\Tests\\": "tests"
+                }
+            },
+            "notification-url": "https://webhub.repo.repman.io/downloads",
+            "scripts": {
+                "test": [
+                    "vendor/bin/pest"
+                ],
+                "format": [
+                    "vendor/bin/pint"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marven Thieme",
+                    "email": "thieme@webhub.de",
+                    "homepage": "https://webhub.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Gathers data from the environment to transmit to the Panoptikum",
+            "homepage": "https://github.com/webhubworks/panoptikum-cell",
+            "keywords": [
+                "panoptikum-cell",
+                "webhubworks"
+            ],
+            "support": {
+                "source": "https://github.com/webhubworks/panoptikum-cell/tree/1.4.0",
+                "issues": "https://github.com/webhubworks/panoptikum-cell/issues"
+            },
+            "funding": [
+                {
+                    "type": "github",
+                    "url": "https://github.com/webhubworks"
+                }
+            ],
+            "time": "2025-04-25T11:21:42+00:00"
         },
         {
             "name": "webmozart/assert",

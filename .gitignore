@@ -56,3 +56,10 @@
 !.vscode/extensions.json
 config.codekit3
 prepros-6.config
+
+# Panoptikum
+auth.json
+/storage/.current-git-branch
+/storage/.current-git-commit-sha
+/storage/.current-githash
+/storage/.current-gittag

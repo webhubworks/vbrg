@@ -1,11 +1,13 @@
 {
+  "name": "webhubworks/vbrg",
   "require": {
     "craftcms/ckeditor": "3.6.0",
     "craftcms/cms": "^4.15.3",
     "ether/seo": "4.2.1",
     "nystudio107/craft-vite": "^4.0",
     "putyourlightson/craft-elements-panel": "2.0.0",
-    "vlucas/phpdotenv": "^5.4.0"
+    "vlucas/phpdotenv": "^5.4.0",
+    "webhubworks/craft-panoptikum-cell": "^4"
   },
   "require-dev": {
     "craftcms/generator": "^1.6",
@@ -32,6 +34,9 @@
   "scripts": {
     "post-root-package-install": [
       "@php -r \"file_exists('.env') || copy('.env.example.dev', '.env');\""
+    ],
+    "post-autoload-dump": [
+      "vendor/bin/panoptikum-git-commands.sh"
     ]
   },
   "repositories": [
@@ -39,6 +44,10 @@
       "type": "composer",
       "url": "https://composer.craftcms.com",
       "canonical": false
+    },
+    {
+      "type": "composer",
+      "url": "https://webhub.repo.repman.io"
     }
   ]
 }

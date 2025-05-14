@@ -1,4 +1,4 @@
-dateModified: 1747230931
+dateModified: 1747236320
 elementSources:
   craft\elements\Entry:
     -
@@ -200,6 +200,10 @@ meta:
     f362f19b-51b2-471e-878f-aa10ed49f232: Donate # Donate
     ffbc0646-f9f5-42bf-aa98-45db48cc473d: Slider # Slider
 plugins:
+  _craft-panoptikum-cell:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   ckeditor:
     edition: standard
     enabled: true
